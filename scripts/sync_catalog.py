@@ -7,6 +7,7 @@ import re
 import hashlib
 import time
 from collections import Counter
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from html import unescape
 from pathlib import Path
@@ -18,7 +19,11 @@ GROUPS = ("剧毒蛇", "微毒蛇", "无毒蛇")
 OUTPUT = Path(__file__).resolve().parents[1] / "docs" / "catalog.json"
 PHOTO_ROOT = OUTPUT.parent / "photos"
 PHOTO_INDEX = OUTPUT.parent / "photo_index.json"
-HEADERS = {"User-Agent": "SnakeLibraryCloud/1.0 (public educational catalogue)"}
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/131 Safari/537.36",
+    "Referer": "https://snake.pictureknow.com/",
+    "Accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+}
 
 
 def fetch(url: str) -> str:
@@ -39,7 +44,7 @@ def fetch_bytes(url: str) -> tuple[bytes, str]:
     for attempt in range(3):
         try:
             request = Request(url, headers=HEADERS)
-            with urlopen(request, timeout=60) as response:
+            with urlopen(request, timeout=20) as response:
                 return response.read(), response.headers.get_content_type()
         except Exception:
             if attempt == 2:
@@ -105,26 +110,34 @@ def archive_new_images(species: list[dict]) -> None:
     PHOTO_ROOT.mkdir(parents=True, exist_ok=True)
     saved = [entry for entry in load_photo_index() if (OUTPUT.parent / entry.get("path", "")).is_file()]
     known_urls = {entry["url"] for entry in saved if entry.get("url")}
-    for position, item in enumerate(species, start=1):
+    missing = [(item, url) for item in species for url in item["_source_images"] if url not in known_urls]
+
+    def save_one(item: dict, url: str) -> dict:
+        content, mime = fetch_bytes(url)
         folder = PHOTO_ROOT / item["site_id"]
         folder.mkdir(exist_ok=True)
-        added = 0
-        for url in item.pop("_source_images"):
-            if url in known_urls:
-                continue
-            content, mime = fetch_bytes(url)
-            filename = hashlib.sha256(url.encode("utf-8")).hexdigest()[:20] + extension(mime)
-            path = folder / filename
-            if not path.exists():
-                path.write_bytes(content)
-            saved.append({"url": url, "site_id": item["site_id"], "path": str(path.relative_to(OUTPUT.parent)), "captured_at": datetime.now(timezone.utc).isoformat()})
-            known_urls.add(url)
-            added += 1
+        filename = hashlib.sha256(url.encode("utf-8")).hexdigest()[:20] + extension(mime)
+        path = folder / filename
+        if not path.exists():
+            path.write_bytes(content)
+        return {"url": url, "site_id": item["site_id"], "path": str(path.relative_to(OUTPUT.parent)), "captured_at": datetime.now(timezone.utc).isoformat()}
+
+    # Eight workers keep the first import practical without putting excessive
+    # load on the public source website.
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        futures = [pool.submit(save_one, item, url) for item, url in missing]
+        for future in as_completed(futures):
+            entry = future.result()
+            saved.append(entry)
+            known_urls.add(entry["url"])
+
+    for position, item in enumerate(species, start=1):
+        item.pop("_source_images")
         # Show every historical photo for this species, including photos no longer
         # displayed by the source website.
         item["images"] = [entry["path"] for entry in saved if entry.get("site_id") == item["site_id"]]
         item["image_count"] = len(item["images"])
-        print(f"Archived {position}/{len(species)}: {item['chinese_name']} (+{added}, total {item['image_count']})")
+        print(f"Archived {position}/{len(species)}: {item['chinese_name']} (total {item['image_count']})")
     PHOTO_INDEX.write_text(json.dumps({"updated_at": datetime.now(timezone.utc).isoformat(), "photos": saved}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
 

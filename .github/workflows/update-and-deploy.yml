@@ -16,7 +16,6 @@ permissions:
 
 concurrency:
   group: "pages"
-  # Never interrupt between writing an immutable blob and committing its index.
   cancel-in-progress: false
 
 jobs:
@@ -38,11 +37,15 @@ jobs:
         env:
           SNAKE_TOPIC_TOKEN: ${{ secrets.SNAKE_TOPIC_TOKEN }}
         run: |
-          if [ -z "$SNAKE_TOPIC_TOKEN" ]; then echo "SNAKE_TOPIC_TOKEN is not configured; skipping download"; exit 0; fi
+          if [ -z "$SNAKE_TOPIC_TOKEN" ]; then
+            echo "SNAKE_TOPIC_TOKEN is not configured; skipping Topics download."
+            exit 0
+          fi
           python scripts/sync_catalog.py
       - name: Save expanded Topics photo archive
         run: |
-          git add docs/topic_photo_index.json docs/topic_sync_state.json
+          git add docs/topic_photo_index.json
+          if [ -f docs/topic_sync_state.json ]; then git add docs/topic_sync_state.json; fi
           if [ -d docs/photos ]; then git add docs/photos; fi
           git diff --cached --quiet || git commit -m "Archive new Topics photos"
           for attempt in 1 2 3; do

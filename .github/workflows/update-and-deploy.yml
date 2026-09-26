@@ -1,29 +1,41 @@
 name: Update snake library
+
 on:
   schedule:
-    - cron: "0 1 * * *"
+    - cron: "0 1 * * *" # 09:00 China Standard Time
   workflow_dispatch:
   push:
     branches: [main]
+
 permissions:
   contents: write
   pages: write
   id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   update-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-        with: {python-version: "3.12"}
-      - run: python scripts/sync_catalog.py
-      - run: |
-          git config user.name snake-library-bot
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+        with:
+          python-version: "3.12"
+      - name: Refresh catalogue from source
+        run: python scripts/sync_catalog.py
+      - name: Save changed catalogue
+        run: |
+          git config user.name "snake-library-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/catalog.json
           git diff --cached --quiet || git commit -m "Update snake catalogue"
           git push
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
-        with: {path: docs}
-      - uses: actions/deploy-pages@v4
+        with:
+          path: docs
+      - id: deployment
+        uses: actions/deploy-pages@v4

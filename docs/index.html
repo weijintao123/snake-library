@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="中国蛇类图片、学名与毒性资料库">
+  <title>蛇类资料库</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%2318311f' d='M11 37c0-16 10-26 23-26 12 0 20 8 20 19 0 8-5 13-12 13-7 0-10-5-10-10 0-3 2-5 5-5 3 0 5 2 5 5h6c0-8-6-13-14-13-9 0-15 6-15 14 0 10 8 17 19 17 15 0 25-10 25-24C63 11 50 1 35 1 16 1 1 16 1 37v15h10V37Z'/%3E%3Ccircle cx='43' cy='25' r='2.5' fill='%23f4b942'/%3E%3C/svg%3E">
+  <style>
+    :root{--ink:#18311f;--forest:#25653c;--lime:#cde37a;--paper:#f5f7f1;--line:#d9e2d5;--muted:#6b786f;--danger:#b94032;--shadow:0 14px 40px rgba(24,49,31,.10)}
+    *{box-sizing:border-box} body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
+    header{background:var(--ink);color:#fff;padding:28px max(24px,calc((100vw - 1240px)/2));display:flex;gap:28px;align-items:end;justify-content:space-between} h1{font-size:clamp(1.7rem,3vw,2.6rem);margin:0;letter-spacing:.02em} header p{margin:4px 0 0;color:#c9d7ca}.stamp{font-size:.82rem;color:#b5cbb5;text-align:right}
+    main{max-width:1240px;margin:0 auto;padding:28px 24px 60px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:25px}.stat{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px}.stat b{display:block;font-size:1.55rem}.stat span{color:var(--muted);font-size:.9rem}
+    .controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap;background:#fff;border:1px solid var(--line);padding:14px;border-radius:14px;box-shadow:var(--shadow)} input,select{font:inherit;border:1px solid #b9c9ba;border-radius:9px;padding:10px 12px;background:#fff;color:var(--ink)}input{min-width:260px;flex:1}button{font:inherit;border:0;border-radius:9px;background:var(--forest);color:#fff;padding:10px 14px;cursor:pointer}button:hover{filter:brightness(.92)}.count{color:var(--muted);font-size:.9rem;margin-left:auto}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px;margin-top:25px}.card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;cursor:pointer;transition:transform .15s,box-shadow .15s}.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.thumb{height:155px;background:#e5ebe2;display:block;width:100%;object-fit:cover}.empty-thumb{height:155px;display:grid;place-items:center;color:var(--muted);background:#e5ebe2}.card-body{padding:13px}.cn{font-weight:700;font-size:1.05rem}.sci{font-family:Georgia,serif;font-style:italic;color:var(--muted);font-size:.88rem;min-height:2.7em}.badge{display:inline-block;border-radius:999px;padding:3px 9px;font-size:.78rem;background:#e4f1df;color:#24582e}.badge.剧毒{background:#fde7e3;color:#a13426}.badge.微毒{background:#fff0cf;color:#81590c}.photos{float:right;color:var(--muted);font-size:.8rem}
+    dialog{border:0;border-radius:16px;padding:0;width:min(880px,94vw);box-shadow:0 28px 80px rgba(0,0,0,.3)}dialog::backdrop{background:rgba(15,28,18,.63)}.detail{padding:24px}.close{float:right;background:#e5ebe2;color:var(--ink)}.detail h2{margin:0}.detail .sci{font-size:1rem}.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px;margin-top:18px}.gallery img{width:100%;height:160px;object-fit:cover;border-radius:10px;background:#e5ebe2}.source{color:var(--forest)}
+    @media(max-width:650px){header{align-items:start;flex-direction:column;padding:24px}.stamp{text-align:left}.stats{grid-template-columns:repeat(2,1fr)}main{padding:18px 14px}.count{width:100%;margin-left:0}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.thumb,.empty-thumb{height:120px}.card-body{padding:10px}.gallery{grid-template-columns:repeat(2,1fr)}}
+  </style>
+</head>
+<body>
+<header><div><h1>蛇类资料库</h1><p>图片、中文名、学名与毒性</p></div><div class="stamp" id="stamp">正在读取资料库…</div></header>
+<main>
+  <section class="stats" id="stats"></section>
+  <section class="controls"><input id="query" type="search" placeholder="搜索中文名或学名" aria-label="搜索蛇类"><select id="toxicity" aria-label="按毒性筛选"><option value="">全部毒性</option><option>剧毒</option><option>微毒</option><option>无毒</option></select><button id="clear">清除筛选</button><span class="count" id="count"></span></section>
+  <section class="grid" id="grid" aria-live="polite"></section>
+</main>
+<dialog id="detail"><div class="detail" id="detail-content"></div></dialog>
+<script>
+const esc=s=>String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
+const grid=document.querySelector('#grid'),q=document.querySelector('#query'),tox=document.querySelector('#toxicity'),count=document.querySelector('#count'),detail=document.querySelector('#detail'),content=document.querySelector('#detail-content');let catalog;
+function badge(t){return `<span class="badge ${esc(t)}">${esc(t||'未标注')}</span>`}
+function render(){const needle=q.value.trim().toLowerCase(),type=tox.value;const rows=catalog.species.filter(s=>(!type||s.toxicity===type)&&(!needle||`${s.chinese_name} ${s.scientific_name}`.toLowerCase().includes(needle)));count.textContent=`显示 ${rows.length} / ${catalog.total_species} 种`;grid.innerHTML=rows.map((s,i)=>{let img=s.images?.[0];return `<article class="card" data-i="${i}">${img?`<img class="thumb" src="${esc(img)}" alt="${esc(s.chinese_name)}" loading="lazy">`:'<div class="empty-thumb">暂无图片</div>'}<div class="card-body"><span class="photos">${s.image_count||0} 图</span><div class="cn">${esc(s.chinese_name)}</div><div class="sci">${esc(s.scientific_name||'未标注')}</div>${badge(s.toxicity)}</div></article>`}).join('')||'<p>没有符合条件的蛇类。</p>';document.querySelectorAll('.card').forEach((el,pos)=>el.onclick=()=>open(rows[pos]));}
+function open(s){content.innerHTML=`<button class="close" onclick="document.querySelector('#detail').close()">关闭</button><h2>${esc(s.chinese_name)}</h2><div class="sci">${esc(s.scientific_name||'未标注')}</div><p>${badge(s.toxicity)}　当前收录 ${s.image_count||0} 张图片</p><p><a class="source" href="${esc(s.source_url)}" target="_blank" rel="noopener">查看来源页面 ↗</a></p><div class="gallery">${(s.images||[]).map(u=>`<a href="${esc(u)}" target="_blank" rel="noopener"><img src="${esc(u)}" alt="${esc(s.chinese_name)}"></a>`).join('')||'暂无图片'}</div>`;detail.showModal()}
+Promise.all([fetch('catalog.json').then(r=>r.json())]).then(([data])=>{catalog=data;document.querySelector('#stamp').textContent=`资料更新：${new Date(data.generated_at).toLocaleString('zh-CN')}`;document.querySelector('#stats').innerHTML=`<div class="stat"><b>${data.total_species}</b><span>收录蛇种</span></div>`+data.toxicity_summary.map(x=>`<div class="stat"><b>${x.species_count}</b><span>${esc(x.toxicity)}</span></div>`).join('');render();q.oninput=render;tox.onchange=render;document.querySelector('#clear').onclick=()=>{q.value='';tox.value='';render()}}).catch(()=>{document.querySelector('#stamp').textContent='资料库加载失败';grid.innerHTML='<p>暂时无法读取资料。</p>'});
+</script>
+</body></html>

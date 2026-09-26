@@ -4,8 +4,6 @@ on:
   schedule:
     - cron: "0 1 * * *" # 09:00 China Standard Time
   workflow_dispatch:
-  push:
-    branches: [main]
 
 permissions:
   contents: write
@@ -14,6 +12,7 @@ permissions:
 
 concurrency:
   group: "pages"
+  # Never interrupt between writing an immutable blob and committing its index.
   cancel-in-progress: false
 
 jobs:
@@ -24,15 +23,29 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Refresh catalogue from source
-        run: python scripts/sync_catalog.py
-      - name: Save expanded catalogue and photo archive
+      - name: Remove legacy non-Topics gallery once
         run: |
+          git rm -rf --ignore-unmatch docs/photos docs/catalog.json docs/photo_index.json scripts/sync_catalog.py scripts/import_local_archive.py
           git config user.name "snake-library-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/catalog.json docs/photo_index.json docs/photos
-          git diff --cached --quiet || git commit -m "Update snake catalogue"
+          git diff --cached --quiet || git commit -m "Remove legacy snake gallery"
           git push
+      - name: Archive new Topics photos only
+        if: ${{ secrets.SNAKE_TOPIC_TOKEN != '' }}
+        env:
+          SNAKE_TOPIC_TOKEN: ${{ secrets.SNAKE_TOPIC_TOKEN }}
+        run: python scripts/sync_topics.py
+      - name: Save expanded Topics photo archive
+        run: |
+          git add docs/topic_photo_index.json docs/topic_sync_state.json
+          if [ -d docs/photos ]; then git add docs/photos; fi
+          git diff --cached --quiet || git commit -m "Archive new Topics photos"
+          for attempt in 1 2 3; do
+            git pull --rebase origin main && git push && break
+            git rebase --abort 2>/dev/null || true
+            if [ "$attempt" = 3 ]; then exit 1; fi
+            sleep $((attempt * 5))
+          done
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

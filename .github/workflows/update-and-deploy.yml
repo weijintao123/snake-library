@@ -25,7 +25,7 @@ jobs:
           python-version: "3.12"
       - name: Remove legacy non-Topics gallery once
         run: |
-          git rm -rf --ignore-unmatch docs/photos docs/catalog.json docs/photo_index.json scripts/sync_catalog.py scripts/import_local_archive.py
+          git rm -rf --ignore-unmatch docs/photos docs/catalog.json docs/photo_index.json scripts/import_local_archive.py scripts/image_store.py scripts/sync_topics.py
           git config user.name "snake-library-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git diff --cached --quiet || git commit -m "Remove legacy snake gallery"
@@ -34,7 +34,7 @@ jobs:
         if: ${{ secrets.SNAKE_TOPIC_TOKEN != '' }}
         env:
           SNAKE_TOPIC_TOKEN: ${{ secrets.SNAKE_TOPIC_TOKEN }}
-        run: python scripts/sync_topics.py
+        run: python scripts/sync_catalog.py
       - name: Save expanded Topics photo archive
         run: |
           git add docs/topic_photo_index.json docs/topic_sync_state.json

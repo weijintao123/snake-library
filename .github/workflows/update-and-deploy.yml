@@ -4,6 +4,10 @@ on:
   schedule:
     - cron: "0 1 * * *" # 09:00 China Standard Time
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "docs/**"
 
 permissions:
   contents: write

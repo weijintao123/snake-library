@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import json
 import re
-import shutil
+import hashlib
 import time
 from collections import Counter
 from datetime import datetime, timezone
@@ -17,6 +17,7 @@ SITE = "https://snake.pictureknow.com"
 GROUPS = ("剧毒蛇", "微毒蛇", "无毒蛇")
 OUTPUT = Path(__file__).resolve().parents[1] / "docs" / "catalog.json"
 PHOTO_ROOT = OUTPUT.parent / "photos"
+PHOTO_INDEX = OUTPUT.parent / "photo_index.json"
 HEADERS = {"User-Agent": "SnakeLibraryCloud/1.0 (public educational catalogue)"}
 
 
@@ -90,35 +91,47 @@ def extension(content_type: str) -> str:
     return {"image/jpeg": ".jpg", "image/png": ".png", "image/webp": ".webp", "image/gif": ".gif"}.get(content_type, ".jpg")
 
 
-def mirror_images(species: list[dict]) -> None:
-    """Create a fresh, source-owned mirror; only swap it in if all downloads work."""
-    staging = PHOTO_ROOT.with_name(".photos-staging")
-    shutil.rmtree(staging, ignore_errors=True)
-    staging.mkdir(parents=True)
+def load_photo_index() -> list[dict]:
+    if not PHOTO_INDEX.exists():
+        return []
     try:
-        for position, item in enumerate(species, start=1):
-            folder = staging / item["site_id"]
-            folder.mkdir()
-            paths: list[str] = []
-            for index, url in enumerate(item.pop("_source_images"), start=1):
-                content, mime = fetch_bytes(url)
-                filename = f"{index:03d}{extension(mime)}"
-                (folder / filename).write_bytes(content)
-                paths.append(f"photos/{item['site_id']}/{filename}")
-            item["images"] = paths
-            item["image_count"] = len(paths)
-            print(f"Mirrored {position}/{len(species)}: {item['chinese_name']} ({len(paths)} images)")
-        shutil.rmtree(PHOTO_ROOT, ignore_errors=True)
-        staging.replace(PHOTO_ROOT)
-    except Exception:
-        shutil.rmtree(staging, ignore_errors=True)
-        raise
+        return json.loads(PHOTO_INDEX.read_text(encoding="utf-8")).get("photos", [])
+    except (OSError, json.JSONDecodeError):
+        return []
+
+
+def archive_new_images(species: list[dict]) -> None:
+    """Append new source photos to the cloud archive; never remove old ones."""
+    PHOTO_ROOT.mkdir(parents=True, exist_ok=True)
+    saved = [entry for entry in load_photo_index() if (OUTPUT.parent / entry.get("path", "")).is_file()]
+    known_urls = {entry["url"] for entry in saved if entry.get("url")}
+    for position, item in enumerate(species, start=1):
+        folder = PHOTO_ROOT / item["site_id"]
+        folder.mkdir(exist_ok=True)
+        added = 0
+        for url in item.pop("_source_images"):
+            if url in known_urls:
+                continue
+            content, mime = fetch_bytes(url)
+            filename = hashlib.sha256(url.encode("utf-8")).hexdigest()[:20] + extension(mime)
+            path = folder / filename
+            if not path.exists():
+                path.write_bytes(content)
+            saved.append({"url": url, "site_id": item["site_id"], "path": str(path.relative_to(OUTPUT.parent)), "captured_at": datetime.now(timezone.utc).isoformat()})
+            known_urls.add(url)
+            added += 1
+        # Show every historical photo for this species, including photos no longer
+        # displayed by the source website.
+        item["images"] = [entry["path"] for entry in saved if entry.get("site_id") == item["site_id"]]
+        item["image_count"] = len(item["images"])
+        print(f"Archived {position}/{len(species)}: {item['chinese_name']} (+{added}, total {item['image_count']})")
+    PHOTO_INDEX.write_text(json.dumps({"updated_at": datetime.now(timezone.utc).isoformat(), "photos": saved}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
 
 def main() -> None:
     species = [detail(site_id, toxicity) for site_id, toxicity in list_species().items()]
     species.sort(key=lambda item: item["chinese_name"])
-    mirror_images(species)
+    archive_new_images(species)
     totals = Counter(item["toxicity"] for item in species)
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),

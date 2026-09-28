@@ -26,28 +26,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Apply UTF-8 species-folder migration
-        run: |
-          if [ -f species-update-v3b.zip ]; then
-            unzip -o species-update-v3b.zip
-            find docs/photos -type f -name .gitkeep -delete 2>/dev/null || true
-            find docs/photos -depth -type d -empty -delete 2>/dev/null || true
-            python - <<'PY'
-          import json
-          from pathlib import Path
-          data = json.loads(Path("docs/species_catalog.json").read_text(encoding="utf-8"))
-          for species in data["species"]:
-              folder = Path("docs/photos") / species["folder"]
-              folder.mkdir(parents=True, exist_ok=True)
-              (folder / ".gitkeep").touch()
-          PY
-            rm species-update-v3b.zip species-update.zip 2>/dev/null || true
-            git config user.name "snake-library-bot"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add -A
-            git commit -m "Fix 152 UTF-8 species folder names"
-            git push
-          fi
       - name: Remove legacy non-Topics gallery once
         run: |
           git rm -rf --ignore-unmatch docs/catalog.json docs/photo_index.json scripts/import_local_archive.py scripts/image_store.py scripts/sync_topics.py

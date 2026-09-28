@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "source": "https://snake.pictureknow.com/topics",
+  "verified_at": "2026-09-28T00:00:00+08:00",
+  "topics": [
+    {
+      "uniqueId": "8a3d5521cc8c4cc182bb01bcf5a3a483",
+      "snakeId": "02eefe73536247d7b837009a77f526bf",
+      "sciName": "Boiga kraepelini",
+      "cnName": "绞花林蛇",
+      "img": "https://xstatic.pictureknow.com/snake/8a3d5521cc8c4cc182bb01bcf5a3a483.png"
+    },
+    {
+      "uniqueId": "b7932400e21d491d8c370657b291eee3",
+      "snakeId": "0e8cc0c7585841c4ae83c4b1d8417191",
+      "sciName": "Pareas boulengeri",
+      "cnName": "平鳞钝头蛇",
+      "img": "https://xstatic.pictureknow.com/snake/b7932400e21d491d8c370657b291eee3.png"
+    },
+    {
+      "uniqueId": "778747e2419f47ed940a67ab9afc3ebd",
+      "snakeId": "4ca82904e79f4ec0b234e052d8a23fa1",
+      "sciName": "Ophiophagus hannah",
+      "cnName": "眼镜王蛇",
+      "img": "https://xstatic.pictureknow.com/snake/778747e2419f47ed940a67ab9afc3ebd.png"
+    }
+  ]
+}

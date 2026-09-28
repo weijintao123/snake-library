@@ -36,12 +36,7 @@ jobs:
       - name: Archive new Topics photos only
         env:
           SNAKE_TOPIC_TOKEN: ${{ secrets.SNAKE_TOPIC_TOKEN }}
-        run: |
-          if [ -z "$SNAKE_TOPIC_TOKEN" ]; then
-            echo "SNAKE_TOPIC_TOKEN is not configured; skipping Topics download."
-            exit 0
-          fi
-          python scripts/sync_catalog.py
+        run: python scripts/sync_catalog.py
       - name: Save expanded Topics photo archive
         run: |
           git add docs/topic_photo_index.json docs/species_catalog.json

@@ -28,9 +28,9 @@ jobs:
           python-version: "3.12"
       - name: Apply pending species-folder migration
         run: |
-          if [ -f species-update.zip ]; then
-            unzip -o species-update.zip
-            rm species-update.zip
+          if [ -f species-update-v2.zip ]; then
+            unzip -o species-update-v2.zip
+            rm species-update-v2.zip species-update.zip
             git config user.name "snake-library-bot"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add -A

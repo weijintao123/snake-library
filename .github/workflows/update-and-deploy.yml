@@ -26,9 +26,20 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Apply pending species-folder migration
+        run: |
+          if [ -f species-update.zip ]; then
+            unzip -o species-update.zip
+            rm species-update.zip
+            git config user.name "snake-library-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "Create 152 species photo folders"
+            git push
+          fi
       - name: Remove legacy non-Topics gallery once
         run: |
-          git rm -rf --ignore-unmatch docs/photos docs/catalog.json docs/photo_index.json scripts/import_local_archive.py scripts/image_store.py scripts/sync_topics.py
+          git rm -rf --ignore-unmatch docs/catalog.json docs/photo_index.json scripts/import_local_archive.py scripts/image_store.py scripts/sync_topics.py
           git config user.name "snake-library-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git diff --cached --quiet || git commit -m "Remove legacy snake gallery"
@@ -44,7 +55,7 @@ jobs:
           python scripts/sync_catalog.py
       - name: Save expanded Topics photo archive
         run: |
-          git add docs/topic_photo_index.json
+          git add docs/topic_photo_index.json docs/species_catalog.json
           if [ -f docs/topic_sync_state.json ]; then git add docs/topic_sync_state.json; fi
           if [ -d docs/photos ]; then git add docs/photos; fi
           git diff --cached --quiet || git commit -m "Archive new Topics photos"
@@ -60,3 +71,4 @@ jobs:
           path: docs
       - id: deployment
         uses: actions/deploy-pages@v4
+

@@ -165,6 +165,7 @@ DOCS = ROOT / "docs"
 INDEX = DOCS / "topic_photo_index.json"
 STATE = DOCS / "topic_sync_state.json"
 SPECIES_CATALOG = DOCS / "species_catalog.json"
+PENDING_TOPICS = ROOT / "scripts" / "pending_topic_photos.json"
 MAX_TOPICS = 500  # The web client applies the same upper bound.
 PAGE_SIZE = 50
 HEADERS = {
@@ -358,10 +359,28 @@ def archive_topics(topics: list[dict], token: str) -> tuple[int, int]:
     return added, len(records)
 
 
+def load_pending_topics() -> list[dict]:
+    """Load manually verified Topics records. Keeping this file is safe: URL and SHA-256 checks make reruns idempotent."""
+    if not PENDING_TOPICS.exists():
+        return []
+    payload = json.loads(PENDING_TOPICS.read_text(encoding="utf-8"))
+    topics = payload.get("topics", [])
+    if not isinstance(topics, list):
+        raise RuntimeError(f"Pending topics file has an invalid format: {PENDING_TOPICS}")
+    return topics
+
+
 def main() -> None:
     token = os.environ.get("SNAKE_TOPIC_TOKEN", "").strip()
+    pending = load_pending_topics()
+    pending_added = 0
+    total = len(load_index(INDEX)["photos"])
+    if pending:
+        pending_added, total = archive_topics(pending, token)
+        print(f"Verified pending topics: {len(pending)}; new unique photos: {pending_added}; archived total: {total}")
     if not token:
-        raise SystemExit("SNAKE_TOPIC_TOKEN is required because the Topics API requires login")
+        print("SNAKE_TOPIC_TOKEN is not configured; API discovery skipped after importing verified public Topics images.")
+        return
     start, end = scheduled_window()
     discovered = collect_topics(token)
     topics = topics_in_window(discovered, start, end)

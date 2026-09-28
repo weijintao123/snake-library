@@ -164,6 +164,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 INDEX = DOCS / "topic_photo_index.json"
 STATE = DOCS / "topic_sync_state.json"
+SPECIES_CATALOG = DOCS / "species_catalog.json"
 MAX_TOPICS = 500  # The web client applies the same upper bound.
 PAGE_SIZE = 50
 HEADERS = {
@@ -260,11 +261,42 @@ def image_suffix(url: str, mime: str) -> str:
     return by_mime.get(mime, Path(urlsplit(url).path).suffix or ".img")
 
 
+
+def _species_key(value: object) -> str:
+    return " ".join(str(value or "").strip().casefold().split())
+
+
+def load_species_catalog() -> list[dict]:
+    payload = json.loads(SPECIES_CATALOG.read_text(encoding="utf-8"))
+    species = payload.get("species")
+    if not isinstance(species, list) or len(species) != 152:
+        raise RuntimeError("Species catalog must contain exactly 152 species")
+    return species
+
+
+def match_species(topic: dict, species_catalog: list[dict]) -> dict | None:
+    """Match a topic conservatively by site id, scientific name, or Chinese name."""
+    snake_id = _species_key(topic.get("snakeId"))
+    scientific = _species_key(topic.get("sciName"))
+    chinese = _species_key(topic.get("cnName"))
+    if snake_id:
+        matches = [item for item in species_catalog if _species_key(item.get("site_id")) == snake_id]
+        if len(matches) == 1:
+            return matches[0]
+    for field, value in (("scientific_name", scientific), ("chinese_name", chinese)):
+        if value:
+            matches = [item for item in species_catalog if _species_key(item.get(field)) == value]
+            if len(matches) == 1:
+                return matches[0]
+    return None
+
+
 def archive_topics(topics: list[dict], token: str) -> tuple[int, int]:
     index = load_index(INDEX)
     records = index["photos"]
     local_value = os.environ.get("SNAKE_LOCAL_PHOTO_ROOT", "").strip()
     store = ImageStore(DOCS, Path(local_value).expanduser() if local_value else None)
+    species_catalog = load_species_catalog()
     for record in records:
         path = DOCS / record.get("path", "")
         if path.is_file():
@@ -277,6 +309,9 @@ def archive_topics(topics: list[dict], token: str) -> tuple[int, int]:
     }
     added = 0
     for topic in topics:
+        species = match_species(topic, species_catalog)
+        if species is None:
+            continue
         url = str(topic.get("img", "")).split("?x-oss-process=", 1)[0].strip()
         topic_id = str(topic.get("uniqueId", "")).strip()
         normalized = normalize_url(url) if url else ""
@@ -291,17 +326,19 @@ def archive_topics(topics: list[dict], token: str) -> tuple[int, int]:
                     break
             continue
         content, mime = request_bytes(url, token)
-        stored = store.put("topics", content, image_suffix(url, mime))
+        stored = store.put(species["folder"], content, image_suffix(url, mime))
         candidate = {
             "url": url,
             "urls": [url],
             "normalized_url": normalized,
-            "site_id": "topics",
+            "site_id": species["site_id"],
             "topic_ids": [topic_id],
             "source_url": f"{SITE}/topics",
             "snake_id": topic.get("snakeId"),
-            "chinese_name": topic.get("cnName"),
-            "scientific_name": topic.get("sciName"),
+            "chinese_name": species["chinese_name"],
+            "scientific_name": species["scientific_name"],
+            "toxicity": species["toxicity"],
+            "species_folder": species["folder"],
             "captured_at": utc_now(),
             **stored,
         }
@@ -336,3 +373,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

@@ -1,34 +1,22 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>蛇类话题图库</title>
-  <style>
-    :root{color-scheme:light;--ink:#173027;--muted:#62756d;--paper:#f5f2e9;--card:#fff;--accent:#1d6b4d}
-    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
-    header{padding:48px 20px 28px;text-align:center;background:linear-gradient(135deg,#dfeade,#f5f2e9)}
-    h1{margin:0 0 10px;font-size:clamp(28px,5vw,48px)}header p{margin:0;color:var(--muted)}
-    main{max-width:1200px;margin:auto;padding:28px 18px 60px}.status{margin-bottom:22px;color:var(--muted)}
-    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
-    article{overflow:hidden;border-radius:16px;background:var(--card);box-shadow:0 8px 25px #17302714}
-    article img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:#dfe5df}
-    .meta{padding:14px}.name{font-weight:700}.scientific{margin-top:4px;color:var(--muted);font-size:14px;font-style:italic}
-    .topics{margin-top:8px;color:var(--accent);font-size:12px}.empty{padding:60px 20px;text-align:center;color:var(--muted)}
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>中国152种蛇话题图库</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#162118;background:#f3f6f1}body{margin:0}header{background:#183f2a;color:#fff;padding:28px 5vw}header h1{margin:0 0 8px}main{padding:24px 5vw}.summary{margin-bottom:18px;color:#405047}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}.species{background:#fff;border:1px solid #d9e1da;border-radius:14px;padding:16px;box-shadow:0 3px 12px #17352210}.species h2{font-size:18px;margin:0 0 5px}.latin{font-style:italic;color:#506157}.tox{display:inline-block;padding:2px 8px;border-radius:999px;background:#e9f1eb;font-size:12px}.photos{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:12px}.photos img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px;background:#e8ece8}.empty{margin-top:14px;color:#8a958e;font-size:14px}</style>
 </head>
 <body>
-  <header><h1>蛇类话题图库</h1><p>仅收录“肥猫识蛇”话题区每日新增的蛇照片</p></header>
-  <main><div id="status" class="status">正在读取图库…</div><section id="gallery" class="grid"></section></main>
-  <script>
-    const escapeHtml=value=>String(value??"").replace(/[&<>'"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"}[c]));
-    fetch(`topic_photo_index.json?v=${Date.now()}`,{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json()}).then(data=>{
-      const photos=[...(data.photos||[])].reverse();
-      document.querySelector("#status").textContent=`共保存 ${photos.length} 张不重复话题照片 · 最后更新：${data.updated_at?new Date(data.updated_at).toLocaleString("zh-CN"):"尚未运行"}`;
-      const gallery=document.querySelector("#gallery");
-      if(!photos.length){gallery.innerHTML='<div class="empty">暂无照片。首次定时采集成功后会自动显示。</div>';return}
-      gallery.innerHTML=photos.map(photo=>`<article><img loading="lazy" src="${encodeURI(photo.path)}" alt="${escapeHtml(photo.chinese_name||"蛇类话题照片")}"><div class="meta"><div class="name">${escapeHtml(photo.chinese_name||"未识别蛇种")}</div><div class="scientific">${escapeHtml(photo.scientific_name||"")}</div><div class="topics">话题记录 ${escapeHtml((photo.topic_ids||[]).length)}</div></div></article>`).join("");
-    }).catch(error=>{document.querySelector("#status").textContent="图库读取失败";document.querySelector("#gallery").innerHTML=`<div class="empty">${escapeHtml(error.message)}</div>`});
-  </script>
-</body>
-</html>
+<header><h1>中国152种蛇话题图库</h1><div>照片仅来自“肥猫识蛇”话题区；按学名、中文名和毒性归档</div></header>
+<main><div id="summary" class="summary">正在读取目录…</div><div id="grid" class="grid"></div></main>
+<script>
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+Promise.all([fetch("species_catalog.json",{cache:"no-store"}).then(r=>r.json()),fetch("topic_photo_index.json",{cache:"no-store"}).then(r=>r.json())]).then(([catalog,index])=>{
+ const photos=Array.isArray(index.photos)?index.photos:[]; const byFolder=new Map();
+ for(const p of photos){const key=p.species_folder||String(p.path||"").split("/")[1];if(!byFolder.has(key))byFolder.set(key,[]);byFolder.get(key).push(p)}
+ document.getElementById("summary").textContent=`共 ${catalog.species.length} 个蛇种目录，已保存 ${photos.length} 张不重复话题照片；没有照片的蛇种保留空目录。`;
+ document.getElementById("grid").innerHTML=catalog.species.map(s=>{const ps=byFolder.get(s.folder)||[];return `<section class="species"><h2>${esc(s.chinese_name)}</h2><div class="latin">${esc(s.scientific_name)}</div><div class="tox">${esc(s.toxicity)}</div>${ps.length?`<div class="photos">${ps.map(p=>`<a href="${encodeURI(p.path)}"><img loading="lazy" src="${encodeURI(p.path)}" alt="${esc(s.chinese_name)}"></a>`).join("")}</div>`:`<div class="empty">暂无话题照片</div>`}</section>`}).join("");
+}).catch(e=>{document.getElementById("summary").textContent="目录读取失败："+e.message});
+</script>
+</body></html>
+

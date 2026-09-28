@@ -9,3 +9,8 @@ GitHub Actions 每天北京时间 09:00 只读取 `snake.pictureknow.com/topics`
 话题接口要求登录。请把站点登录令牌保存为 GitHub Actions 仓库 Secret `SNAKE_TOPIC_TOKEN`；本机测试则设置同名环境变量。令牌只作为请求 Cookie 使用，不会写入文件、日志或索引。话题专用索引为 `docs/topic_photo_index.json`。
 
 基础校验：`python -m unittest discover -s tests -v`。
+
+## 152 种蛇目录
+
+`docs/photos/` 下固定建立 152 个以“学名--中文名--毒性”命名的目录。话题照片只有在蛇种 ID、学名或中文名唯一匹配时才进入对应目录；未能可靠匹配的内容不会误归类。Git 使用各目录内的 `.gitkeep` 保留尚无照片的空目录。
+

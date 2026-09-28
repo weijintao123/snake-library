@@ -17,3 +17,6 @@ GitHub Actions 每天北京时间 09:00 只读取 `snake.pictureknow.com/topics`
 ## 当前归档
 
 现已按 152 个物种目录保存 1045 张内容哈希不重复的蛇类图片：158 张来自“肥猫识蛇”话题区，887 张来自本地“肥猫识蛇全部152种_新版”归档。
+
+
+网页入口：https://weijintao123.github.io/snake-library/

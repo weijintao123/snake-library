@@ -294,7 +294,7 @@ def match_species(topic: dict, species_catalog: list[dict]) -> dict | None:
 
 def archive_topics(topics: list[dict], token: str) -> tuple[int, int]:
     index = load_index(INDEX)
-    records = index["photos"]
+    records = index["photos"]\n    original_records = json.dumps(records, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
     local_value = os.environ.get("SNAKE_LOCAL_PHOTO_ROOT", "").strip()
     store = ImageStore(DOCS, Path(local_value).expanduser() if local_value else None)
     species_catalog = load_species_catalog()
@@ -349,14 +349,7 @@ def archive_topics(topics: list[dict], token: str) -> tuple[int, int]:
         known.add(candidate["normalized_url"])
         added += int(is_new)
     for record in records:
-        record.pop("normalized_url", None)
-    atomic_write_json(INDEX, {
-        "schema_version": 2,
-        "source": f"{SITE}/topics",
-        "updated_at": utc_now(),
-        "photos": records,
-    })
-    return added, len(records)
+        record.pop("normalized_url", None)\n    current_records = json.dumps(records, ensure_ascii=False, sort_keys=True, separators=(",", ":"))\n    if current_records != original_records:\n        atomic_write_json(INDEX, {\n            "schema_version": 2,\n            "source": f"{SITE}/topics",\n            "updated_at": utc_now(),\n            "photos": records,\n        })\n    return added, len(records)
 
 
 def load_pending_topics() -> list[dict]:

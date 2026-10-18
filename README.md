@@ -1,22 +1,13 @@
-# 蛇类资料库（云端版）
+# 蛇类图库
 
-GitHub Actions 每天北京时间 09:00 只读取 `snake.pictureknow.com/topics` 的话题列表，并将话题中新增的蛇照片追加到 `docs/photos/topics/`。它不会抓取“剧毒蛇、微毒蛇、无毒蛇”目录或蛇种详情页。
+网页：https://weijintao123.github.io/snake-library/
 
-首次运行采集前一个北京时间 09:00 至当天 09:00 的内容；以后从上次成功截止点继续，任务延迟或失败后不会漏过时间段。图片以 SHA-256 内容哈希命名，`docs/topic_photo_index.json` 同时按规范化原始地址和内容哈希去重，因此同图不同 URL 也只保存一次。网页由 GitHub Pages 部署。
+截至2026-10-18，152个既有物种目录中共有1141张内容SHA-256不重复的照片。本次检查北京时间2026-10-15 13:42:49至10-18 13:42:49的话题，扫描100条，65条落在窗口内，新增47张，跳过18条。27张保存原始JPEG，20张因原图处于源站归档状态，保存网页实际使用的全尺寸WebP并记录下载来源。详细结果：`docs/topic_sync_report.json`。
 
-`docs/photos/` 是仓库内本地副本，推送后同时成为 GitHub/Pages 云端副本。若还需镜像到独立的本机归档目录，运行同步前设置 `SNAKE_LOCAL_PHOTO_ROOT`；任一副本写入失败时索引不会提交，下次运行会以相同哈希路径幂等重试。
+只追加话题中的蛇照片；先视觉核验，再按站点物种ID、学名、中文名保守匹配。站点物种标签不代表专家鉴定；存疑内容不误归档。规范化URL与内容SHA-256双重去重，既有照片不覆盖、不删除。
 
-话题接口要求登录。请把站点登录令牌保存为 GitHub Actions 仓库 Secret `SNAKE_TOPIC_TOKEN`；本机测试则设置同名环境变量。令牌只作为请求 Cookie 使用，不会写入文件、日志或索引。话题专用索引为 `docs/topic_photo_index.json`。
+使用 `skills/snake-topics-daily/SKILL.md` 每日更新。Python3.12及Pillow环境中，`python scripts/sync_catalog.py --days 3` 生成最近三天待审队列；核验后将记录标记 `visual_verified: true` 写入 `scripts/pending_topic_photos.json`，运行 `python scripts/sync_catalog.py --pending-only` 导入。发现接口需要安全配置环境变量 `SNAKE_TOPIC_TOKEN`；不要把凭据写进文件或聊天。
 
-基础校验：`python -m unittest discover -s tests -v`。
+GitHub Actions计划为北京时间09:00，实际可能延迟。推送时导入已核验记录并部署Pages；定时发现缺少Secret或有新照片待核验时明确报告未完成，并保留待审artifact。浏览器登录不能替代仓库Secret。Skill本身不包含调度器。
 
-## 152 种蛇目录
-
-`docs/photos/` 下固定建立 152 个以“学名--中文名--毒性”命名的目录。话题照片只有在蛇种 ID、学名或中文名唯一匹配时才进入对应目录；未能可靠匹配的内容不会误归类。Git 使用各目录内的 `.gitkeep` 保留尚无照片的空目录。
-
-## 当前归档
-
-现已按 152 个物种目录保存 1045 张内容哈希不重复的蛇类图片：158 张来自“肥猫识蛇”话题区，887 张来自本地“肥猫识蛇全部152种_新版”归档。
-
-
-网页入口：https://weijintao123.github.io/snake-library/
+验证：`python skills/snake-topics-daily/scripts/test_sync.py`。本次重复导入新增0张。指定窗口外的中断期尚未补抓，不因此推进完整历史截止点。

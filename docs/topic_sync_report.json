@@ -1,0 +1,108 @@
+{
+  "window_start": "2026-10-15T13:42:49+08:00",
+  "window_end": "2026-10-18T13:42:49+08:00",
+  "scanned": 100,
+  "within_window": 65,
+  "visually_approved": 47,
+  "added": 47,
+  "duplicate_records": 0,
+  "total": 1141,
+  "skipped": [
+    {
+      "topic_id": "86313ab9430fceff3ee43abfa8fca94b",
+      "number": 1,
+      "reason": "no_confirmed_snake"
+    },
+    {
+      "topic_id": "f025e4a90e77c19428c7d99375b8bf80",
+      "number": 2,
+      "reason": "no_confirmed_snake"
+    },
+    {
+      "topic_id": "b7875bb9b62fcf0921819e9bf6f30734",
+      "number": 3,
+      "reason": "no_confirmed_snake"
+    },
+    {
+      "topic_id": "ab03cd8a8b92886e9950ae66fd61d3d9",
+      "number": 4,
+      "reason": "no_confirmed_snake"
+    },
+    {
+      "topic_id": "11adc18cfbde5d74e4858057e69e7c59",
+      "number": 5,
+      "reason": "no_confirmed_snake"
+    },
+    {
+      "topic_id": "44b4ca2e41a88485f10f34adc86c543c",
+      "number": 19,
+      "reason": "species_label_conflict"
+    },
+    {
+      "topic_id": "3cc41ea0b0185e8bb8249ae6a5b25d86",
+      "number": 33,
+      "reason": "species_label_conflict"
+    },
+    {
+      "topic_id": "4c2b4e4d21b796d5acd30e58c2bc0827",
+      "number": 37,
+      "reason": "species_label_conflict"
+    },
+    {
+      "topic_id": "2fae807a4ff7dddd8f9d38acbb281425",
+      "number": 41,
+      "reason": "non_snake"
+    },
+    {
+      "topic_id": "89d241cb342b0d36c971ab8b240efa02",
+      "number": 44,
+      "reason": "non_snake"
+    },
+    {
+      "topic_id": "0cd72a8e8c046d87367b39c8ece8d84a",
+      "number": 46,
+      "reason": "snake_content_uncertain"
+    },
+    {
+      "topic_id": "73ded7319bc494ddf421e3005ef80608",
+      "number": 50,
+      "reason": "snake_content_uncertain"
+    },
+    {
+      "topic_id": "2e4dc940da817da99ec44e61c5a31959",
+      "number": 58,
+      "reason": "species_label_conflict"
+    },
+    {
+      "topic_id": "a90d255b196df2cb97029b278f82cb64",
+      "number": 59,
+      "reason": "original_and_webp_unavailable"
+    },
+    {
+      "topic_id": "0bf911d05cd44b5cca3d62de4bdedecc",
+      "number": 60,
+      "reason": "original_and_webp_unavailable"
+    },
+    {
+      "topic_id": "0735e9bf7b94f91b67ca5b9b46178c5e",
+      "number": 61,
+      "reason": "original_and_webp_unavailable"
+    },
+    {
+      "topic_id": "33718694fe21e5c2a613e8cd95cbdfab",
+      "number": 62,
+      "reason": "original_and_webp_unavailable"
+    },
+    {
+      "topic_id": "2b15e98a3f574c2369e5d87af8545aef",
+      "number": 64,
+      "reason": "original_and_webp_unavailable"
+    }
+  ],
+  "formats": {
+    ".jpg": 27,
+    ".png": 0,
+    ".webp": 20
+  },
+  "notes": "Source species labels; visual review is not expert identification. No API cutoff advanced; this update covers only the requested 72 hours."
+}

@@ -3,6 +3,9 @@
 from __future__ import annotations
 
 import json
+import argparse
+import io
+from PIL import Image
 import hashlib
 import tempfile
 import os
@@ -10,7 +13,7 @@ import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
-from urllib.request import Request, urlopen
+from urllib.request import Request, urlopen, build_opener, HTTPRedirectHandler
 
 TRACKING_QUERY_KEYS = {"fbclid", "gclid", "mc_cid", "mc_eid"}
 
@@ -175,13 +178,24 @@ HEADERS = {
 }
 
 
+class SameOriginRedirect(HTTPRedirectHandler):
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        redirected = super().redirect_request(req, fp, code, msg, headers, newurl)
+        if redirected and urlsplit(req.full_url).netloc != urlsplit(newurl).netloc:
+            redirected.remove_header("Cookie")
+        return redirected
+
+
 def request_bytes(url: str, token: str, *, timeout: int = 30) -> tuple[bytes, str]:
+    parts = urlsplit(url)
+    if parts.scheme != "https" or parts.hostname not in {"snake.pictureknow.com", "xstatic.pictureknow.com", "static.pictureknow.com"} or parts.username or parts.password:
+        raise RuntimeError("Unexpected source URL")
     headers = dict(HEADERS)
-    if token:
+    if token and urlsplit(url).hostname == "snake.pictureknow.com":
         headers["Cookie"] = f"token={token}"
     for attempt in range(3):
         try:
-            with urlopen(Request(url, headers=headers), timeout=timeout) as response:
+            with build_opener(SameOriginRedirect()).open(Request(url, headers=headers), timeout=timeout) as response:
                 return response.read(), response.headers.get_content_type()
         except Exception:
             if attempt == 2:
@@ -191,7 +205,11 @@ def request_bytes(url: str, token: str, *, timeout: int = 30) -> tuple[bytes, st
 
 
 def fetch_page(page: int, token: str) -> dict:
-    url = f"{API}?{urlencode({'page': page, 'size': PAGE_SIZE})}"
+    # Public client request prefix; not an account credential or login token.
+    prefix = 'kyR3Q77sBlhMgeUhSGxYbAdtIIKpLCyMHUnmms+8q5EyBkybMReXPbt5wrAa95J5:'
+    timestamp = int(time.time() * 1000)
+    signature = hashlib.md5(f"{prefix}{page}&{timestamp}".encode()).hexdigest()
+    url = f"{API}?{urlencode(dict(page=page, size=PAGE_SIZE, timestamp=timestamp, signature=signature))}"
     raw, _mime = request_bytes(url, token)
     payload = json.loads(raw.decode("utf-8"))
     base = payload.get("base_resp", {})
@@ -203,18 +221,21 @@ def fetch_page(page: int, token: str) -> dict:
     return data
 
 
-def collect_topics(token: str) -> list[dict]:
-    topics: list[dict] = []
-    page = 1
-    while len(topics) < MAX_TOPICS:
+def collect_topics(token: str, start: datetime) -> list[dict]:
+    topics, seen = [], set()
+    for page in range(1, MAX_TOPICS // PAGE_SIZE + 1):
         data = fetch_page(page, token)
         batch = data["pages"]
-        topics.extend(batch[: MAX_TOPICS - len(topics)])
-        total = min(int(data.get("total", len(topics))), MAX_TOPICS)
-        if not batch or len(topics) >= total:
-            break
-        page += 1
-    return topics
+        ids = {str(t.get("uniqueId")) for t in batch}
+        if batch and ids <= seen:
+            raise RuntimeError("Pagination repeated; coverage incomplete")
+        seen.update(ids)
+        topics.extend(batch)
+        if any(topic_time(t) < start for t in batch):
+            return topics
+        if not batch or len(topics) >= int(data.get("total", MAX_TOPICS + 1)):
+            return topics
+    raise RuntimeError("500-item boundary reached before requested start; coverage incomplete")
 
 
 def scheduled_window(now: datetime | None = None) -> tuple[datetime, datetime]:
@@ -277,19 +298,19 @@ def load_species_catalog() -> list[dict]:
 
 def match_species(topic: dict, species_catalog: list[dict]) -> dict | None:
     """Match a topic conservatively by site id, scientific name, or Chinese name."""
-    snake_id = _species_key(topic.get("snakeId"))
-    scientific = _species_key(topic.get("sciName"))
-    chinese = _species_key(topic.get("cnName"))
-    if snake_id:
-        matches = [item for item in species_catalog if _species_key(item.get("site_id")) == snake_id]
-        if len(matches) == 1:
-            return matches[0]
-    for field, value in (("scientific_name", scientific), ("chinese_name", chinese)):
-        if value:
-            matches = [item for item in species_catalog if _species_key(item.get(field)) == value]
-            if len(matches) == 1:
-                return matches[0]
-    return None
+    resolved = []
+    for source, field in (("snakeId", "site_id"), ("sciName", "scientific_name"), ("cnName", "chinese_name")):
+        value = _species_key(topic.get(source))
+        if not value:
+            continue
+        matches = [item for item in species_catalog if _species_key(item.get(field)) == value]
+        if len(matches) > 1:
+            return None
+        if matches:
+            resolved.append(matches[0])
+    if not resolved or len({item["site_id"] for item in resolved}) != 1:
+        return None
+    return resolved[0]
 
 
 def archive_topics(topics: list[dict], token: str) -> tuple[int, int]:
@@ -310,16 +331,21 @@ def archive_topics(topics: list[dict], token: str) -> tuple[int, int]:
         for url in [record.get("url"), *record.get("urls", [])] if url
     }
     added = 0
+    skipped = []
     for topic in topics:
+        if topic.get("visual_verified") is not True:
+            skipped.append({"topic_id": topic.get("uniqueId"), "reason": "visual_review_required"})
+            continue
         species = match_species(topic, species_catalog)
         if species is None:
+            skipped.append({"topic_id": topic.get("uniqueId"), "reason": "unmatched_or_conflicting_species"})
             continue
         url = str(topic.get("img", "")).split("?x-oss-process=", 1)[0].strip()
         topic_id = str(topic.get("uniqueId", "")).strip()
         normalized = normalize_url(url) if url else ""
         if not url or not topic_id:
             continue
-        if normalized in known:
+        if normalized in known and not local_value:
             for record in records:
                 aliases = [record.get("url"), *record.get("urls", [])]
                 if normalized in {normalize_url(alias) for alias in aliases if alias}:
@@ -327,10 +353,40 @@ def archive_topics(topics: list[dict], token: str) -> tuple[int, int]:
                         record["topic_ids"].append(topic_id)
                     break
             continue
-        content, mime = request_bytes(url, token)
-        stored = store.put(species["folder"], content, image_suffix(url, mime))
+        download_url = topic.get("download_url") or url
+        content, mime = request_bytes(download_url, token)
+        try:
+            with Image.open(io.BytesIO(content)) as image:
+                image_format = image.format
+                image.verify()
+        except Exception as error:
+            raise RuntimeError(f"Invalid image for topic {topic_id}") from error
+        suffix = {"JPEG": ".jpg", "PNG": ".png", "WEBP": ".webp", "GIF": ".gif", "AVIF": ".avif"}.get(image_format)
+        if not suffix:
+            raise RuntimeError(f"Unsupported image format for topic {topic_id}")
+        digest = content_sha256(content)
+        existing = next((r for r in records if r.get("sha256") == digest), None)
+        if existing:
+            canonical = Path(existing["path"])
+            if canonical.is_absolute() or ".." in canonical.parts or canonical.parts[0] != "photos":
+                raise RuntimeError("Unsafe canonical photo path")
+            cloud_path = DOCS / canonical
+            atomic_write_bytes(cloud_path, content, exclusive=True)
+            if content_sha256(cloud_path.read_bytes()) != digest:
+                raise RuntimeError("Existing image hash conflict")
+            stored = {"path": existing["path"], "sha256": digest, "cloud_saved": True}
+            if store.local_root:
+                mirror = store.local_root / Path(*canonical.parts[1:])
+                atomic_write_bytes(mirror, content, exclusive=True)
+                if content_sha256(mirror.read_bytes()) != digest:
+                    raise RuntimeError("Mirror image hash conflict")
+                stored.update(local_saved=True, local_path=str(mirror))
+        else:
+            stored = store.put(species["folder"], content, suffix)
         candidate = {
             "url": url,
+            "download_url": download_url,
+            "original_unavailable": topic.get("original_unavailable"),
             "urls": [url],
             "normalized_url": normalized,
             "site_id": species["site_id"],
@@ -341,6 +397,8 @@ def archive_topics(topics: list[dict], token: str) -> tuple[int, int]:
             "scientific_name": species["scientific_name"],
             "toxicity": species["toxicity"],
             "species_folder": species["folder"],
+            "published_at": topic_time(topic).isoformat() if topic.get("createTime") else None,
+            "visual_verified": True,
             "captured_at": utc_now(),
             **stored,
         }
@@ -359,6 +417,8 @@ def archive_topics(topics: list[dict], token: str) -> tuple[int, int]:
             "updated_at": utc_now(),
             "photos": records,
         })
+    if added or skipped or not (DOCS / "topic_sync_report.json").exists():
+        atomic_write_json(DOCS / "topic_sync_report.json", {"checked": len(topics), "added": added, "total": len(records), "skipped": skipped})
     return added, len(records)
 
 
@@ -374,25 +434,39 @@ def load_pending_topics() -> list[dict]:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--pending-only", action="store_true", help="Import verified records only; does not certify API discovery or advance cutoff")
+    parser.add_argument("--days", type=float, default=3, help="Recent rolling window in days for review queue (default 3)")
+    args = parser.parse_args()
+    if args.days <= 0:
+        parser.error("--days must be positive")
     token = os.environ.get("SNAKE_TOPIC_TOKEN", "").strip()
+    if not token and not args.pending_only:
+        raise SystemExit("SNAKE_TOPIC_TOKEN missing: discovery NOT completed. Log in or configure repository Secret; use --pending-only only for verified browser imports.")
     pending = load_pending_topics()
     pending_added = 0
     total = len(load_index(INDEX)["photos"])
     if pending:
         pending_added, total = archive_topics(pending, token)
         print(f"Verified pending topics: {len(pending)}; new unique photos: {pending_added}; archived total: {total}")
-    if not token:
-        print("SNAKE_TOPIC_TOKEN is not configured; API discovery skipped after importing verified public Topics images.")
+    if args.pending_only:
+        print("Verified import completed; API discovery not performed; cutoff unchanged.")
         return
-    start, end = scheduled_window()
-    discovered = collect_topics(token)
+    end = datetime.now(timezone.utc)
+    start = end - timedelta(days=args.days)
+    discovered = collect_topics(token, start)
     topics = topics_in_window(discovered, start, end)
-    added, total = archive_topics(topics, token)
-    # Advance only after every image and the index have been committed locally.
-    atomic_write_json(STATE, {"last_successful_cutoff": end.isoformat(), "updated_at": utc_now()})
-    print(f"Window: {start.isoformat()} to {end.isoformat()}; matching topics: {len(topics)}; new unique photos: {added}; archived total: {total}")
+    known_urls = {normalize_url(url) for record in load_index(INDEX)["photos"]
+                  for url in [record.get("url"), *record.get("urls", [])] if url}
+    topics = [topic for topic in topics if normalize_url(str(topic.get("img", "")).split("?x-oss-process=", 1)[0]) not in known_urls]
+    # Automated species labels do not prove an image contains a snake.
+    # Discovery queues candidates; the Codex skill performs visual review before import.
+    atomic_write_json(ROOT / "scripts" / "topic_review_queue.json", {
+        "source": f"{SITE}/topics", "window_start": start.isoformat(),
+        "window_end": end.isoformat(), "scanned": len(discovered), "topics": topics,
+    })
+    print(f"Discovery complete: {len(topics)} candidates queued for visual review; no cutoff advanced.")
 
 
 if __name__ == "__main__":
     main()
-

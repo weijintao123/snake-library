@@ -2,7 +2,7 @@ name: Update snake library
 
 on:
   schedule:
-    - cron: "0 1 * * *" # 09:00 China Standard Time
+    - cron: "0 1 * * *" # 09:00 Asia/Shanghai, GitHub may delay execution
   workflow_dispatch:
   push:
     branches: [main]
@@ -24,34 +24,42 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Remove legacy non-Topics gallery once
-        run: |
-          git rm -rf --ignore-unmatch docs/catalog.json docs/photo_index.json scripts/import_local_archive.py scripts/image_store.py scripts/sync_topics.py
-          git config user.name "snake-library-bot"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git diff --cached --quiet || git commit -m "Remove legacy snake gallery"
-          git push
-      - name: Archive new Topics photos only
+      - name: Install image decoder
+        run: python -m pip install 'Pillow>=11,<13'
+      - name: Verify synchronization invariants
+        run: python skills/snake-topics-daily/scripts/test_sync.py
+      - name: Import visually verified Topics photos
+        run: python scripts/sync_catalog.py --pending-only
+      - name: Discover recent candidates for review
+        if: github.event_name != 'push'
         env:
           SNAKE_TOPIC_TOKEN: ${{ secrets.SNAKE_TOPIC_TOKEN }}
-        run: python scripts/sync_catalog.py
-      - name: Save expanded Topics photo archive
         run: |
-          git add docs/topic_photo_index.json docs/species_catalog.json
-          if [ -f docs/topic_sync_state.json ]; then git add docs/topic_sync_state.json; fi
-          if [ -d docs/photos ]; then git add docs/photos; fi
-          git diff --cached --quiet || git commit -m "Archive new Topics photos"
-          for attempt in 1 2 3; do
-            git pull --rebase origin main && git push && break
-            git rebase --abort 2>/dev/null || true
-            if [ "$attempt" = 3 ]; then exit 1; fi
-            sleep $((attempt * 5))
-          done
+          python scripts/sync_catalog.py --days 3
+          python - <<'PYCODE'
+          import json
+          from pathlib import Path
+          topics = json.loads(Path('scripts/topic_review_queue.json').read_text())['topics']
+          if topics:
+              raise SystemExit('New candidates require visual review; see Topics review queue artifact. Discovery is not archival completion.')
+          PYCODE
+      - name: Preserve review queue
+        if: always() && github.event_name != 'push'
+        uses: actions/upload-artifact@v4
+        with:
+          name: topics-review-queue
+          path: scripts/topic_review_queue.json
+          if-no-files-found: ignore
+      - name: Save verified archive
+        run: |
+          git config user.name "snake-library-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/topic_photo_index.json docs/photos
+          git diff --cached --quiet || git commit -m "Archive visually verified Topics photos"
+          git push
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
           path: docs
       - id: deployment
         uses: actions/deploy-pages@v4
-
-

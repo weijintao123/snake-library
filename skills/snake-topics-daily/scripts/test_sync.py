@@ -46,4 +46,26 @@ class SyncTests(unittest.TestCase):
  def test_pagination_repeated_page_fails(self):
   with patch.object(m,'fetch_page',return_value={'total':20000,'pages':[dict(uniqueId='a',createTime=200)]}):
    with self.assertRaises(RuntimeError):m.collect_topics('',datetime.fromtimestamp(100,tz=timezone.utc))
+ def test_default_window_resumes_after_long_gap(self):
+  m.STATE.write_text(json.dumps({'last_successful_cutoff':'2026-10-01T09:00:00+08:00'}))
+  before=m.STATE.read_bytes();end=datetime.fromisoformat('2026-10-18T14:00:00+08:00')
+  start,finish=m.incremental_window(end)
+  self.assertEqual(start,datetime.fromisoformat('2026-10-01T01:00:00+00:00'))
+  self.assertEqual(finish,end);self.assertEqual(m.STATE.read_bytes(),before)
+ def test_missing_checkpoint_does_not_default_to_three_days(self):
+  with self.assertRaises(RuntimeError):m.incremental_window()
+ def test_future_checkpoint_rejected(self):
+  m.STATE.write_text(json.dumps({'last_successful_cutoff':'2099-10-01T09:00:00+08:00'}))
+  with self.assertRaises(RuntimeError):m.incremental_window(datetime.fromisoformat('2026-10-18T14:00:00+08:00'))
+ def test_naive_checkpoint_rejected(self):
+  m.STATE.write_text(json.dumps({'last_successful_cutoff':'2026-10-01T09:00:00'}))
+  with self.assertRaises(RuntimeError):m.incremental_window()
+ def test_retry_survives_after_checkpoint(self):
+  retry=self.topic('old');retry['createTime']=10
+  state={'retry_topics':[retry],'excluded_topic_ids':['rejected']}
+  recent=self.topic('new',url='https://xstatic.pictureknow.com/new.png');recent['createTime']=200
+  bad=self.topic('rejected');bad['createTime']=200
+  result=m.review_candidates([recent,bad],datetime.fromtimestamp(100,timezone.utc),datetime.fromtimestamp(300,timezone.utc),state)
+  self.assertEqual([x['uniqueId'] for x in result],['old','new'])
+  self.assertTrue(all('visual_verified' not in x for x in result))
 if __name__=='__main__':unittest.main(verbosity=2)

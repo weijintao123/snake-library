@@ -1,0 +1,137 @@
+{
+  "schema_version": 3,
+  "last_successful_cutoff": "2026-10-18T13:42:49+08:00",
+  "last_verified_data_commit": "660cc73bcf846e6fae61636c8222ae84097202c3",
+  "last_verified_deployment": "https://github.com/weijintao123/snake-library/actions/runs/39103376875",
+  "verified_image_count": 1141,
+  "retry_topics": [
+    {
+      "number": 19,
+      "uniqueId": "44b4ca2e41a88485f10f34adc86c543c",
+      "createTime": 1792244409000,
+      "img": "https://xstatic.pictureknow.com/snake/e873cb94a0314201bcfedfa941a58221.png",
+      "cnName": "滑鼠蛇",
+      "snakeId": "8264c64646c24a08a8e2cb60209c2641",
+      "sciName": "Ptyas mucosa",
+      "retry_reason": "species_label_conflict"
+    },
+    {
+      "number": 33,
+      "uniqueId": "3cc41ea0b0185e8bb8249ae6a5b25d86",
+      "createTime": 1792197798000,
+      "img": "https://xstatic.pictureknow.com/snake/5086d3617a544bbaa412489c68b7df11.png",
+      "cnName": "眼镜王蛇",
+      "snakeId": "4ca82904e79f4ec0b234e052d8a23fa1",
+      "sciName": "Ophiophagus hannah",
+      "retry_reason": "species_label_conflict"
+    },
+    {
+      "number": 37,
+      "uniqueId": "4c2b4e4d21b796d5acd30e58c2bc0827",
+      "createTime": 1792164707000,
+      "img": "https://xstatic.pictureknow.com/snake/e2d3763304644d2393f3e6e3d288ed16.png",
+      "cnName": "铅色水蛇",
+      "snakeId": "3b8b110410b74eeab07c56a3d8c0a1dc",
+      "sciName": "Hypsiscopus plumbea",
+      "download_url": "https://xstatic.pictureknow.com/snake/e2d3763304644d2393f3e6e3d288ed16.png?x-oss-process=image/format,webp",
+      "original_unavailable": "OSS InvalidObjectState",
+      "retry_reason": "species_label_conflict"
+    },
+    {
+      "number": 46,
+      "uniqueId": "0cd72a8e8c046d87367b39c8ece8d84a",
+      "createTime": 1792133009000,
+      "img": "https://xstatic.pictureknow.com/snake/926746633b674fb183d90ef110e3f365.png",
+      "cnName": "紫沙蛇",
+      "snakeId": "8e9d43644fe243ffb0a72a558b6590b0",
+      "sciName": "Psammodynastes pulverulentus",
+      "download_url": "https://xstatic.pictureknow.com/snake/926746633b674fb183d90ef110e3f365.png?x-oss-process=image/format,webp",
+      "original_unavailable": "OSS InvalidObjectState",
+      "retry_reason": "snake_content_uncertain"
+    },
+    {
+      "number": 50,
+      "uniqueId": "73ded7319bc494ddf421e3005ef80608",
+      "createTime": 1792129387000,
+      "img": "https://xstatic.pictureknow.com/snake/38ac0a4839274a2fae9e1f8ba57bc12a.png",
+      "cnName": "钝尾两头蛇",
+      "snakeId": "b75cdc3b222c43a2a19690ef7261c6f8",
+      "sciName": "Calamaria septentrionalis",
+      "download_url": "https://xstatic.pictureknow.com/snake/38ac0a4839274a2fae9e1f8ba57bc12a.png?x-oss-process=image/format,webp",
+      "original_unavailable": "OSS InvalidObjectState",
+      "retry_reason": "snake_content_uncertain"
+    },
+    {
+      "number": 58,
+      "uniqueId": "2e4dc940da817da99ec44e61c5a31959",
+      "createTime": 1792069493000,
+      "img": "https://xstatic.pictureknow.com/snake/d47fbcde47404e4fbab6aec36b17ca9e.png",
+      "cnName": "赤链蛇",
+      "snakeId": "ea20f2a33ff94d5ab89d988289847fc8",
+      "sciName": "Lycodon rufozonatus",
+      "download_url": "https://xstatic.pictureknow.com/snake/d47fbcde47404e4fbab6aec36b17ca9e.png?x-oss-process=image/format,webp",
+      "original_unavailable": "OSS InvalidObjectState",
+      "retry_reason": "species_label_conflict"
+    },
+    {
+      "number": 59,
+      "uniqueId": "a90d255b196df2cb97029b278f82cb64",
+      "createTime": 1792069477000,
+      "img": "https://xstatic.pictureknow.com/snake/e038b69e08cd43bb8b1d0c1ddbbb84dd.png",
+      "cnName": "银环蛇",
+      "snakeId": "74b046ff50044584b80a5e19c612308f",
+      "sciName": "Bungarus multicinctus",
+      "retry_reason": "original_and_webp_unavailable"
+    },
+    {
+      "number": 60,
+      "uniqueId": "0bf911d05cd44b5cca3d62de4bdedecc",
+      "createTime": 1792069463000,
+      "img": "https://xstatic.pictureknow.com/snake/c62faaac94944280a977c466807b8e15.png",
+      "cnName": "黄斑渔游蛇",
+      "snakeId": "f75d122546494092a6a2f67279972d82",
+      "sciName": "Fowlea flavipunctatus",
+      "retry_reason": "original_and_webp_unavailable"
+    },
+    {
+      "number": 61,
+      "uniqueId": "0735e9bf7b94f91b67ca5b9b46178c5e",
+      "createTime": 1792069040000,
+      "img": "https://xstatic.pictureknow.com/snake/5c1d48eb0eab4bb0927772d3b87c7502.png",
+      "cnName": "福清白环蛇",
+      "snakeId": "6caf505e6b504b108a47cb9910d7c994",
+      "sciName": "Lycodon futsingensis",
+      "retry_reason": "original_and_webp_unavailable"
+    },
+    {
+      "number": 62,
+      "uniqueId": "33718694fe21e5c2a613e8cd95cbdfab",
+      "createTime": 1792068947000,
+      "img": "https://xstatic.pictureknow.com/snake/5ac76d8501904cdd953e4f03c9a40b03.png",
+      "cnName": "福清白环蛇",
+      "snakeId": "6caf505e6b504b108a47cb9910d7c994",
+      "sciName": "Lycodon futsingensis",
+      "retry_reason": "original_and_webp_unavailable"
+    },
+    {
+      "number": 64,
+      "uniqueId": "2b15e98a3f574c2369e5d87af8545aef",
+      "createTime": 1792067569000,
+      "img": "https://xstatic.pictureknow.com/snake/16d862c5ec834f28b689842682be13ad.png",
+      "cnName": "翠青蛇",
+      "snakeId": "e554b5771b004bf7aebdf727286c6f1d",
+      "sciName": "Ptyas major",
+      "retry_reason": "original_and_webp_unavailable"
+    }
+  ],
+  "excluded_topic_ids": [
+    "86313ab9430fceff3ee43abfa8fca94b",
+    "f025e4a90e77c19428c7d99375b8bf80",
+    "b7875bb9b62fcf0921819e9bf6f30734",
+    "ab03cd8a8b92886e9950ae66fd61d3d9",
+    "11adc18cfbde5d74e4858057e69e7c59",
+    "2fae807a4ff7dddd8f9d38acbb281425",
+    "89d241cb342b0d36c971ab8b240efa02"
+  ],
+  "coverage_note": "Checkpoint seeds forward incremental updates from the prior verified window end. Unresolved records are retained for review/retry; this does not certify history before 2026-10-15T13:42:49+08:00."
+}

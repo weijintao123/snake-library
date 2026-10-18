@@ -1,4 +1,4 @@
 interface:
   display_name: "蛇类照片每日更新"
   short_description: "增量归档肥猫识蛇话题原图，按物种去重，并核验每日更新与部署结果"
-  default_prompt: "使用 $snake-topics-daily 补抓最新蛇类话题照片，去重归档并报告新增数和部署状态。"
+  default_prompt: "使用 $snake-topics-daily 从上次成功断点接续抓取蛇类话题照片，去重归档并报告新增数和部署状态。"

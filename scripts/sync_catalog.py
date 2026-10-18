@@ -238,29 +238,68 @@ def collect_topics(token: str, start: datetime) -> list[dict]:
     raise RuntimeError("500-item boundary reached before requested start; coverage incomplete")
 
 
-def scheduled_window(now: datetime | None = None) -> tuple[datetime, datetime]:
-    """Return the unprocessed [start, end) window bounded by 09:00 China time."""
-    china = timezone(timedelta(hours=8))
-    current = (now or datetime.now(timezone.utc)).astimezone(china)
-    end = current.replace(hour=9, minute=0, second=0, microsecond=0)
-    if current < end:
-        end -= timedelta(days=1)
-    default_start = end - timedelta(days=1)
+def parse_cutoff(value: str) -> datetime:
+    try:
+        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        if parsed.tzinfo is None:
+            raise ValueError("timezone missing")
+        return parsed.astimezone(timezone.utc)
+    except (TypeError, AttributeError, ValueError) as error:
+        raise RuntimeError("Cutoff must be an ISO-8601 timestamp with timezone") from error
+
+
+def load_sync_state() -> dict:
     if not STATE.exists():
-        return default_start, end
+        raise RuntimeError("No verified checkpoint. Recover it from a verified publication; do not silently default to yesterday or three days ago. Explicit --since/--days can be used for an authorized backfill.")
     try:
         state = json.loads(STATE.read_text(encoding="utf-8"))
-        if not state.get("last_successful_cutoff"):
-            return default_start, end
-        previous = datetime.fromisoformat(state["last_successful_cutoff"])
-        if previous.tzinfo is None:
-            raise ValueError("cutoff has no timezone")
-        start = previous.astimezone(china)
-    except (OSError, KeyError, ValueError, json.JSONDecodeError) as error:
-        raise RuntimeError(f"Sync state is invalid; refusing to risk a gap: {STATE}") from error
+    except (OSError, ValueError) as error:
+        raise RuntimeError("Sync state unreadable; cutoff unchanged") from error
+    if not isinstance(state, dict) or not state.get("last_successful_cutoff"):
+        raise RuntimeError("Sync state missing last_successful_cutoff")
+    parse_cutoff(state["last_successful_cutoff"])
+    if not isinstance(state.get("retry_topics", []), list) or not isinstance(state.get("excluded_topic_ids", []), list):
+        raise RuntimeError("Sync retry/exclusion state malformed")
+    return state
+
+
+def incremental_window(now: datetime | None = None, *, since: str | None = None, days: float | None = None) -> tuple[datetime, datetime]:
+    end = now or datetime.now(timezone.utc)
+    if end.tzinfo is None:
+        raise RuntimeError("Current time must carry a timezone")
+    end = end.astimezone(timezone.utc)
+    if since is not None and days is not None:
+        raise RuntimeError("Choose either --since or --days")
+    if since is not None:
+        start = parse_cutoff(since)
+    elif days is not None:
+        if days <= 0:
+            raise RuntimeError("--days must be positive")
+        start = end - timedelta(days=days)
+    else:
+        start = parse_cutoff(load_sync_state()["last_successful_cutoff"])
     if start > end:
-        raise RuntimeError("Sync state cutoff is later than the current 09:00 boundary")
+        raise RuntimeError("Verified checkpoint is in the future; refusing to skip content")
     return start, end
+
+
+def review_candidates(discovered: list[dict], start: datetime, end: datetime, state: dict) -> list[dict]:
+    known_urls = {normalize_url(url) for record in load_index(INDEX)["photos"]
+                  for url in [record.get("url"), *record.get("urls", [])] if url}
+    excluded = set(state.get("excluded_topic_ids", []))
+    combined = [*state.get("retry_topics", []), *topics_in_window(discovered, start, end)]
+    result, seen = [], set()
+    for topic in combined:
+        topic_id = str(topic.get("uniqueId", ""))
+        url = normalize_url(str(topic.get("img", "")).split("?x-oss-process=", 1)[0])
+        if not topic_id or topic_id in seen or topic_id in excluded or url in known_urls:
+            continue
+        seen.add(topic_id)
+        # A previous approval is not inherited by an unresolved retry.
+        item = dict(topic)
+        item.pop("visual_verified", None)
+        result.append(item)
+    return result
 
 
 def topic_time(topic: dict) -> datetime:
@@ -436,9 +475,11 @@ def load_pending_topics() -> list[dict]:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--pending-only", action="store_true", help="Import verified records only; does not certify API discovery or advance cutoff")
-    parser.add_argument("--days", type=float, default=3, help="Recent rolling window in days for review queue (default 3)")
+    window = parser.add_mutually_exclusive_group()
+    window.add_argument("--since", help="Explicit backfill start with timezone; default: last verified checkpoint")
+    window.add_argument("--days", type=float, help="Explicit rolling-day override; never the default")
     args = parser.parse_args()
-    if args.days <= 0:
+    if args.days is not None and args.days <= 0:
         parser.error("--days must be positive")
     token = os.environ.get("SNAKE_TOPIC_TOKEN", "").strip()
     if not token and not args.pending_only:
@@ -452,20 +493,17 @@ def main() -> None:
     if args.pending_only:
         print("Verified import completed; API discovery not performed; cutoff unchanged.")
         return
-    end = datetime.now(timezone.utc)
-    start = end - timedelta(days=args.days)
+    start, end = incremental_window(since=args.since, days=args.days)
+    state = load_sync_state() if STATE.exists() else {}
     discovered = collect_topics(token, start)
-    topics = topics_in_window(discovered, start, end)
-    known_urls = {normalize_url(url) for record in load_index(INDEX)["photos"]
-                  for url in [record.get("url"), *record.get("urls", [])] if url}
-    topics = [topic for topic in topics if normalize_url(str(topic.get("img", "")).split("?x-oss-process=", 1)[0]) not in known_urls]
+    topics = review_candidates(discovered, start, end, state)
     # Automated species labels do not prove an image contains a snake.
     # Discovery queues candidates; the Codex skill performs visual review before import.
     atomic_write_json(ROOT / "scripts" / "topic_review_queue.json", {
-        "source": f"{SITE}/topics", "window_start": start.isoformat(),
+        "source": f"{SITE}/topics", "base_cutoff": state.get("last_successful_cutoff"), "window_start": start.isoformat(),
         "window_end": end.isoformat(), "scanned": len(discovered), "topics": topics,
     })
-    print(f"Discovery complete: {len(topics)} candidates queued for visual review; no cutoff advanced.")
+    print(f"Window: {start.isoformat()} to {end.isoformat()}; {len(topics)} candidates including unresolved retries; no cutoff advanced.")
 
 
 if __name__ == "__main__":

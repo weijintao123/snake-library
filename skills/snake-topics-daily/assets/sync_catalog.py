@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import argparse
+import re
 import io
 from PIL import Image
 import hashlib
@@ -330,9 +331,58 @@ def _species_key(value: object) -> str:
 def load_species_catalog() -> list[dict]:
     payload = json.loads(SPECIES_CATALOG.read_text(encoding="utf-8"))
     species = payload.get("species")
-    if not isinstance(species, list) or len(species) != 152:
-        raise RuntimeError("Species catalog must contain exactly 152 species")
+    if not isinstance(species, list) or not species:
+        raise RuntimeError("Species catalog must contain a nonempty species list")
+    for field in ("site_id", "scientific_name", "folder"):
+        values = [_species_key(item.get(field)) for item in species]
+        if any(not value for value in values) or len(set(values)) != len(values):
+            raise RuntimeError(f"Species catalog has missing or duplicate {field}")
+    for item in species:
+        folder = Path(item["folder"])
+        if folder.is_absolute() or len(folder.parts) != 1 or folder.name in {".", ".."} or "/" in item["folder"] or "\\" in item["folder"]:
+            raise RuntimeError("Unsafe species folder")
     return species
+
+
+def register_verified_species(topic: dict, species_catalog: list[dict]) -> dict | None:
+    """Append only source-verified new species; 152 is an initial count, not a limit."""
+    new = topic.get("new_species")
+    if not isinstance(new, dict) or new.get("verified") is not True:
+        return None
+    for source, field in (("snakeId", "site_id"), ("sciName", "scientific_name"), ("cnName", "chinese_name")):
+        value = _species_key(topic.get(source))
+        if not value or value != _species_key(new.get(field)):
+            return None
+        # Existing names/IDs, synonyms and conflicting assignments need reconciliation,
+        # not a second species folder.
+        if any(value == _species_key(item.get(field)) for item in species_catalog):
+            return None
+    scientific = new["scientific_name"].strip()
+    chinese = new["chinese_name"].strip()
+    if not re.fullmatch(r"[A-Z][A-Za-z-]+ [a-z][a-z-]+(?: [a-z][a-z-]+)?", scientific):
+        return None
+    if chinese in {"未知", "未知蛇", "未识别", "待确认"}:
+        return None
+    source = urlsplit(str(new.get("source_url", "")))
+    if (source.scheme != "https" or source.hostname != "snake.pictureknow.com"
+            or source.path != "/snake" or source.username or source.password
+            or dict(parse_qsl(source.query)).get("id") != new["site_id"]):
+        return None
+    toxicity = new.get("toxicity") or "毒性待核实"
+    if toxicity not in {"剧毒", "微毒", "无毒", "毒性待核实"}:
+        return None
+    folder = f"{scientific}--{chinese}--{toxicity}"
+    if any(c in folder for c in '/\\<>:"|?*') or "--" in scientific or "--" in chinese or any(ord(c) < 32 for c in folder):
+        return None
+    if any(_species_key(item["folder"]) == _species_key(folder) for item in species_catalog):
+        return None
+    record = dict(site_id=new["site_id"], scientific_name=scientific,
+                  chinese_name=chinese, toxicity=toxicity, folder=folder,
+                  source_url=new["source_url"], added_at=utc_now())
+    if new.get("english_name"):
+        record["english_name"] = new["english_name"]
+    species_catalog.append(record)
+    return record
 
 
 def match_species(topic: dict, species_catalog: list[dict]) -> dict | None:
@@ -349,7 +399,12 @@ def match_species(topic: dict, species_catalog: list[dict]) -> dict | None:
             resolved.append(matches[0])
     if not resolved or len({item["site_id"] for item in resolved}) != 1:
         return None
-    return resolved[0]
+    candidate = resolved[0]
+    if isinstance(topic.get("new_species"), dict):
+        for source, field in (("sciName", "scientific_name"), ("cnName", "chinese_name")):
+            if _species_key(topic.get(source)) != _species_key(candidate.get(field)):
+                return None
+    return candidate
 
 
 def archive_topics(topics: list[dict], token: str) -> tuple[int, int]:
@@ -359,6 +414,7 @@ def archive_topics(topics: list[dict], token: str) -> tuple[int, int]:
     local_value = os.environ.get("SNAKE_LOCAL_PHOTO_ROOT", "").strip()
     store = ImageStore(DOCS, Path(local_value).expanduser() if local_value else None)
     species_catalog = load_species_catalog()
+    original_species_count = len(species_catalog)
     for record in records:
         path = DOCS / record.get("path", "")
         if path.is_file():
@@ -376,6 +432,8 @@ def archive_topics(topics: list[dict], token: str) -> tuple[int, int]:
             skipped.append({"topic_id": topic.get("uniqueId"), "reason": "visual_review_required"})
             continue
         species = match_species(topic, species_catalog)
+        if species is None:
+            species = register_verified_species(topic, species_catalog)
         if species is None:
             skipped.append({"topic_id": topic.get("uniqueId"), "reason": "unmatched_or_conflicting_species"})
             continue
@@ -448,6 +506,12 @@ def archive_topics(topics: list[dict], token: str) -> tuple[int, int]:
         added += int(is_new)
     for record in records:
         record.pop("normalized_url", None)
+    if len(species_catalog) != original_species_count:
+        payload = json.loads(SPECIES_CATALOG.read_text(encoding="utf-8"))
+        payload.update(species=species_catalog, total_species=len(species_catalog), updated_at=utc_now())
+        for item in species_catalog[original_species_count:]:
+            atomic_write_bytes(DOCS / "photos" / item["folder"] / ".gitkeep", b"", exclusive=True)
+        atomic_write_json(SPECIES_CATALOG, payload)
     current_records = json.dumps(records, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
     if current_records != original_records:
         atomic_write_json(INDEX, {

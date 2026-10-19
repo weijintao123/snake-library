@@ -12,9 +12,9 @@ class SyncTests(unittest.TestCase):
   self.species=[dict(site_id='a',scientific_name='Test a',chinese_name='甲蛇',toxicity='无毒',folder='Test a--甲蛇--无毒'),dict(site_id='b',scientific_name='Test b',chinese_name='乙蛇',toxicity='无毒',folder='Test b--乙蛇--无毒')]
   stream=io.BytesIO();Image.new('RGB',(9,9),'red').save(stream,format='PNG');self.blob=stream.getvalue()
   self.stack=[]
-  for key,value in [('DOCS',self.docs),('INDEX',self.docs/'topic_photo_index.json'),('STATE',self.docs/'topic_sync_state.json')]:
+  for key,value in [('DOCS',self.docs),('INDEX',self.docs/'topic_photo_index.json'),('STATE',self.docs/'topic_sync_state.json'),('SPECIES_CATALOG',self.docs/'species_catalog.json')]:
    p=patch.object(m,key,value);p.start();self.stack.append(p)
-  p=patch.object(m,'load_species_catalog',return_value=self.species);p.start();self.stack.append(p)
+  m.SPECIES_CATALOG.write_text(json.dumps({'schema_version':1,'total_species':2,'species':self.species}))
  def tearDown(self):
   for p in reversed(self.stack):p.stop()
   self.tmp.cleanup()
@@ -68,4 +68,47 @@ class SyncTests(unittest.TestCase):
   result=m.review_candidates([recent,bad],datetime.fromtimestamp(100,timezone.utc),datetime.fromtimestamp(300,timezone.utc),state)
   self.assertEqual([x['uniqueId'] for x in result],['old','new'])
   self.assertTrue(all('visual_verified' not in x for x in result))
+ def new_topic(self):
+  topic=self.topic('new','c','https://xstatic.pictureknow.com/new.png')
+  topic.update(sciName='Test nova',cnName='丙蛇',new_species={'verified':True,'site_id':'c','scientific_name':'Test nova','chinese_name':'丙蛇','source_url':'https://snake.pictureknow.com/snake?id=c'})
+  return topic
+ def test_new_species_extends_152_without_duplicate_folder(self):
+  import string
+  catalog=list(self.species)
+  for i in range(150):
+   latin='Seed'+string.ascii_lowercase[i//26]+string.ascii_lowercase[i%26]+' species'
+   catalog.append(dict(site_id=f'seed{i}',scientific_name=latin,chinese_name=f'种{i}',toxicity='无毒',folder=latin+f'--种{i}--无毒'))
+  m.SPECIES_CATALOG.write_text(json.dumps({'total_species':152,'species':catalog}))
+  with patch.object(m,'request_bytes',return_value=(self.blob,'image/png')):
+   self.assertEqual(m.archive_topics([self.new_topic()],''),(1,1))
+   self.assertEqual(m.archive_topics([self.new_topic()],''),(0,1))
+  after=json.loads(m.SPECIES_CATALOG.read_text())
+  self.assertEqual(after['total_species'],153);self.assertEqual(len(after['species']),153)
+  folder=self.docs/'photos/Test nova--丙蛇--毒性待核实'
+  self.assertTrue((folder/'.gitkeep').exists());self.assertEqual(len(list(folder.glob('*.png'))),1)
+  self.assertFalse(m.STATE.exists())
+ def test_unverified_species_does_not_create_folder(self):
+  topic=self.new_topic();topic['new_species']['verified']=False
+  with patch.object(m,'request_bytes') as fetch:
+   self.assertEqual(m.archive_topics([topic],''),(0,0));fetch.assert_not_called()
+  self.assertEqual(len(m.load_species_catalog()),2)
+ def test_new_site_id_with_existing_scientific_name_reuses_species(self):
+  topic=self.new_topic();topic.update(sciName='Test a',cnName='甲蛇')
+  with patch.object(m,'request_bytes',return_value=(self.blob,'image/png')):m.archive_topics([topic],'')
+  self.assertEqual(len(m.load_species_catalog()),2)
+  self.assertTrue(m.load_index(m.INDEX)['photos'][0]['path'].startswith('photos/Test a--'))
+ def test_new_species_cannot_override_conflicting_existing_labels(self):
+  topic=self.new_topic();topic['cnName']='乙蛇';topic['new_species']['chinese_name']='乙蛇'
+  with patch.object(m,'request_bytes') as fetch:
+   self.assertEqual(m.archive_topics([topic],''),(0,0));fetch.assert_not_called()
+  self.assertEqual(len(m.load_species_catalog()),2)
+ def test_unsafe_new_species_folder_rejected(self):
+  topic=self.new_topic();topic['cnName']='../丙蛇';topic['new_species']['chinese_name']='../丙蛇'
+  with patch.object(m,'request_bytes') as fetch:
+   self.assertEqual(m.archive_topics([topic],''),(0,0));fetch.assert_not_called()
+ def test_failed_download_does_not_persist_new_species(self):
+  before=m.SPECIES_CATALOG.read_bytes()
+  with patch.object(m,'request_bytes',side_effect=RuntimeError('download failed')):
+   with self.assertRaises(RuntimeError):m.archive_topics([self.new_topic()],'')
+  self.assertEqual(m.SPECIES_CATALOG.read_bytes(),before)
 if __name__=='__main__':unittest.main(verbosity=2)

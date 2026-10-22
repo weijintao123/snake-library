@@ -1,112 +1,290 @@
 {
-  "window_start": "2026-10-19T16:12:05+08:00",
-  "window_end": "2026-10-20T16:24:19+08:00",
+  "window_start": "2026-10-20T16:24:19+08:00",
+  "window_end": "2026-10-22T09:46:04+08:00",
   "source": "https://snake.pictureknow.com/topics",
-  "base_cutoff": "2026-10-19T16:12:05+08:00",
+  "base_cutoff": "2026-10-20T16:24:19+08:00",
   "topics": [
     {
-      "uniqueId": "1fa2834890f077afa20fcc06a15fdac4",
-      "createTime": 1792483375000,
-      "img": "https://xstatic.pictureknow.com/snake/80f47fc7e5a1411488c90f69f4dd6ea9.png",
-      "snakeId": "754cd6ec0ad845718dec8fe2020d47c4",
-      "sciName": "Naja atra",
-      "cnName": "舟山眼镜蛇",
-      "download_url": "https://xstatic.pictureknow.com/snake/80f47fc7e5a1411488c90f69f4dd6ea9.png",
-      "visual_verified": true
-    },
-    {
-      "uniqueId": "768755cbe29954ce5afa56e662553e66",
-      "createTime": 1792480192000,
-      "img": "https://xstatic.pictureknow.com/snake/73304b0d0ed14ee4ae3dd448cb4689c7.png",
-      "snakeId": "28b9dc018252448e966fb872063f4eb1",
-      "sciName": "Ahaetulla prasina",
-      "cnName": "绿瘦蛇",
-      "download_url": "https://xstatic.pictureknow.com/snake/73304b0d0ed14ee4ae3dd448cb4689c7.png",
-      "visual_verified": true
-    },
-    {
-      "uniqueId": "ee8d8bb26226403c9419b74f45bae0c1",
-      "createTime": 1792468908000,
-      "img": "https://xstatic.pictureknow.com/snake/6c096eb5eee74638936180c2669d6dd2.png",
-      "snakeId": "d4618164bcad486fbd1113e9d29c115a",
-      "sciName": "Gloydius ussuriensis",
-      "cnName": "乌苏里蝮",
-      "download_url": "https://xstatic.pictureknow.com/snake/6c096eb5eee74638936180c2669d6dd2.png",
-      "visual_verified": true
-    },
-    {
-      "uniqueId": "6af4f5ceec24603311bb0f9b48b2414d",
-      "createTime": 1792462380000,
-      "img": "https://xstatic.pictureknow.com/snake/78d8bab706214d92a7dcf031e6b07281.png",
-      "snakeId": "077ca911a06d4c1bb6942f5fabe3dbc4",
-      "sciName": "Deinagkistrodon acutus",
-      "cnName": "尖吻蝮",
-      "download_url": "https://xstatic.pictureknow.com/snake/78d8bab706214d92a7dcf031e6b07281.png",
-      "visual_verified": true
-    },
-    {
-      "uniqueId": "c56cee527955a3285320537b31b112b6",
-      "createTime": 1792446059000,
-      "img": "https://xstatic.pictureknow.com/snake/0dd66314e2724b58b7e47637af5ab5e2.png",
-      "snakeId": "6435f96708124c51b4a7d85cbfd0b6dd",
-      "sciName": "Pseudagkistrodon rudis",
-      "cnName": "颈棱蛇",
-      "download_url": "https://xstatic.pictureknow.com/snake/0dd66314e2724b58b7e47637af5ab5e2.png",
-      "visual_verified": true
-    },
-    {
-      "uniqueId": "3fede173379ae2eba03824710ea25d28",
-      "createTime": 1792425821000,
-      "img": "https://xstatic.pictureknow.com/snake/552322b7350240b7b88df7dabebc3a52.png",
-      "snakeId": "754cd6ec0ad845718dec8fe2020d47c4",
-      "sciName": "Naja atra",
-      "cnName": "舟山眼镜蛇",
-      "download_url": "https://xstatic.pictureknow.com/snake/552322b7350240b7b88df7dabebc3a52.png",
-      "visual_verified": true
-    },
-    {
-      "uniqueId": "9113bfece445966dbb695767bdc9a784",
-      "createTime": 1792425061000,
-      "img": "https://xstatic.pictureknow.com/snake/62ac0b4e49d94ce2b8b96a6c7f3c6ef1.png",
+      "uniqueId": "53a188138e6c3f5ed6a370a7a9730e76",
+      "createTime": 1792631759000,
+      "img": "https://xstatic.pictureknow.com/snake/e3bcbef61ad94b27a325d4ff5eab55cc.png",
       "snakeId": "177e11fb1b2345a986e5e0efd2878fd1",
       "sciName": "Protobothrops mucrosquamatus",
       "cnName": "原矛头蝮",
-      "download_url": "https://xstatic.pictureknow.com/snake/62ac0b4e49d94ce2b8b96a6c7f3c6ef1.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/e3bcbef61ad94b27a325d4ff5eab55cc.png",
       "visual_verified": true
     },
     {
-      "uniqueId": "cf81b6ae8968fcbff8f59ff5e442a1bf",
-      "createTime": 1792417915000,
-      "img": "https://xstatic.pictureknow.com/snake/4226e3524362490b8b28327aaa66cecd.png",
-      "snakeId": "4ca82904e79f4ec0b234e052d8a23fa1",
-      "sciName": "Ophiophagus hannah",
-      "cnName": "眼镜王蛇",
-      "download_url": "https://xstatic.pictureknow.com/snake/4226e3524362490b8b28327aaa66cecd.png",
+      "uniqueId": "b923e537ad5bbbfab14d4361e395c12b",
+      "createTime": 1792621589000,
+      "img": "https://xstatic.pictureknow.com/snake/1d0e9d238a3f4933931624452bd95db8.png",
+      "snakeId": "3032d2777a4742af8c3da0f2b25d6bc8",
+      "sciName": "Ptyas korros",
+      "cnName": "灰鼠蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/1d0e9d238a3f4933931624452bd95db8.png",
       "visual_verified": true
     },
     {
-      "uniqueId": "721ad294e3233ea98e9aba1d52a6a57d",
-      "createTime": 1792407477000,
-      "img": "https://xstatic.pictureknow.com/snake/4474840ca82f4f57a0aef51c545fe1a9.png",
-      "snakeId": "8e9d43644fe243ffb0a72a558b6590b0",
-      "sciName": "Psammodynastes pulverulentus",
-      "cnName": "紫沙蛇",
-      "download_url": "https://xstatic.pictureknow.com/snake/4474840ca82f4f57a0aef51c545fe1a9.png",
+      "uniqueId": "b34f696abea190546d175cf4614c6560",
+      "createTime": 1792592683000,
+      "img": "https://xstatic.pictureknow.com/snake/741ce3ba9ff441109acfa15525566f2a.png",
+      "snakeId": "ab139189433b407e9ca3189b72a9b103",
+      "sciName": "Trimeresurus albolabris",
+      "cnName": "白唇竹叶青蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/741ce3ba9ff441109acfa15525566f2a.png",
       "visual_verified": true
     },
     {
-      "uniqueId": "9a72a95299ec5e73caaaa19a639c3fca",
-      "createTime": 1792404160000,
-      "img": "https://xstatic.pictureknow.com/snake/e1774a9264b14905a6c18433970a2bb3.png",
-      "snakeId": "d33886d2cdb04b5dbf0f81853aafc16d",
-      "sciName": "Python bivittatus",
-      "cnName": "缅甸蟒",
-      "download_url": "https://xstatic.pictureknow.com/snake/e1774a9264b14905a6c18433970a2bb3.png",
+      "uniqueId": "bbadc6eaaf224946ddde9f2c3ec3c7cc",
+      "createTime": 1792585815000,
+      "img": "https://xstatic.pictureknow.com/snake/9fb4da35b7f9478a8c749c4b5699ca45.png",
+      "snakeId": "6435f96708124c51b4a7d85cbfd0b6dd",
+      "sciName": "Pseudagkistrodon rudis",
+      "cnName": "颈棱蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/9fb4da35b7f9478a8c749c4b5699ca45.png",
+      "visual_verified": true
+    },
+    {
+      "uniqueId": "e3e93d87ec667879281c86a811321f3a",
+      "createTime": 1792582922000,
+      "img": "https://xstatic.pictureknow.com/snake/54681b59ff9c43a0b48e0dfd01258aca.png",
+      "snakeId": "177e11fb1b2345a986e5e0efd2878fd1",
+      "sciName": "Protobothrops mucrosquamatus",
+      "cnName": "原矛头蝮",
+      "download_url": "https://xstatic.pictureknow.com/snake/54681b59ff9c43a0b48e0dfd01258aca.png",
+      "visual_verified": true
+    },
+    {
+      "uniqueId": "16b8d2380a65a8bdb36e4d6fa536ee66",
+      "createTime": 1792581177000,
+      "img": "https://xstatic.pictureknow.com/snake/1d85231377d14923a88cef13c514c5e6.png",
+      "snakeId": "ab139189433b407e9ca3189b72a9b103",
+      "sciName": "Trimeresurus albolabris",
+      "cnName": "白唇竹叶青蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/1d85231377d14923a88cef13c514c5e6.png",
+      "visual_verified": true
+    },
+    {
+      "uniqueId": "e90af7108a1a5f022da3cb4e1ea5e077",
+      "createTime": 1792576012000,
+      "img": "https://xstatic.pictureknow.com/snake/10107930b4b04cb38f5a1864526fda7b.png",
+      "snakeId": "ab139189433b407e9ca3189b72a9b103",
+      "sciName": "Trimeresurus albolabris",
+      "cnName": "白唇竹叶青蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/10107930b4b04cb38f5a1864526fda7b.png",
+      "visual_verified": true
+    },
+    {
+      "uniqueId": "d0c5b0b2385f2e7187c12361528e7144",
+      "createTime": 1792574827000,
+      "img": "https://xstatic.pictureknow.com/snake/612366d0ebb54139bae8f0052f0f1e19.png",
+      "snakeId": "754cd6ec0ad845718dec8fe2020d47c4",
+      "sciName": "Naja atra",
+      "cnName": "舟山眼镜蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/612366d0ebb54139bae8f0052f0f1e19.png",
+      "visual_verified": true
+    },
+    {
+      "uniqueId": "9ec86af9549a0fabb32b62b2369b1e0c",
+      "createTime": 1792574801000,
+      "img": "https://xstatic.pictureknow.com/snake/b07e0f8897d142a19b48172dbf8eb544.png",
+      "snakeId": "754cd6ec0ad845718dec8fe2020d47c4",
+      "sciName": "Naja atra",
+      "cnName": "舟山眼镜蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/b07e0f8897d142a19b48172dbf8eb544.png",
+      "visual_verified": true
+    },
+    {
+      "uniqueId": "6633da33e2bcf33372982770664a58f7",
+      "createTime": 1792548676000,
+      "img": "https://xstatic.pictureknow.com/snake/85623af734f94fc48c6a0492f776d0aa.png",
+      "snakeId": "021a13b9c06b49fca86751f3d04eb049",
+      "sciName": "Rhabdophis helleri",
+      "cnName": "海勒颈槽蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/85623af734f94fc48c6a0492f776d0aa.png",
+      "visual_verified": true
+    },
+    {
+      "uniqueId": "a5565a8daa108448dfa8d5053b399aaa",
+      "createTime": 1792542854000,
+      "img": "https://xstatic.pictureknow.com/snake/277c306f27db4f7e84784b24ae7d2e16.png",
+      "snakeId": "754cd6ec0ad845718dec8fe2020d47c4",
+      "sciName": "Naja atra",
+      "cnName": "舟山眼镜蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/277c306f27db4f7e84784b24ae7d2e16.png",
       "visual_verified": true
     }
   ],
   "review_complete": true,
   "deferred_topics": [
+    {
+      "uniqueId": "10fd0595fdc1b0d59ea3ca0f29b32a2b",
+      "createTime": 1792595777000,
+      "img": "https://xstatic.pictureknow.com/snake/dbd83a34c1be4adcb71c951edf2b1b27.png",
+      "snakeId": "4ca82904e79f4ec0b234e052d8a23fa1",
+      "sciName": "Ophiophagus hannah",
+      "cnName": "眼镜王蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/dbd83a34c1be4adcb71c951edf2b1b27.png",
+      "retry_reason": "species_label_uncertain_low_detail",
+      "last_attempt_at": "2026-10-22",
+      "last_attempt_result": "requires_species_review"
+    },
+    {
+      "uniqueId": "7b59ed8caf355adbec10828502846a6c",
+      "createTime": 1792594316000,
+      "img": "https://xstatic.pictureknow.com/snake/f6d6990f1c314630ab8d34c9f3625a19.png",
+      "snakeId": "f99a930d1a7d411f9bc2082a9c832311",
+      "sciName": "Lycodon ruhstrati",
+      "cnName": "黑背白环蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/f6d6990f1c314630ab8d34c9f3625a19.png",
+      "retry_reason": "species_label_uncertain",
+      "last_attempt_at": "2026-10-22",
+      "last_attempt_result": "requires_species_review"
+    },
+    {
+      "uniqueId": "94ce10e3459e1ce11e9410572e818276",
+      "createTime": 1792580492000,
+      "img": "https://xstatic.pictureknow.com/snake/e5c5b8d7b73a4d4ea4d55fab7b54cade.png",
+      "snakeId": "f0c8d3c27d7b424a8fbd6c1ac1b6e898",
+      "sciName": "Lycodon flavozonatus",
+      "cnName": "黄链蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/e5c5b8d7b73a4d4ea4d55fab7b54cade.png",
+      "retry_reason": "snake_content_and_species_uncertain",
+      "last_attempt_at": "2026-10-22",
+      "last_attempt_result": "requires_species_review"
+    },
+    {
+      "uniqueId": "3b448aa023720a787bed207d58b4b6b1",
+      "createTime": 1792551926000,
+      "img": "https://xstatic.pictureknow.com/snake/5cfcb72264db4171a1bb22beb0ccaafb.png",
+      "snakeId": "f99a930d1a7d411f9bc2082a9c832311",
+      "sciName": "Lycodon ruhstrati",
+      "cnName": "黑背白环蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/5cfcb72264db4171a1bb22beb0ccaafb.png",
+      "retry_reason": "species_label_uncertain",
+      "last_attempt_at": "2026-10-22",
+      "last_attempt_result": "requires_species_review"
+    },
+    {
+      "uniqueId": "79be0ac6840e756f125a0aff3eac97e9",
+      "createTime": 1792539245000,
+      "img": "https://xstatic.pictureknow.com/snake/b62c4204c6dc49cab31fe60e89a216d0.png",
+      "snakeId": "bccaae38b7294442a78f7bea0ebb7e64",
+      "sciName": "Ovophis monticola",
+      "cnName": "山烙铁头蛇",
+      "last_attempt_at": "2026-10-22",
+      "last_attempt_result": "original_and_webp_unavailable"
+    },
+    {
+      "uniqueId": "a0337f17c01178ec0dea91f07a347936",
+      "createTime": 1792524406000,
+      "img": "https://xstatic.pictureknow.com/snake/fb114a50e93e4c129404764495b19aa8.png",
+      "snakeId": "0a449ff24dda4db39bb5e43e7bd38469",
+      "sciName": "Naja kaouthia",
+      "cnName": "孟加拉眼镜蛇",
+      "last_attempt_at": "2026-10-22",
+      "last_attempt_result": "original_and_webp_unavailable"
+    },
+    {
+      "uniqueId": "06231c7835aa1ec98f28449e46417862",
+      "createTime": 1792512142000,
+      "img": "https://xstatic.pictureknow.com/snake/34483bc22bf44984af9ca6e6da553c45.png",
+      "snakeId": "d33886d2cdb04b5dbf0f81853aafc16d",
+      "sciName": "Python bivittatus",
+      "cnName": "缅甸蟒",
+      "last_attempt_at": "2026-10-22",
+      "last_attempt_result": "original_and_webp_unavailable"
+    },
+    {
+      "uniqueId": "77e10fbe73c0733b863b96aad432d417",
+      "createTime": 1792503546000,
+      "img": "https://xstatic.pictureknow.com/snake/ef522a24191245a6a825587e99a79c4d.png",
+      "snakeId": "8264c64646c24a08a8e2cb60209c2641",
+      "sciName": "Ptyas mucosa",
+      "cnName": "滑鼠蛇",
+      "last_attempt_at": "2026-10-22",
+      "last_attempt_result": "original_and_webp_unavailable"
+    },
+    {
+      "uniqueId": "71a56f59f8b541d7b85e9d106d1405f9",
+      "createTime": 1792503487000,
+      "img": "https://xstatic.pictureknow.com/snake/06078126d3244db38aadc1e7e5084a57.png",
+      "snakeId": "0396b17d4e244f94bb5f8e7e087351fc",
+      "sciName": "Vipera berus",
+      "cnName": "极北蝰",
+      "last_attempt_at": "2026-10-22",
+      "last_attempt_result": "original_and_webp_unavailable"
+    },
+    {
+      "uniqueId": "ed3af443063bf41494e9170e32bc3e52",
+      "createTime": 1792499350000,
+      "img": "https://xstatic.pictureknow.com/snake/e2b38197901a46fa9ea8f6a4dcca60c4.png",
+      "snakeId": "f99a930d1a7d411f9bc2082a9c832311",
+      "sciName": "Lycodon ruhstrati",
+      "cnName": "黑背白环蛇",
+      "last_attempt_at": "2026-10-22",
+      "last_attempt_result": "original_and_webp_unavailable"
+    },
+    {
+      "uniqueId": "9e4336eece8e798e810c8fb171447304",
+      "createTime": 1792499213000,
+      "img": "https://xstatic.pictureknow.com/snake/f2919c43575a4c83bf12f39ffc1b71ca.png",
+      "snakeId": "",
+      "sciName": "",
+      "cnName": "睡袋",
+      "last_attempt_at": "2026-10-22",
+      "last_attempt_result": "original_and_webp_unavailable"
+    },
+    {
+      "uniqueId": "c492592f519105d01474c9a3580d222c",
+      "createTime": 1792499144000,
+      "img": "https://xstatic.pictureknow.com/snake/1702c47a095740d294f7cdad73b2b04c.png",
+      "snakeId": "4dea85d9da714ceda8a4f8d248051c98",
+      "sciName": "Elaphe carinata",
+      "cnName": "王锦蛇",
+      "last_attempt_at": "2026-10-22",
+      "last_attempt_result": "original_and_webp_unavailable"
+    },
+    {
+      "uniqueId": "db3607fd3a76c6a56073e33288321754",
+      "createTime": 1792492005000,
+      "img": "https://xstatic.pictureknow.com/snake/b814b8c0da9243fba216fe40bd81ad75.png",
+      "snakeId": "f0a0d9515e464da0861f7767ab0d6a82",
+      "sciName": "Oreocryptophis porphyraceus",
+      "cnName": "紫灰锦蛇",
+      "last_attempt_at": "2026-10-22",
+      "last_attempt_result": "original_and_webp_unavailable"
+    },
+    {
+      "uniqueId": "387ea4a6ba45d41cd7bdd2fb3004da2e",
+      "createTime": 1792488589000,
+      "img": "https://xstatic.pictureknow.com/snake/e4d20f2c8bf4470d84b3e4f082caf7cc.png",
+      "snakeId": "7006f0e7bee74033aa680d413cd63e8e",
+      "sciName": "Gloydius brevicauda",
+      "cnName": "短尾蝮",
+      "last_attempt_at": "2026-10-22",
+      "last_attempt_result": "original_and_webp_unavailable"
+    },
+    {
+      "uniqueId": "937b5cf8d640c6d8aa1318f1ad5fdaa0",
+      "createTime": 1792488450000,
+      "img": "https://xstatic.pictureknow.com/snake/939b60dde33840e0a2f2c589c5df0fd1.png",
+      "snakeId": "5e9abb7a58134cbb9ffd49b3859f44c0",
+      "sciName": "Trimerodytes balteatus",
+      "cnName": "横纹华游蛇",
+      "last_attempt_at": "2026-10-22",
+      "last_attempt_result": "original_and_webp_unavailable"
+    },
+    {
+      "uniqueId": "785eb94c75000ff14c4a843f38c548a2",
+      "createTime": 1792486053000,
+      "img": "https://xstatic.pictureknow.com/snake/32480afa13d949f28f814c32bb6bc2cf.png",
+      "snakeId": "b75cdc3b222c43a2a19690ef7261c6f8",
+      "sciName": "Calamaria septentrionalis",
+      "cnName": "钝尾两头蛇",
+      "last_attempt_at": "2026-10-22",
+      "last_attempt_result": "original_and_webp_unavailable"
+    },
     {
       "uniqueId": "f0de58077a6de318daaee29846193c8a",
       "createTime": 1792478505000,
@@ -116,8 +294,8 @@
       "cnName": "棕黑锦蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/8f6017315d0947ec9c6e8b87a4526678.png",
       "retry_reason": "species_label_uncertain",
-      "last_attempt_at": "2026-10-20",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-10-22",
+      "last_attempt_result": "original_and_webp_unavailable"
     },
     {
       "uniqueId": "55d42cf6aef7d527a2b33933283ed1c0",
@@ -128,8 +306,8 @@
       "cnName": "银环蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/01e5ef77044d428c8d4a15aeb446d459.png",
       "retry_reason": "same_image_conflicting_species_labels",
-      "last_attempt_at": "2026-10-20",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-10-22",
+      "last_attempt_result": "original_and_webp_unavailable"
     },
     {
       "uniqueId": "c6ec224339e10c3e8f2deccd6e36cd04",
@@ -140,8 +318,8 @@
       "cnName": "金花蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/c1c690aa9d9d4680956f8b3a9faa36cf.png",
       "retry_reason": "same_image_conflicting_species_labels",
-      "last_attempt_at": "2026-10-20",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-10-22",
+      "last_attempt_result": "original_and_webp_unavailable"
     },
     {
       "uniqueId": "6839d993c9b2e5edd4fac7c58e1bb58b",
@@ -152,8 +330,8 @@
       "cnName": "银环蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/ced922c619db48ebbd48bf712da08f87.png",
       "retry_reason": "same_image_conflicting_species_labels",
-      "last_attempt_at": "2026-10-20",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-10-22",
+      "last_attempt_result": "original_and_webp_unavailable"
     },
     {
       "uniqueId": "34d03964377193f5096fc4918748901f",
@@ -164,8 +342,8 @@
       "cnName": "福清白环蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/1c87927a147046eeb8a84fccf3e58d2d.png",
       "retry_reason": "same_image_conflicting_species_labels",
-      "last_attempt_at": "2026-10-20",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-10-22",
+      "last_attempt_result": "original_and_webp_unavailable"
     },
     {
       "uniqueId": "064a1b2079135970753f65255fe84759",
@@ -176,8 +354,8 @@
       "cnName": "银环蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/4f168ce859f94bbbbd1caed4674c2ad6.png",
       "retry_reason": "same_image_conflicting_species_labels",
-      "last_attempt_at": "2026-10-20",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-10-22",
+      "last_attempt_result": "original_and_webp_unavailable"
     },
     {
       "uniqueId": "e78494105746c288696ea315fb2ea012",
@@ -188,8 +366,8 @@
       "cnName": "台湾小头蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/3eb13231d5d8417dbba137e749082d9e.png",
       "retry_reason": "species_label_uncertain",
-      "last_attempt_at": "2026-10-20",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-10-22",
+      "last_attempt_result": "original_and_webp_unavailable"
     },
     {
       "uniqueId": "a16f91c4b5fbe4e8d4fb38097dc0a462",
@@ -200,7 +378,7 @@
       "cnName": "中国小头蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/366e6bc9b378437e85b79927e24fde86.png",
       "retry_reason": "species_labels_conflict_and_image_authenticity_uncertain",
-      "last_attempt_at": "2026-10-20",
+      "last_attempt_at": "2026-10-22",
       "last_attempt_result": "original_and_webp_unavailable"
     },
     {
@@ -212,7 +390,7 @@
       "cnName": "中国小头蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/ad9ffae984b9429d9d8eefc0117e821d.png",
       "retry_reason": "species_labels_conflict_and_image_authenticity_uncertain",
-      "last_attempt_at": "2026-10-20",
+      "last_attempt_at": "2026-10-22",
       "last_attempt_result": "original_and_webp_unavailable"
     },
     {
@@ -224,7 +402,7 @@
       "cnName": "台湾小头蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/c0cc4fac59fd4f0b875800e01ade907b.png",
       "retry_reason": "species_labels_conflict_and_image_authenticity_uncertain",
-      "last_attempt_at": "2026-10-20",
+      "last_attempt_at": "2026-10-22",
       "last_attempt_result": "original_and_webp_unavailable"
     },
     {
@@ -235,7 +413,7 @@
       "sciName": "Ptyas mucosa",
       "cnName": "滑鼠蛇",
       "retry_reason": "species_label_conflict",
-      "last_attempt_at": "2026-10-20",
+      "last_attempt_at": "2026-10-22",
       "last_attempt_result": "original_and_webp_unavailable"
     },
     {
@@ -246,7 +424,7 @@
       "sciName": "Ophiophagus hannah",
       "cnName": "眼镜王蛇",
       "retry_reason": "species_label_conflict",
-      "last_attempt_at": "2026-10-20",
+      "last_attempt_at": "2026-10-22",
       "last_attempt_result": "original_and_webp_unavailable"
     },
     {
@@ -259,7 +437,7 @@
       "download_url": "https://xstatic.pictureknow.com/snake/e2d3763304644d2393f3e6e3d288ed16.png?x-oss-process=image/format,webp",
       "original_unavailable": "OSS InvalidObjectState",
       "retry_reason": "species_label_conflict",
-      "last_attempt_at": "2026-10-20",
+      "last_attempt_at": "2026-10-22",
       "last_attempt_result": "original_and_webp_unavailable"
     },
     {
@@ -272,7 +450,7 @@
       "download_url": "https://xstatic.pictureknow.com/snake/926746633b674fb183d90ef110e3f365.png?x-oss-process=image/format,webp",
       "original_unavailable": "OSS InvalidObjectState",
       "retry_reason": "snake_content_uncertain",
-      "last_attempt_at": "2026-10-20",
+      "last_attempt_at": "2026-10-22",
       "last_attempt_result": "original_and_webp_unavailable"
     },
     {
@@ -285,7 +463,7 @@
       "download_url": "https://xstatic.pictureknow.com/snake/38ac0a4839274a2fae9e1f8ba57bc12a.png?x-oss-process=image/format,webp",
       "original_unavailable": "OSS InvalidObjectState",
       "retry_reason": "snake_content_uncertain",
-      "last_attempt_at": "2026-10-20",
+      "last_attempt_at": "2026-10-22",
       "last_attempt_result": "original_and_webp_unavailable"
     },
     {
@@ -298,7 +476,7 @@
       "download_url": "https://xstatic.pictureknow.com/snake/d47fbcde47404e4fbab6aec36b17ca9e.png?x-oss-process=image/format,webp",
       "original_unavailable": "OSS InvalidObjectState",
       "retry_reason": "species_label_conflict",
-      "last_attempt_at": "2026-10-20",
+      "last_attempt_at": "2026-10-22",
       "last_attempt_result": "original_and_webp_unavailable"
     },
     {
@@ -309,7 +487,7 @@
       "sciName": "Bungarus multicinctus",
       "cnName": "银环蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-10-20",
+      "last_attempt_at": "2026-10-22",
       "last_attempt_result": "original_and_webp_unavailable"
     },
     {
@@ -320,7 +498,7 @@
       "sciName": "Fowlea flavipunctatus",
       "cnName": "黄斑渔游蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-10-20",
+      "last_attempt_at": "2026-10-22",
       "last_attempt_result": "original_and_webp_unavailable"
     },
     {
@@ -331,7 +509,7 @@
       "sciName": "Lycodon futsingensis",
       "cnName": "福清白环蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-10-20",
+      "last_attempt_at": "2026-10-22",
       "last_attempt_result": "original_and_webp_unavailable"
     },
     {
@@ -342,7 +520,7 @@
       "sciName": "Lycodon futsingensis",
       "cnName": "福清白环蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-10-20",
+      "last_attempt_at": "2026-10-22",
       "last_attempt_result": "original_and_webp_unavailable"
     },
     {
@@ -353,14 +531,21 @@
       "sciName": "Ptyas major",
       "cnName": "翠青蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-10-20",
+      "last_attempt_at": "2026-10-22",
       "last_attempt_result": "original_and_webp_unavailable"
     }
   ],
-  "excluded_topics": [
+  "excluded_topics": [],
+  "visual_duplicates": [
     {
-      "topic_id": "ede3cc79c279f01a7e130d3ee2402bc7",
-      "reason": "non_snake_lizard"
+      "topic_id": "f7772f1953c1e1514361bf15921fd326",
+      "duplicate_of": "e90af7108a1a5f022da3cb4e1ea5e077",
+      "reason": "same_photo_reposted_with_encoding_or_resolution_changes"
+    },
+    {
+      "topic_id": "5be216b45926e092bfba349b61a1e26c",
+      "duplicate_of": "e90af7108a1a5f022da3cb4e1ea5e077",
+      "reason": "same_photo_reposted_with_encoding_or_resolution_changes"
     }
   ]
 }

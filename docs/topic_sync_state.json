@@ -1,10 +1,94 @@
 {
   "schema_version": 3,
-  "last_successful_cutoff": "2026-10-19T16:12:05+08:00",
-  "last_verified_data_commit": "c4e4712a8d7a048e597b73af4b629a8671d9d67b",
-  "last_verified_deployment": "https://github.com/weijintao123/snake-library/actions/runs/39221476360",
-  "verified_image_count": 1147,
+  "last_successful_cutoff": "2026-10-20T16:24:19+08:00",
+  "last_verified_data_commit": "b997aadaf39360c7c235a543117ae0f9cc6bd3b5",
+  "last_verified_deployment": "https://github.com/weijintao123/snake-library/actions/runs/39393606097",
+  "verified_image_count": 1157,
   "retry_topics": [
+    {
+      "uniqueId": "f0de58077a6de318daaee29846193c8a",
+      "createTime": 1792478505000,
+      "img": "https://xstatic.pictureknow.com/snake/8f6017315d0947ec9c6e8b87a4526678.png",
+      "snakeId": "ed94f2c43f754395bcb7e95cc17c6b7a",
+      "sciName": "Elaphe schrenckii",
+      "cnName": "棕黑锦蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/8f6017315d0947ec9c6e8b87a4526678.png",
+      "retry_reason": "species_label_uncertain",
+      "last_attempt_at": "2026-10-20",
+      "last_attempt_result": "requires_species_review"
+    },
+    {
+      "uniqueId": "55d42cf6aef7d527a2b33933283ed1c0",
+      "createTime": 1792419135000,
+      "img": "https://xstatic.pictureknow.com/snake/01e5ef77044d428c8d4a15aeb446d459.png",
+      "snakeId": "74b046ff50044584b80a5e19c612308f",
+      "sciName": "Bungarus multicinctus",
+      "cnName": "银环蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/01e5ef77044d428c8d4a15aeb446d459.png",
+      "retry_reason": "same_image_conflicting_species_labels",
+      "last_attempt_at": "2026-10-20",
+      "last_attempt_result": "requires_species_review"
+    },
+    {
+      "uniqueId": "c6ec224339e10c3e8f2deccd6e36cd04",
+      "createTime": 1792418853000,
+      "img": "https://xstatic.pictureknow.com/snake/c1c690aa9d9d4680956f8b3a9faa36cf.png",
+      "snakeId": "cd820a6915c645c2bf593edc50c4d468",
+      "sciName": "Chrysopelea ornata",
+      "cnName": "金花蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/c1c690aa9d9d4680956f8b3a9faa36cf.png",
+      "retry_reason": "same_image_conflicting_species_labels",
+      "last_attempt_at": "2026-10-20",
+      "last_attempt_result": "requires_species_review"
+    },
+    {
+      "uniqueId": "6839d993c9b2e5edd4fac7c58e1bb58b",
+      "createTime": 1792417453000,
+      "img": "https://xstatic.pictureknow.com/snake/ced922c619db48ebbd48bf712da08f87.png",
+      "snakeId": "74b046ff50044584b80a5e19c612308f",
+      "sciName": "Bungarus multicinctus",
+      "cnName": "银环蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/ced922c619db48ebbd48bf712da08f87.png",
+      "retry_reason": "same_image_conflicting_species_labels",
+      "last_attempt_at": "2026-10-20",
+      "last_attempt_result": "requires_species_review"
+    },
+    {
+      "uniqueId": "34d03964377193f5096fc4918748901f",
+      "createTime": 1792417348000,
+      "img": "https://xstatic.pictureknow.com/snake/1c87927a147046eeb8a84fccf3e58d2d.png",
+      "snakeId": "6caf505e6b504b108a47cb9910d7c994",
+      "sciName": "Lycodon futsingensis",
+      "cnName": "福清白环蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/1c87927a147046eeb8a84fccf3e58d2d.png",
+      "retry_reason": "same_image_conflicting_species_labels",
+      "last_attempt_at": "2026-10-20",
+      "last_attempt_result": "requires_species_review"
+    },
+    {
+      "uniqueId": "064a1b2079135970753f65255fe84759",
+      "createTime": 1792417082000,
+      "img": "https://xstatic.pictureknow.com/snake/4f168ce859f94bbbbd1caed4674c2ad6.png",
+      "snakeId": "74b046ff50044584b80a5e19c612308f",
+      "sciName": "Bungarus multicinctus",
+      "cnName": "银环蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/4f168ce859f94bbbbd1caed4674c2ad6.png",
+      "retry_reason": "same_image_conflicting_species_labels",
+      "last_attempt_at": "2026-10-20",
+      "last_attempt_result": "requires_species_review"
+    },
+    {
+      "uniqueId": "e78494105746c288696ea315fb2ea012",
+      "createTime": 1792404114000,
+      "img": "https://xstatic.pictureknow.com/snake/3eb13231d5d8417dbba137e749082d9e.png",
+      "snakeId": "ee3e7d89f26e4c7c97db034cd44df358",
+      "sciName": "Oligodon formosanus",
+      "cnName": "台湾小头蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/3eb13231d5d8417dbba137e749082d9e.png",
+      "retry_reason": "species_label_uncertain",
+      "last_attempt_at": "2026-10-20",
+      "last_attempt_result": "requires_species_review"
+    },
     {
       "uniqueId": "a16f91c4b5fbe4e8d4fb38097dc0a462",
       "createTime": 1792338214000,
@@ -14,8 +98,8 @@
       "cnName": "中国小头蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/366e6bc9b378437e85b79927e24fde86.png",
       "retry_reason": "species_labels_conflict_and_image_authenticity_uncertain",
-      "last_attempt_at": "2026-10-19",
-      "last_attempt_result": "requires_species_and_photo_authenticity_review"
+      "last_attempt_at": "2026-10-20",
+      "last_attempt_result": "original_and_webp_unavailable"
     },
     {
       "uniqueId": "d13ea9059cfa7d98ea06374991c46b20",
@@ -26,8 +110,8 @@
       "cnName": "中国小头蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/ad9ffae984b9429d9d8eefc0117e821d.png",
       "retry_reason": "species_labels_conflict_and_image_authenticity_uncertain",
-      "last_attempt_at": "2026-10-19",
-      "last_attempt_result": "requires_species_and_photo_authenticity_review"
+      "last_attempt_at": "2026-10-20",
+      "last_attempt_result": "original_and_webp_unavailable"
     },
     {
       "uniqueId": "0bd4f4f20cf5464369d6e1c7070551fa",
@@ -38,8 +122,8 @@
       "cnName": "台湾小头蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/c0cc4fac59fd4f0b875800e01ade907b.png",
       "retry_reason": "species_labels_conflict_and_image_authenticity_uncertain",
-      "last_attempt_at": "2026-10-19",
-      "last_attempt_result": "requires_species_and_photo_authenticity_review"
+      "last_attempt_at": "2026-10-20",
+      "last_attempt_result": "original_and_webp_unavailable"
     },
     {
       "uniqueId": "44b4ca2e41a88485f10f34adc86c543c",
@@ -49,7 +133,7 @@
       "sciName": "Ptyas mucosa",
       "cnName": "滑鼠蛇",
       "retry_reason": "species_label_conflict",
-      "last_attempt_at": "2026-10-19",
+      "last_attempt_at": "2026-10-20",
       "last_attempt_result": "original_and_webp_unavailable"
     },
     {
@@ -60,7 +144,7 @@
       "sciName": "Ophiophagus hannah",
       "cnName": "眼镜王蛇",
       "retry_reason": "species_label_conflict",
-      "last_attempt_at": "2026-10-19",
+      "last_attempt_at": "2026-10-20",
       "last_attempt_result": "original_and_webp_unavailable"
     },
     {
@@ -73,7 +157,7 @@
       "download_url": "https://xstatic.pictureknow.com/snake/e2d3763304644d2393f3e6e3d288ed16.png?x-oss-process=image/format,webp",
       "original_unavailable": "OSS InvalidObjectState",
       "retry_reason": "species_label_conflict",
-      "last_attempt_at": "2026-10-19",
+      "last_attempt_at": "2026-10-20",
       "last_attempt_result": "original_and_webp_unavailable"
     },
     {
@@ -86,7 +170,7 @@
       "download_url": "https://xstatic.pictureknow.com/snake/926746633b674fb183d90ef110e3f365.png?x-oss-process=image/format,webp",
       "original_unavailable": "OSS InvalidObjectState",
       "retry_reason": "snake_content_uncertain",
-      "last_attempt_at": "2026-10-19",
+      "last_attempt_at": "2026-10-20",
       "last_attempt_result": "original_and_webp_unavailable"
     },
     {
@@ -99,7 +183,7 @@
       "download_url": "https://xstatic.pictureknow.com/snake/38ac0a4839274a2fae9e1f8ba57bc12a.png?x-oss-process=image/format,webp",
       "original_unavailable": "OSS InvalidObjectState",
       "retry_reason": "snake_content_uncertain",
-      "last_attempt_at": "2026-10-19",
+      "last_attempt_at": "2026-10-20",
       "last_attempt_result": "original_and_webp_unavailable"
     },
     {
@@ -112,7 +196,7 @@
       "download_url": "https://xstatic.pictureknow.com/snake/d47fbcde47404e4fbab6aec36b17ca9e.png?x-oss-process=image/format,webp",
       "original_unavailable": "OSS InvalidObjectState",
       "retry_reason": "species_label_conflict",
-      "last_attempt_at": "2026-10-19",
+      "last_attempt_at": "2026-10-20",
       "last_attempt_result": "original_and_webp_unavailable"
     },
     {
@@ -123,7 +207,7 @@
       "sciName": "Bungarus multicinctus",
       "cnName": "银环蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-10-19",
+      "last_attempt_at": "2026-10-20",
       "last_attempt_result": "original_and_webp_unavailable"
     },
     {
@@ -134,7 +218,7 @@
       "sciName": "Fowlea flavipunctatus",
       "cnName": "黄斑渔游蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-10-19",
+      "last_attempt_at": "2026-10-20",
       "last_attempt_result": "original_and_webp_unavailable"
     },
     {
@@ -145,7 +229,7 @@
       "sciName": "Lycodon futsingensis",
       "cnName": "福清白环蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-10-19",
+      "last_attempt_at": "2026-10-20",
       "last_attempt_result": "original_and_webp_unavailable"
     },
     {
@@ -156,7 +240,7 @@
       "sciName": "Lycodon futsingensis",
       "cnName": "福清白环蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-10-19",
+      "last_attempt_at": "2026-10-20",
       "last_attempt_result": "original_and_webp_unavailable"
     },
     {
@@ -167,7 +251,7 @@
       "sciName": "Ptyas major",
       "cnName": "翠青蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-10-19",
+      "last_attempt_at": "2026-10-20",
       "last_attempt_result": "original_and_webp_unavailable"
     }
   ],
@@ -178,16 +262,20 @@
     "ab03cd8a8b92886e9950ae66fd61d3d9",
     "11adc18cfbde5d74e4858057e69e7c59",
     "2fae807a4ff7dddd8f9d38acbb281425",
-    "89d241cb342b0d36c971ab8b240efa02"
+    "89d241cb342b0d36c971ab8b240efa02",
+    "ede3cc79c279f01a7e130d3ee2402bc7"
   ],
   "coverage_note": "Incremental window fully reviewed and publication hashes verified. Deferred items remain in retry_topics; history before 2026-10-15T13:42:49+08:00 is not certified.",
   "last_completed_window": {
-    "window_start": "2026-10-18T13:42:49+08:00",
-    "window_end": "2026-10-19T16:12:05+08:00",
+    "window_start": "2026-10-19T16:12:05+08:00",
+    "window_end": "2026-10-20T16:24:19+08:00",
     "scanned": 50,
-    "new_topics": 9,
-    "added": 6,
+    "new_topics": 18,
+    "added": 10,
     "duplicates": 0,
-    "deferred": 14
+    "deferred": 21,
+    "excluded": 1,
+    "new_species": 0,
+    "total_species": 152
   }
 }

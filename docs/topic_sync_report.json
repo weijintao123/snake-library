@@ -609,5 +609,35 @@
   "notes": "All 18 new photos and 3 historical retries were downloaded for visual review. Three new photos were archived; 2 bat photos were excluded; 13 new label conflicts or uncertain identifications and all 37 historical retries remain pending. Of the historical retries, 3 were downloaded but remain visually uncertain; 34 originals and webpage WebP versions were unavailable. Source species labels are not expert identification.",
   "downloaded_new_count": 18,
   "downloaded_historical_count": 3,
-  "download_unavailable_count": 34
+  "download_unavailable_count": 34,
+  "followup_run": {
+    "window_start": "2026-10-23T09:19:07+08:00",
+    "window_end": "2026-10-23T09:31:22+08:00",
+    "source": "https://snake.pictureknow.com/topics",
+    "login_verified": true,
+    "scanned": 50,
+    "oldest_scanned_create_time": 1792482307000,
+    "chronological_order_verified": true,
+    "coverage_complete": true,
+    "new_topics": 1,
+    "reviewed_candidates_including_retries": 51,
+    "downloaded_new": 1,
+    "downloaded_historical_retries": 16,
+    "unavailable_historical_retries": 34,
+    "added": 0,
+    "duplicates": 0,
+    "total_photos": 1171,
+    "total_species": 152,
+    "new_species": 0,
+    "deferred_count": 51,
+    "new_topic_deferred": [
+      {
+        "uniqueId": "9c1a50ea81b12529724ca347c222fe46",
+        "sciName": "Hydrophis stokesii",
+        "cnName": "棘鳞海蛇",
+        "retry_reason": "source_label_inconsistent_with_visible_anatomy"
+      }
+    ],
+    "notes": "The new photo contains snake bodies with ventral anatomy visible, but the presentation and visible anatomy do not confidently support the Hydrophis stokesii label. It remains pending. Historical retries were attempted again; 16 image files were retrieved but retained for unresolved identification or label conflicts, and 34 remained unavailable. No image was added."
+  }
 }

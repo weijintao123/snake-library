@@ -606,5 +606,8 @@
     }
   ],
   "visual_duplicates": [],
-  "notes": "Same image assigned to multiple species or visually uncertain source labels are deferred. Source species labels are not expert identification. Historical image downloads remain unavailable; all retries are retained."
+  "notes": "All 18 new photos and 3 historical retries were downloaded for visual review. Three new photos were archived; 2 bat photos were excluded; 13 new label conflicts or uncertain identifications and all 37 historical retries remain pending. Of the historical retries, 3 were downloaded but remain visually uncertain; 34 originals and webpage WebP versions were unavailable. Source species labels are not expert identification.",
+  "downloaded_new_count": 18,
+  "downloaded_historical_count": 3,
+  "download_unavailable_count": 34
 }

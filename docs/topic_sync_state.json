@@ -1,10 +1,22 @@
 {
   "schema_version": 3,
-  "last_successful_cutoff": "2026-10-23T09:19:07+08:00",
+  "last_successful_cutoff": "2026-10-23T09:31:22+08:00",
   "last_verified_data_commit": "37d62f5f2f2409816fd6606442b09a0ee57ed502",
-  "last_verified_deployment": "https://github.com/weijintao123/snake-library/actions/runs/39883608177",
+  "last_verified_deployment": "https://github.com/weijintao123/snake-library/actions/runs/39884740889",
   "verified_image_count": 1171,
   "retry_topics": [
+    {
+      "uniqueId": "9c1a50ea81b12529724ca347c222fe46",
+      "createTime": 1792718928000,
+      "img": "https://xstatic.pictureknow.com/snake/fbd6676d71a248fe86c2a7f14d61bd39.png",
+      "snakeId": "07c2e389fcf04b1e956379a19718181c",
+      "sciName": "Hydrophis stokesii",
+      "cnName": "棘鳞海蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/fbd6676d71a248fe86c2a7f14d61bd39.png",
+      "retry_reason": "source_label_inconsistent_with_visible_anatomy",
+      "last_attempt_at": "2026-10-23",
+      "last_attempt_result": "requires_species_review"
+    },
     {
       "uniqueId": "6fb7cfe60ba5143b7569ef7618ae81df",
       "createTime": 1792717154000,
@@ -593,17 +605,20 @@
     "03ea7843a21a3e77e211376e50da91e8",
     "efb718d15fe601967ab079a20a58a0d4"
   ],
-  "coverage_note": "Incremental window fully reviewed and publication hashes verified. Deferred items remain in retry_topics; history before 2026-10-15T13:42:49+08:00 is not certified.",
+  "coverage_note": "Window through 2026-10-23T09:31:22+08:00 fully scanned, reviewed and recorded. No photo added; source-label uncertainty and unavailable historical images remain in retry_topics.",
   "last_completed_window": {
-    "window_start": "2026-10-22T09:46:04+08:00",
-    "window_end": "2026-10-23T09:19:07+08:00",
+    "window_start": "2026-10-23T09:19:07+08:00",
+    "window_end": "2026-10-23T09:31:22+08:00",
     "scanned": 50,
-    "new_topics": 18,
-    "added": 3,
+    "new_topics": 1,
+    "added": 0,
     "duplicates": 0,
     "new_species": 0,
     "total_species": 152,
-    "deferred": 50,
-    "excluded": 2
+    "deferred": 51,
+    "excluded": 0,
+    "downloaded_new": 1,
+    "downloaded_historical_retries": 16,
+    "unavailable_historical_retries": 34
   }
 }

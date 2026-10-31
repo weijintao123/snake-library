@@ -1,5 +1,16 @@
 # 项目与恢复
 
+## 2026-11-01发布与复查
+
+- 数据提交：`2b661525875b8b26d16aadef6d813c8220a02d35`；部署：https://github.com/weijintao123/snake-library/actions/runs/41219433229 。
+- 扫描2026-10-23 09:31:22至2026-11-01 00:06:24（北京时间），4页200条，窗口内186条；并重试51条历史记录。
+- 新增27张，线上总数1198张，152个物种。全部27张线上SHA-256与发布文件一致，页面数量已核验。无可靠新物种。
+- 待重试208条：183条原图及网页全尺寸WebP均返回403（抽查OSS InvalidObjectState），25条图片内容或来源物种标签存疑；2条非蛇内容已排除。再次尝试未恢复更多图片。
+- 2026-11-01 00:31:05.230再次读取最新50条，源站总话题仍为23219，没有晚于本轮00:06:24的新记录。最终成功断点以远端状态为准，始终重新读取，不照抄本段。
+- 在线技能：https://github.com/weijintao123/snake-library/tree/skill-package/skills/snake-topics-daily 。在线分支只用于技能分发；照片与状态仍维护main。
+
+以下为项目的历史恢复资料，不作为当前基线。
+
 - 仓库：https://github.com/weijintao123/snake-library （默认分支main）
 - 图库：https://weijintao123.github.io/snake-library/
 - 来源：https://snake.pictureknow.com/topics

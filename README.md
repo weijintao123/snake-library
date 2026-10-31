@@ -1,18 +1,35 @@
-# 蛇类图库
+# 蛇照片更新技能
 
-网页：https://weijintao123.github.io/snake-library/
+## 在线安装（推荐）
 
-截至2026-11-01，现有152个物种目录共有1198张内容SHA-256不重复的照片。本次从北京时间2026-10-23 09:31:22接续至2026-11-01 00:06:24，完整扫描4页200条话题，其中186条在窗口内；并重试51条历史记录。新增27张、内容哈希重复0张、排除2条非蛇内容。208条保留重试，其中183条原图及全尺寸WebP均返回403，25条图片内容或物种标签存疑。暂无可靠新蛇种。详细结果：`docs/topic_sync_report.json`。
+另一台电脑打开Codex，发送这一句话：
 
-只追加话题中的蛇照片；先视觉核验，再按站点物种ID、学名、中文名保守匹配。站点物种标签不代表专家鉴定；存疑内容不误归档。规范化URL与内容SHA-256双重去重，既有照片不覆盖、不删除。
+> 使用 $skill-installer 安装 https://github.com/weijintao123/snake-library/tree/skill-package/skills/snake-topics-daily
 
-使用 `skills/snake-topics-daily/SKILL.md` 每日更新。Python3.12及Pillow环境中，`python scripts/sync_catalog.py` 从上次成功断点生成本次待审队列；核验后将记录标记 `visual_verified: true` 写入 `scripts/pending_topic_photos.json`，运行 `python scripts/sync_catalog.py --pending-only` 导入。发现接口需要安全配置环境变量 `SNAKE_TOPIC_TOKEN`；不要把凭据写进文件或聊天。
+此在线分支只包含技能，安装器不需要下载整个照片图库。安装后的下一轮可用；未出现时重启Codex。然后说“使用 $snake-topics-daily 更新上次以来的全部蛇照片”。照片和断点通过GitHub共享，本地技能需要在每台电脑安装一次。
 
-GitHub Actions计划为北京时间09:00，实际可能延迟。推送时导入已核验记录并部署Pages；定时发现缺少Secret或有新照片待核验时明确报告未完成，并保留待审artifact。浏览器登录不能替代仓库Secret。Skill本身不包含调度器。
+官方说明：https://learn.chatgpt.com/docs/build-skills#install-curated-skills-for-local-use
 
-验证：`python skills/snake-topics-daily/scripts/test_sync.py`。本次重复导入新增0张。下载失败和存疑项保留到retry_topics，下次继续重试。
+## 离线复制
 
-默认接续断点保存在 `docs/topic_sync_state.json`；首次恢复值为北京时间2026-10-18 13:42:49，当前成功截止点以该状态文件为准。每次发布核验成功后才推进，失败重试不跳过时间段；历史未解决项保留到retry_topics并在后续运行一并补抓。只有明确要求补抓固定天数时使用--days。
+解压后，将完整的snake-topics-daily文件夹放到新电脑的用户主目录：
 
-每次手动更新先打开肥猫识蛇并核验当前登录。152种为初始目录数量；可靠确认的新增蛇种自动创建“学名--中文名--毒性”目录并追加物种表，网页数量动态变化。无法确认的新种保留待核验，毒性缺少依据时标注“毒性待核实”。
+`~/.codex/skills/snake-topics-daily/`
 
+Windows为用户主目录下的 `.codex\skills\snake-topics-daily\`。如果配置了CODEX_HOME，则放到该目录的skills子目录。确认其中直接包含SKILL.md。重启Codex。
+
+新版Codex可能使用用户主目录下的 `.agents/skills/`；在线安装会由内置skill-installer选择当前环境的安装位置。
+
+在新电脑登录Codex、GitHub和肥猫识蛇，然后说：
+
+> 使用 $snake-topics-daily 更新上次以来的全部蛇照片。
+
+技能会读取GitHub上的最新成功断点，补抓期间全部话题并重试历史待处理项；核验后更新图片、索引及网站。可靠的新蛇种自动新建目录，152种不是上限。
+
+本包不含密码、Cookie、令牌、GitHub Secret或浏览器登录会话。新电脑需要正常重新登录。图片和断点从线上仓库恢复，无需复制旧电脑全部照片。
+
+仓库：https://github.com/weijintao123/snake-library
+
+图库：https://weijintao123.github.io/snake-library/
+
+安装包版本：2026-11-01。当前数据数量和截止时间始终以远端状态文件为准。

@@ -3305,5 +3305,34 @@
     }
   ],
   "notes": "Source login verified after refresh. Browser API pages 1-4 returned 200 unique topics in descending time order, crossing the previous cutoff; 186 belong to this window. All 51 historical retry items attempted. 183 original and full-size WebP downloads returned HTTP 403; one response was independently confirmed OSS InvalidObjectState. No image restoration or access bypass attempted. 25 readable topics deferred for conflicting source labels, insufficient features, or uncertain photographic content. Source labels are not expert identification. Scheduled discovery remains blocked by missing SNAKE_TOPIC_TOKEN.",
-  "scheduled_failure_evidence": "https://github.com/weijintao123/snake-library/actions/runs/41177639838"
+  "scheduled_failure_evidence": "https://github.com/weijintao123/snake-library/actions/runs/41177639838",
+  "followup_check": {
+    "checked_until": "2026-11-01T00:31:05.230+08:00",
+    "scanned": 50,
+    "latest_topic_time": 1793460904000,
+    "source_total": 23219,
+    "new_topics_since_batch": 0,
+    "original_and_webp_retried": 183,
+    "newly_readable": 0,
+    "still_unavailable": 183
+  },
+  "online_verification": {
+    "verified_at": "2026-10-31T16:25:12.846384+00:00",
+    "verified_new_photos": 27,
+    "online_total": 1198,
+    "online_index_sha256": "92e512b193a1b288ed88d6b76fb8859cb5eb566759d77313ccdd10334459a311",
+    "data_commit": "2b661525875b8b26d16aadef6d813c8220a02d35",
+    "window": {
+      "source": "https://snake.pictureknow.com/topics",
+      "coverage": "full-window-browser-api",
+      "base_cutoff": "2026-10-23T09:31:22+08:00",
+      "window_start": "2026-10-23T09:31:22+08:00",
+      "window_end": "2026-11-01T00:06:24+08:00",
+      "baseline_commit": "398e4f62449f32bd3c77785a58b73a65547ac5f3",
+      "login_verified": true
+    },
+    "all_online_hashes_match": true
+  },
+  "page_display_verified": true,
+  "deployment_url": "https://github.com/weijintao123/snake-library/actions/runs/41219433229"
 }

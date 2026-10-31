@@ -16,3 +16,6 @@ GitHub Actions计划为北京时间09:00，实际可能延迟。推送时导入�
 
 每次手动更新先打开肥猫识蛇并核验当前登录。152种为初始目录数量；可靠确认的新增蛇种自动创建“学名--中文名--毒性”目录并追加物种表，网页数量动态变化。无法确认的新种保留待核验，毒性缺少依据时标注“毒性待核实”。
 
+
+
+技能在线安装：在另一台电脑的Codex发送「使用 $skill-installer 安装 https://github.com/weijintao123/snake-library/tree/skill-package/skills/snake-topics-daily」。安装后下一轮可调用；新电脑需重新登录Codex、GitHub和肥猫识蛇。离线包：[snake-topics-daily.zip](https://weijintao123.github.io/snake-library/downloads/snake-topics-daily.zip)。本轮复查至北京时间2026-11-01 00:31:05，未发现发布后新增话题；183条失败图再次尝试仍不可读取。

@@ -2,13 +2,13 @@
 
 网页：https://weijintao123.github.io/snake-library/
 
-截至2026-11-01，现有152个物种目录共有1198张内容SHA-256不重复的照片。本次从北京时间2026-10-23 09:31:22接续至2026-11-01 00:06:24，完整扫描4页200条话题，其中186条在窗口内；并重试51条历史记录。新增27张、内容哈希重复0张、排除2条非蛇内容。208条保留重试，其中183条原图及全尺寸WebP均返回403，25条图片内容或物种标签存疑。暂无可靠新蛇种。详细结果：`docs/topic_sync_report.json`。
+截至2026-11-02，现有152个物种目录共有1201张内容SHA-256不重复的照片。本次核验登录后，从北京时间2026-11-01 00:31:05.230接续至2026-11-02 09:24:57，扫描1页50条，覆盖窗口内19条新话题并重试208条历史记录。新增3张，去重0张，排除3条非蛇内容，221条保留重试；未新增蛇种。详细结果：`docs/topic_sync_report.json`。
 
 只追加话题中的蛇照片；先视觉核验，再按站点物种ID、学名、中文名保守匹配。站点物种标签不代表专家鉴定；存疑内容不误归档。规范化URL与内容SHA-256双重去重，既有照片不覆盖、不删除。
 
 使用 `skills/snake-topics-daily/SKILL.md` 每日更新。Python3.12及Pillow环境中，`python scripts/sync_catalog.py` 从上次成功断点生成本次待审队列；核验后将记录标记 `visual_verified: true` 写入 `scripts/pending_topic_photos.json`，运行 `python scripts/sync_catalog.py --pending-only` 导入。发现接口需要安全配置环境变量 `SNAKE_TOPIC_TOKEN`；不要把凭据写进文件或聊天。
 
-GitHub Actions计划为北京时间09:00，实际可能延迟。推送时导入已核验记录并部署Pages；定时发现缺少Secret或有新照片待核验时明确报告未完成，并保留待审artifact。浏览器登录不能替代仓库Secret。Skill本身不包含调度器。
+每日完整更新由Codex本聊天定时任务在北京时间10:00执行；原GitHub 09:00计划已移除，避免重复。推送时导入已核验记录并部署Pages；手动触发Actions发现时，缺少Secret或有新照片待核验会明确报告未完成，并保留待审artifact。浏览器登录不能替代仓库Secret。Skill本身不包含调度器。
 
 验证：`python skills/snake-topics-daily/scripts/test_sync.py`。本次重复导入新增0张。下载失败和存疑项保留到retry_topics，下次继续重试。
 

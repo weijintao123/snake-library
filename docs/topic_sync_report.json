@@ -1,31 +1,33 @@
 {
   "source": "https://snake.pictureknow.com/topics",
-  "coverage": "full-window-browser-api",
-  "base_cutoff": "2026-10-23T09:31:22+08:00",
-  "window_start": "2026-10-23T09:31:22+08:00",
-  "window_end": "2026-11-01T00:06:24+08:00",
-  "baseline_commit": "398e4f62449f32bd3c77785a58b73a65547ac5f3",
+  "window_start": "2026-11-01T00:31:05.230+08:00",
+  "window_end": "2026-11-02T09:24:57+08:00",
+  "baseline_commit": "0c0178edf456d49d536ff6cdcf1a82ec57f0c339",
   "login_verified": true,
-  "scanned": 200,
-  "pages_scanned": 4,
-  "source_total": 23219,
-  "chronological_order_verified": true,
-  "coverage_complete": true,
-  "new_topics": 186,
-  "reviewed_candidates_including_retries": 237,
-  "readable_photos": 54,
-  "approved": 27,
-  "added": 27,
+  "coverage": "full-window-browser-api",
+  "pages": [
+    {
+      "page": 1,
+      "count": 50,
+      "unique": 50,
+      "descending": true,
+      "latest": 1793581098000,
+      "earliest": 1793348488000,
+      "total": 23238
+    }
+  ],
+  "new_topics": 19,
+  "historical_retried": 208,
+  "added": 3,
   "duplicates": 0,
-  "archived_total": 1198,
-  "total_species": 152,
+  "excluded": 3,
+  "deferred": 221,
   "new_species": 0,
-  "new_deferred_count": 157,
-  "historical_deferred_count": 51,
-  "deferred_count": 208,
-  "unavailable_count": 183,
-  "uncertain_content_count": 25,
-  "deferred_topics": [
+  "total_species": 152,
+  "total_photos": 1201,
+  "idempotent_second_added": 0,
+  "notes": "Only source-labelled and visually reviewed snake photos archived. Three non-snake records excluded (flagpole, lizard, food). Twelve readable new records deferred for insufficient detail or conflicting labels; one new and 208 historical images unavailable. Source labels are not expert identification.",
+  "retry_topics": [
     {
       "uniqueId": "c0471dc80d1de0514bb53b06cc5c48b3",
       "createTime": 1793460904000,
@@ -35,8 +37,13 @@
       "cnName": "台湾小头蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/bcb53fee41eb4c07805272a08c59bbc2.png",
       "retry_reason": "insufficient_visible_species_features",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/bcb53fee41eb4c07805272a08c59bbc2.png",
+        "https://xstatic.pictureknow.com/snake/bcb53fee41eb4c07805272a08c59bbc2.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "6d5fabea4165d8d457c007815fc1dad6",
@@ -47,8 +54,13 @@
       "cnName": "白枕白环蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/ff9a6279dce24d7db128e38d6e2311a9.png",
       "retry_reason": "source_label_inconsistent_with_visible_pattern",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/ff9a6279dce24d7db128e38d6e2311a9.png",
+        "https://xstatic.pictureknow.com/snake/ff9a6279dce24d7db128e38d6e2311a9.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "26c925e180acbc1df523ecdbda5ed04e",
@@ -59,8 +71,13 @@
       "cnName": "白唇竹叶青蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/fbba2e17ed5d4404bf2dab53f0fc9204.png",
       "retry_reason": "same_photo_conflicting_species_labels",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/fbba2e17ed5d4404bf2dab53f0fc9204.png",
+        "https://xstatic.pictureknow.com/snake/fbba2e17ed5d4404bf2dab53f0fc9204.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "72226aca5278c4095f6ae7c456e857a9",
@@ -71,8 +88,13 @@
       "cnName": "绞花林蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/994f98df108a4045a799199a403c0e9e.png",
       "retry_reason": "same_photo_conflicting_species_labels",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/994f98df108a4045a799199a403c0e9e.png",
+        "https://xstatic.pictureknow.com/snake/994f98df108a4045a799199a403c0e9e.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "a66ff447058dc58767dc9b40910e969e",
@@ -83,8 +105,13 @@
       "cnName": "横纹斜鳞蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/1a736ffd6be746f88e189c61ffc2616c.png",
       "retry_reason": "same_photo_conflicting_species_labels",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/1a736ffd6be746f88e189c61ffc2616c.png",
+        "https://xstatic.pictureknow.com/snake/1a736ffd6be746f88e189c61ffc2616c.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "5ff3f2f2a1298df202bda58cf134ce3e",
@@ -95,8 +122,13 @@
       "cnName": "紫灰锦蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/6551ba0cdd4d43458f508310172f7835.png",
       "retry_reason": "same_photo_conflicting_species_labels",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/6551ba0cdd4d43458f508310172f7835.png",
+        "https://xstatic.pictureknow.com/snake/6551ba0cdd4d43458f508310172f7835.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "442665dce87718f479560ebdb35fdd43",
@@ -107,8 +139,13 @@
       "cnName": "黑头剑蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/79b3e0e70fc34def99aa16ac4ebc142a.png",
       "retry_reason": "same_photo_conflicting_species_labels",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/79b3e0e70fc34def99aa16ac4ebc142a.png",
+        "https://xstatic.pictureknow.com/snake/79b3e0e70fc34def99aa16ac4ebc142a.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "6e07de4dda682a8fe2e3f3097c754309",
@@ -119,8 +156,13 @@
       "cnName": "黑网乌梢蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/aa8c18ad57ca4a8dbd6d1d51dd47dcb3.png",
       "retry_reason": "same_photo_conflicting_species_labels",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/aa8c18ad57ca4a8dbd6d1d51dd47dcb3.png",
+        "https://xstatic.pictureknow.com/snake/aa8c18ad57ca4a8dbd6d1d51dd47dcb3.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "18378bb79afbb326acaa48f7d9d79f15",
@@ -131,8 +173,13 @@
       "cnName": "黑眉锦蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/09251f93b226457cbe43c9660f35382e.png",
       "retry_reason": "same_photo_conflicting_species_labels",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/09251f93b226457cbe43c9660f35382e.png",
+        "https://xstatic.pictureknow.com/snake/09251f93b226457cbe43c9660f35382e.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "9fb5a5767077a7b6962c1fd0ccc53129",
@@ -143,8 +190,13 @@
       "cnName": "银环蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/67ba24db2aa94089837b974ef2932606.png",
       "retry_reason": "source_label_inconsistent_with_visible_anatomy",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/67ba24db2aa94089837b974ef2932606.png",
+        "https://xstatic.pictureknow.com/snake/67ba24db2aa94089837b974ef2932606.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "2cabdf5f1865f9fd8d882a8a21effbc1",
@@ -155,8 +207,13 @@
       "cnName": "眼镜王蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/db608243e3844d35993fcc6579155745.png",
       "retry_reason": "source_label_inconsistent_with_visible_anatomy",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/db608243e3844d35993fcc6579155745.png",
+        "https://xstatic.pictureknow.com/snake/db608243e3844d35993fcc6579155745.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "e8784590f20dccfaabd83dbe0b4f1d4e",
@@ -167,8 +224,13 @@
       "cnName": "眼镜王蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/d6339cd2bc7e4ffda6a71faa04dc3caa.png",
       "retry_reason": "source_label_inconsistent_with_visible_anatomy",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/d6339cd2bc7e4ffda6a71faa04dc3caa.png",
+        "https://xstatic.pictureknow.com/snake/d6339cd2bc7e4ffda6a71faa04dc3caa.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "8a87ac70294cafbd342fdf18b506efdd",
@@ -179,8 +241,13 @@
       "cnName": "黑眉锦蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/296e35e4b7c143a99a325ebe29b72e3a.png",
       "retry_reason": "species_and_photo_authenticity_uncertain",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/296e35e4b7c143a99a325ebe29b72e3a.png",
+        "https://xstatic.pictureknow.com/snake/296e35e4b7c143a99a325ebe29b72e3a.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "85ffb5a78b6638ac763dc3193bbb068f",
@@ -191,8 +258,13 @@
       "cnName": "原矛头蝮",
       "download_url": "https://xstatic.pictureknow.com/snake/870c4124a7a74c3680e8c6a6315320b1.png",
       "retry_reason": "same_photo_conflicting_species_labels",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/870c4124a7a74c3680e8c6a6315320b1.png",
+        "https://xstatic.pictureknow.com/snake/870c4124a7a74c3680e8c6a6315320b1.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "4307d82035a49569621d58ede1d78be1",
@@ -203,8 +275,13 @@
       "cnName": "眼镜王蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/1bd66c926d494bd69b8fb9abacf862f3.png",
       "retry_reason": "source_label_inconsistent_with_visible_pattern",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/1bd66c926d494bd69b8fb9abacf862f3.png",
+        "https://xstatic.pictureknow.com/snake/1bd66c926d494bd69b8fb9abacf862f3.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "b57bcfa3d6a67cceda167294dc93ce78",
@@ -215,8 +292,13 @@
       "cnName": "繁花林蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/11d0e15d630f4910a430f842de171692.png",
       "retry_reason": "same_photo_conflicting_species_labels",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/11d0e15d630f4910a430f842de171692.png",
+        "https://xstatic.pictureknow.com/snake/11d0e15d630f4910a430f842de171692.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "3d2a44bc563f9ec29eadbc8495736623",
@@ -227,8 +309,13 @@
       "cnName": "眼镜王蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/3a36fa0df95440cf84d01dc03491cc7f.png",
       "retry_reason": "source_label_inconsistent_with_visible_anatomy",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/3a36fa0df95440cf84d01dc03491cc7f.png",
+        "https://xstatic.pictureknow.com/snake/3a36fa0df95440cf84d01dc03491cc7f.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "1d859ffe2b725f334fcff465e635a133",
@@ -239,8 +326,13 @@
       "cnName": "中国水蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/4b7531256c3047fd8cf9406162253aaa.png",
       "retry_reason": "insufficient_visible_species_features",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/4b7531256c3047fd8cf9406162253aaa.png",
+        "https://xstatic.pictureknow.com/snake/4b7531256c3047fd8cf9406162253aaa.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "220ecffdda5e209c10c08b27901090a1",
@@ -251,8 +343,13 @@
       "cnName": "眼镜王蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/26e09da19758479aa92da6e818178044.png",
       "retry_reason": "source_label_inconsistent_with_visible_anatomy",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/26e09da19758479aa92da6e818178044.png",
+        "https://xstatic.pictureknow.com/snake/26e09da19758479aa92da6e818178044.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; The read operation timed out"
     },
     {
       "uniqueId": "b4daff8a684a33022dd32dec0db1d50b",
@@ -263,8 +360,13 @@
       "cnName": "白唇竹叶青蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/d1993cda5b744f56a75c70ef2fd1559b.png",
       "retry_reason": "same_photo_conflicting_species_labels",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/d1993cda5b744f56a75c70ef2fd1559b.png",
+        "https://xstatic.pictureknow.com/snake/d1993cda5b744f56a75c70ef2fd1559b.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "b320d4032b3102f90cb63a89e8894912",
@@ -275,8 +377,13 @@
       "cnName": "绿瘦蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/425280a0d00a4f3fbe8790f70a3a19f5.png",
       "retry_reason": "same_photo_conflicting_species_labels",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/425280a0d00a4f3fbe8790f70a3a19f5.png",
+        "https://xstatic.pictureknow.com/snake/425280a0d00a4f3fbe8790f70a3a19f5.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "<urlopen error _ssl.c:993: The handshake operation timed out>; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "d83a698a1dd31a1423a8a7e0ddc0e5a1",
@@ -287,8 +394,13 @@
       "cnName": "眼镜王蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/73ee7edfb77640f7a368716d0a7676c8.png",
       "retry_reason": "insufficient_visible_species_features",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/73ee7edfb77640f7a368716d0a7676c8.png",
+        "https://xstatic.pictureknow.com/snake/73ee7edfb77640f7a368716d0a7676c8.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "23ba1ed11756e6911c01210c07c46825",
@@ -299,8 +411,13 @@
       "cnName": "山烙铁头蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/0300cdadd77f40e7b5395925da63e12a.png",
       "retry_reason": "species_label_uncertain",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/0300cdadd77f40e7b5395925da63e12a.png",
+        "https://xstatic.pictureknow.com/snake/0300cdadd77f40e7b5395925da63e12a.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "665378e72438e50b2ca2aff1b1cf1a40",
@@ -311,8 +428,13 @@
       "cnName": "虎斑颈槽蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/ed6078c468c1403ba5b30f2c8f8336b8.png",
       "retry_reason": "species_label_uncertain",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/ed6078c468c1403ba5b30f2c8f8336b8.png",
+        "https://xstatic.pictureknow.com/snake/ed6078c468c1403ba5b30f2c8f8336b8.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "adf3be2ddb6edf891616088f52df8770",
@@ -323,8 +445,13 @@
       "cnName": "繁花林蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/e623ac2a1c95402f98a1288a89508da8.png",
       "retry_reason": "source_label_inconsistent_with_visible_anatomy",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "requires_species_review"
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/e623ac2a1c95402f98a1288a89508da8.png",
+        "https://xstatic.pictureknow.com/snake/e623ac2a1c95402f98a1288a89508da8.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "675c36686f06ea165e23ce70336708a4",
@@ -334,13 +461,13 @@
       "sciName": "Protobothrops mucrosquamatus",
       "cnName": "原矛头蝮",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/e2b6d05722364aa49bf7880558d55e59.png",
         "https://xstatic.pictureknow.com/snake/e2b6d05722364aa49bf7880558d55e59.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "4e018b0a5a160f1298349157377690f2",
@@ -350,13 +477,13 @@
       "sciName": "Protobothrops mucrosquamatus",
       "cnName": "原矛头蝮",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/9262008d90f740debfd5593fc911a4df.png",
         "https://xstatic.pictureknow.com/snake/9262008d90f740debfd5593fc911a4df.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "c3b2e17c922a6f87e4a95a27395e037a",
@@ -366,13 +493,13 @@
       "sciName": "Plagiopholis nuchalis",
       "cnName": "缅甸颈斑蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/6e8265be75a5475d88d7609702955474.png",
         "https://xstatic.pictureknow.com/snake/6e8265be75a5475d88d7609702955474.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "1bffa21aea42e0da4bd137c9bd82cb98",
@@ -382,13 +509,13 @@
       "sciName": "Pareas margaritophorus",
       "cnName": "横纹钝头蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/d9ea19c82bce49b29bed5f489760753e.png",
         "https://xstatic.pictureknow.com/snake/d9ea19c82bce49b29bed5f489760753e.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "4c6554c27eeb47cef32c81ecc0f433ed",
@@ -398,13 +525,13 @@
       "sciName": "Oligodon formosanus",
       "cnName": "台湾小头蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/1d869b0596c047e88b7af04d23c92d61.png",
         "https://xstatic.pictureknow.com/snake/1d869b0596c047e88b7af04d23c92d61.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "dce8ae76964e8076135ae6d0ff96529b",
@@ -414,13 +541,13 @@
       "sciName": "Trimeresurus albolabris",
       "cnName": "白唇竹叶青蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/db12b9550f7140b9999747b8fff78d2e.png",
         "https://xstatic.pictureknow.com/snake/db12b9550f7140b9999747b8fff78d2e.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "db3eb619725bbdbb02494aae22691b4b",
@@ -430,13 +557,13 @@
       "sciName": "",
       "cnName": "草原松鸡",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/47675e274fe74a808d1a161eca405de3.png",
         "https://xstatic.pictureknow.com/snake/47675e274fe74a808d1a161eca405de3.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "dde5e353139a2c741f9bdfcd4d0331b6",
@@ -446,13 +573,13 @@
       "sciName": "Gloydius brevicauda",
       "cnName": "短尾蝮",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/0be9b6228c89456883db729875e45c93.png",
         "https://xstatic.pictureknow.com/snake/0be9b6228c89456883db729875e45c93.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "2c0e634cce06865068130509a8408d84",
@@ -462,13 +589,13 @@
       "sciName": "Dendrelaphis pictus",
       "cnName": "过树蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/91985987868041659492270a1e59b868.png",
         "https://xstatic.pictureknow.com/snake/91985987868041659492270a1e59b868.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "5bfcabcde7bbb699b9f32b91cb2f7eff",
@@ -478,13 +605,13 @@
       "sciName": "",
       "cnName": "CRT显示器",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/e02105026ae0489486ff711e67cbbea8.png",
         "https://xstatic.pictureknow.com/snake/e02105026ae0489486ff711e67cbbea8.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "121bb6ee2cf9a4bb257533550f1249ab",
@@ -494,13 +621,13 @@
       "sciName": "Python bivittatus",
       "cnName": "缅甸蟒",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/78719de0115b4c1991b48e93321aa5e4.png",
         "https://xstatic.pictureknow.com/snake/78719de0115b4c1991b48e93321aa5e4.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "3e698cf120756526f18415b4e3730f6c",
@@ -510,13 +637,13 @@
       "sciName": "Trimerodytes percarinatus",
       "cnName": "乌华游蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/b9f42461826e4de3af3eb343591c6fae.png",
         "https://xstatic.pictureknow.com/snake/b9f42461826e4de3af3eb343591c6fae.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "df78c34a913d9ed42944a261154db2ed",
@@ -526,13 +653,13 @@
       "sciName": "Elaphe moellendorffi",
       "cnName": "百花锦蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/abbe69cc206e452fa269f3508e6defd9.png",
         "https://xstatic.pictureknow.com/snake/abbe69cc206e452fa269f3508e6defd9.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "9fc4cdd7951662a247ac19bb4d7c7ad6",
@@ -542,13 +669,13 @@
       "sciName": "Elaphe moellendorffi",
       "cnName": "百花锦蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/6f705900d1bb41cda08270c59a87c762.png",
         "https://xstatic.pictureknow.com/snake/6f705900d1bb41cda08270c59a87c762.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "9abaa04a7231bb4c27e906d8344f874c",
@@ -558,13 +685,13 @@
       "sciName": "Hypsiscopus plumbea",
       "cnName": "铅色水蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/e0c8a8fe435d4f669f745c9de15a2309.png",
         "https://xstatic.pictureknow.com/snake/e0c8a8fe435d4f669f745c9de15a2309.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "89cfd14c6444cd1bbba0f5ff299a2f30",
@@ -574,13 +701,13 @@
       "sciName": "Lycodon capucinus",
       "cnName": "白枕白环蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/615710f88b4a4e1797d5fb9382a6fafc.png",
         "https://xstatic.pictureknow.com/snake/615710f88b4a4e1797d5fb9382a6fafc.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "6bdb6e2c501e7a6557f68f3f8ced42db",
@@ -590,13 +717,13 @@
       "sciName": "Naja kaouthia",
       "cnName": "孟加拉眼镜蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/13975d8cc455477182b6caf60132968e.png",
         "https://xstatic.pictureknow.com/snake/13975d8cc455477182b6caf60132968e.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "300011b13fca1f5819842fc695418366",
@@ -606,13 +733,13 @@
       "sciName": "Ptyas major",
       "cnName": "翠青蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/cf16f94e1d5c40c89431f736dbbe3c12.png",
         "https://xstatic.pictureknow.com/snake/cf16f94e1d5c40c89431f736dbbe3c12.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; <urlopen error _ssl.c:993: The handshake operation timed out>"
     },
     {
       "uniqueId": "6f75ef72df5fd998f2c4f61a2ea40043",
@@ -622,13 +749,13 @@
       "sciName": "Chrysopelea ornata",
       "cnName": "金花蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/8aafe92dd58d4c7ca3bdd826c51b69f8.png",
         "https://xstatic.pictureknow.com/snake/8aafe92dd58d4c7ca3bdd826c51b69f8.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "46b2b59afaf231b44158a1a53d11c662",
@@ -638,13 +765,13 @@
       "sciName": "Rhabdophis tigrinus",
       "cnName": "虎斑颈槽蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/3f852fb945974f7586537876072e55d2.png",
         "https://xstatic.pictureknow.com/snake/3f852fb945974f7586537876072e55d2.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "0d87fd4a963f4580d741d5771c74c16e",
@@ -654,13 +781,13 @@
       "sciName": "Coelognathus radiatus",
       "cnName": "三索锦蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/a44dd6457db54a72b875d299d5526155.png",
         "https://xstatic.pictureknow.com/snake/a44dd6457db54a72b875d299d5526155.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "7e5d63d92987cb47d6001be07675d93f",
@@ -670,13 +797,13 @@
       "sciName": "Naja atra",
       "cnName": "舟山眼镜蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/7539a0e1b9a8487aada416fbadcee08c.png",
         "https://xstatic.pictureknow.com/snake/7539a0e1b9a8487aada416fbadcee08c.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "a1a8b0a7850ebf9ad55beebfcc4a3e26",
@@ -686,13 +813,13 @@
       "sciName": "Boiga multomaculata",
       "cnName": "繁花林蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/fa38775e1d3649918e92b5b184d5786b.png",
         "https://xstatic.pictureknow.com/snake/fa38775e1d3649918e92b5b184d5786b.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "02779b9af19e996bb7717ed625983c9f",
@@ -702,13 +829,13 @@
       "sciName": "Rhabdophis tigrinus",
       "cnName": "虎斑颈槽蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/4f2d9f55b80c499c8718e1b0760cfe2d.png",
         "https://xstatic.pictureknow.com/snake/4f2d9f55b80c499c8718e1b0760cfe2d.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "a24a65ba13a48ad55dd05cf77407a10c",
@@ -718,13 +845,13 @@
       "sciName": "Protobothrops jerdonii",
       "cnName": "菜花原矛头蝮",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/3ec096a437da4cb5b6fd47f9f9eb5eaa.png",
         "https://xstatic.pictureknow.com/snake/3ec096a437da4cb5b6fd47f9f9eb5eaa.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "d3c3ac6c640363555eb54bc95a42109f",
@@ -734,13 +861,13 @@
       "sciName": "Protobothrops jerdonii",
       "cnName": "菜花原矛头蝮",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/ea4dac6ba25a43a59132a7f1f05c0284.png",
         "https://xstatic.pictureknow.com/snake/ea4dac6ba25a43a59132a7f1f05c0284.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "6c95fb7dd7e90576d73ec9afb0247145",
@@ -750,13 +877,13 @@
       "sciName": "Coelognathus radiatus",
       "cnName": "三索锦蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/dede9925c0db4bb7aabd73450aaa4849.png",
         "https://xstatic.pictureknow.com/snake/dede9925c0db4bb7aabd73450aaa4849.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "8aaa0085e603bbe83eabfeac8bf94fe5",
@@ -766,13 +893,13 @@
       "sciName": "Ptyas mucosa",
       "cnName": "滑鼠蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/264b3a3b3a804b6685b01afdb64c62e0.png",
         "https://xstatic.pictureknow.com/snake/264b3a3b3a804b6685b01afdb64c62e0.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "f710f4fcba72ebbce1c5b28d093ad79f",
@@ -782,13 +909,13 @@
       "sciName": "Fowlea flavipunctatus",
       "cnName": "黄斑渔游蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/afb58af538f5436fb78195abe507253e.png",
         "https://xstatic.pictureknow.com/snake/afb58af538f5436fb78195abe507253e.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "8a8990888bd472423f569413d2be5409",
@@ -798,13 +925,13 @@
       "sciName": "Trimeresurus albolabris",
       "cnName": "白唇竹叶青蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/e1bcbe1f29fd4299a2834d69956521dc.png",
         "https://xstatic.pictureknow.com/snake/e1bcbe1f29fd4299a2834d69956521dc.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "b86ea100b58fc1ec7bd3f7275fbe0692",
@@ -814,13 +941,13 @@
       "sciName": "Laticauda colubrina",
       "cnName": "蓝灰扁尾海蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/f56a9367e05c4b628361433f28d76193.png",
         "https://xstatic.pictureknow.com/snake/f56a9367e05c4b628361433f28d76193.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "7d35d137332e6119b1f1f64e4d8b4896",
@@ -830,13 +957,13 @@
       "sciName": "Ovophis makazayazaya",
       "cnName": "台湾烙铁头蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/5abdc8cfe4cf44d79ee97254ff8830de.png",
         "https://xstatic.pictureknow.com/snake/5abdc8cfe4cf44d79ee97254ff8830de.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "3ce6b9af8de6a35514dcc752c3f12c1d",
@@ -846,13 +973,13 @@
       "sciName": "",
       "cnName": "导弹",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/85676c1c9b16439b83ac62012ce8d518.png",
         "https://xstatic.pictureknow.com/snake/85676c1c9b16439b83ac62012ce8d518.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "873025b62f435efd01f34f2e1f7a57c0",
@@ -862,13 +989,13 @@
       "sciName": "",
       "cnName": "火柴",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/078dcdf9a10648e68b43d5858a56d863.png",
         "https://xstatic.pictureknow.com/snake/078dcdf9a10648e68b43d5858a56d863.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "2f4a2821998fe66e67458e1c71c9738b",
@@ -878,13 +1005,13 @@
       "sciName": "",
       "cnName": "浴帽",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/e7a250ca93f64510bf5188fe9bead48a.png",
         "https://xstatic.pictureknow.com/snake/e7a250ca93f64510bf5188fe9bead48a.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "fedcd9b420a17a09c68f1676a5c34b8d",
@@ -894,13 +1021,13 @@
       "sciName": "",
       "cnName": "颈托",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/08a9d4e50c324649b9db3e652d9743d2.png",
         "https://xstatic.pictureknow.com/snake/08a9d4e50c324649b9db3e652d9743d2.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "e0feabdf4d84dd189b8c69a156558ae7",
@@ -910,13 +1037,13 @@
       "sciName": "Bungarus candidus",
       "cnName": "马来环蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/93e6f94263ad4c9b8e6afc9a7bcff6bc.png",
         "https://xstatic.pictureknow.com/snake/93e6f94263ad4c9b8e6afc9a7bcff6bc.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "089fc8c56cae5a477c3eda5e8d6ac7eb",
@@ -926,13 +1053,13 @@
       "sciName": "Bungarus fasciatus",
       "cnName": "金环蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/8fef8f061e4849cdb45ab68a1c6e3e0f.png",
         "https://xstatic.pictureknow.com/snake/8fef8f061e4849cdb45ab68a1c6e3e0f.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "b59f5aa05b3cc5c7eae22329f834b322",
@@ -942,13 +1069,13 @@
       "sciName": "Boiga kraepelini",
       "cnName": "绞花林蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/6a2077d408f04ebf80d98858d03f76f3.png",
         "https://xstatic.pictureknow.com/snake/6a2077d408f04ebf80d98858d03f76f3.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "1b0772d345cc2bfa59b407e595ee1a62",
@@ -958,13 +1085,13 @@
       "sciName": "Boiga kraepelini",
       "cnName": "绞花林蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/5ae9c721b05d4bfb885e87e7b42916a3.png",
         "https://xstatic.pictureknow.com/snake/5ae9c721b05d4bfb885e87e7b42916a3.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "fe61221ea286cb63bd205d5df70fc3ff",
@@ -974,13 +1101,13 @@
       "sciName": "Protobothrops mucrosquamatus",
       "cnName": "原矛头蝮",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/09c27bfad7104effad65c8b584cf9a9f.png",
         "https://xstatic.pictureknow.com/snake/09c27bfad7104effad65c8b584cf9a9f.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "aae1518a66fc9f4c2496fc6399f99229",
@@ -990,13 +1117,13 @@
       "sciName": "Protobothrops mucrosquamatus",
       "cnName": "原矛头蝮",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/d38e1172f67340e7a13acb94e4070163.png",
         "https://xstatic.pictureknow.com/snake/d38e1172f67340e7a13acb94e4070163.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "30b00042c667901871c1714a4bc6eeef",
@@ -1006,13 +1133,13 @@
       "sciName": "Pseudoxenodon bambusicola",
       "cnName": "横纹斜鳞蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/053e27bb279d48caba7621022bcae831.png",
         "https://xstatic.pictureknow.com/snake/053e27bb279d48caba7621022bcae831.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "151f3336847c03bef274ed174aee644f",
@@ -1022,13 +1149,13 @@
       "sciName": "Elaphe carinata",
       "cnName": "王锦蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/ca213cf354fe487d956761dff053238b.png",
         "https://xstatic.pictureknow.com/snake/ca213cf354fe487d956761dff053238b.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "fd9bbd6203900817742cf39cb32dd00a",
@@ -1038,13 +1165,13 @@
       "sciName": "Oligodon cinereus",
       "cnName": "紫棕小头蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/33c4345b75f94fa28ec2aa70e96504ff.png",
         "https://xstatic.pictureknow.com/snake/33c4345b75f94fa28ec2aa70e96504ff.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "6fa65e42765018a7c7984bccbee435f6",
@@ -1054,13 +1181,13 @@
       "sciName": "Ahaetulla prasina",
       "cnName": "绿瘦蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/e2aa52d75e384106bb06844cae3bbce3.png",
         "https://xstatic.pictureknow.com/snake/e2aa52d75e384106bb06844cae3bbce3.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "05024fb98446f3b04cf8a7bfcb6c92af",
@@ -1070,13 +1197,13 @@
       "sciName": "Trimeresurus albolabris",
       "cnName": "白唇竹叶青蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/f303b930a89045a5967932e10c9a6701.png",
         "https://xstatic.pictureknow.com/snake/f303b930a89045a5967932e10c9a6701.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "6d45489c11784aada1e49fa724f13629",
@@ -1086,13 +1213,13 @@
       "sciName": "Gloydius cognatus",
       "cnName": "阿拉善蝮",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/e8305c7bf2ee417c8219a91c4d30c5ad.png",
         "https://xstatic.pictureknow.com/snake/e8305c7bf2ee417c8219a91c4d30c5ad.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "e429013af8f4478b53de0dd0bf511ec3",
@@ -1102,13 +1229,13 @@
       "sciName": "Gloydius ussuriensis",
       "cnName": "乌苏里蝮",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/ac3a8021482c4d9cbee720e419397f6b.png",
         "https://xstatic.pictureknow.com/snake/ac3a8021482c4d9cbee720e419397f6b.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "8f38d5650170ad9f425665959735b5e4",
@@ -1118,13 +1245,13 @@
       "sciName": "Fowlea flavipunctatus",
       "cnName": "黄斑渔游蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/e0f92bae88844446b5f928ae644d5d11.png",
         "https://xstatic.pictureknow.com/snake/e0f92bae88844446b5f928ae644d5d11.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "7f7b9f8d19e6a4a4c4198b75707f69fc",
@@ -1134,13 +1261,13 @@
       "sciName": "Pseudagkistrodon rudis",
       "cnName": "颈棱蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/1106cac2faa7494ba1901808218f34c5.png",
         "https://xstatic.pictureknow.com/snake/1106cac2faa7494ba1901808218f34c5.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "732a9fd9a89d98fbe89196860b9d774d",
@@ -1150,13 +1277,13 @@
       "sciName": "Pseudagkistrodon rudis",
       "cnName": "颈棱蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/3a2b8efe828f4ea4bea2aa8f598c8985.png",
         "https://xstatic.pictureknow.com/snake/3a2b8efe828f4ea4bea2aa8f598c8985.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "7ba6407475e02c5392b9d9d1a1ce57ab",
@@ -1166,13 +1293,13 @@
       "sciName": "Ptyas mucosa",
       "cnName": "滑鼠蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/231d6cc0724149d09a5b36d81059ca27.png",
         "https://xstatic.pictureknow.com/snake/231d6cc0724149d09a5b36d81059ca27.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "bf99b3c5cdb6ce677f4f38330e3207e3",
@@ -1182,13 +1309,13 @@
       "sciName": "Fowlea flavipunctatus",
       "cnName": "黄斑渔游蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/1fb8f1eaa0df4b73b63fa405b1d9dd1e.png",
         "https://xstatic.pictureknow.com/snake/1fb8f1eaa0df4b73b63fa405b1d9dd1e.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "942087ad32b662ae79192df82f5e0d21",
@@ -1198,13 +1325,13 @@
       "sciName": "Ptyas korros",
       "cnName": "灰鼠蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/9378ef98593f45619d28f03aed5a70ce.png",
         "https://xstatic.pictureknow.com/snake/9378ef98593f45619d28f03aed5a70ce.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "338fe1185837e0c747dba22975fc86bf",
@@ -1214,13 +1341,13 @@
       "sciName": "",
       "cnName": "喜鹊",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/8479552bc6e94c31abb8ab7f981b887a.png",
         "https://xstatic.pictureknow.com/snake/8479552bc6e94c31abb8ab7f981b887a.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "c405a43b52a1a69c1ecf60d297ee2db0",
@@ -1230,13 +1357,13 @@
       "sciName": "",
       "cnName": "黑琴鸡",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/1532748e350c46cbbe65d005419f122a.png",
         "https://xstatic.pictureknow.com/snake/1532748e350c46cbbe65d005419f122a.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "1e3d01be0fe13f3ace47e9a8dc0aaf1a",
@@ -1246,13 +1373,13 @@
       "sciName": "Pseudagkistrodon rudis",
       "cnName": "颈棱蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/e1a06120ac9f4c7f9c70b7a08a2764e2.png",
         "https://xstatic.pictureknow.com/snake/e1a06120ac9f4c7f9c70b7a08a2764e2.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "1db2ed67c3c7bc2d80201e1821a2b0f2",
@@ -1262,13 +1389,13 @@
       "sciName": "Pseudagkistrodon rudis",
       "cnName": "颈棱蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/18703814ba86437ea634c0c6386cc596.png",
         "https://xstatic.pictureknow.com/snake/18703814ba86437ea634c0c6386cc596.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "329e6eb11c6a175e1c74af054b902030",
@@ -1278,13 +1405,13 @@
       "sciName": "Pareas carinatus",
       "cnName": "棱鳞钝头蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/5a5ddc645c864d95a6831f56191c3c59.png",
         "https://xstatic.pictureknow.com/snake/5a5ddc645c864d95a6831f56191c3c59.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "fbb4ef6aa019d1051fae6926fa9ba1e6",
@@ -1294,13 +1421,13 @@
       "sciName": "Gloydius halys",
       "cnName": "西伯利亚蝮",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/3f17889f3aaa49ac97a0352fbd6e449f.png",
         "https://xstatic.pictureknow.com/snake/3f17889f3aaa49ac97a0352fbd6e449f.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "714070486524e3f10c3a6a5ee213cb4b",
@@ -1310,13 +1437,13 @@
       "sciName": "Rhabdophis tigrinus",
       "cnName": "虎斑颈槽蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/1540c5a011a449eb86b49ac8b3520d44.png",
         "https://xstatic.pictureknow.com/snake/1540c5a011a449eb86b49ac8b3520d44.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "90435bdeddba44ba05f96470e5fed823",
@@ -1326,13 +1453,13 @@
       "sciName": "Rhabdophis tigrinus",
       "cnName": "虎斑颈槽蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/5b6884067cc34ed79056991d348e4a05.png",
         "https://xstatic.pictureknow.com/snake/5b6884067cc34ed79056991d348e4a05.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "<urlopen error _ssl.c:993: The handshake operation timed out>; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "3fc136e757e8aba73e5d20d382f8e9c0",
@@ -1342,13 +1469,13 @@
       "sciName": "Naja kaouthia",
       "cnName": "孟加拉眼镜蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/4ddc78e5de0b4c2ca886004db24b10fd.png",
         "https://xstatic.pictureknow.com/snake/4ddc78e5de0b4c2ca886004db24b10fd.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "a9dc0928cc99806776add7074c611bc0",
@@ -1358,13 +1485,13 @@
       "sciName": "Azemiops kharini",
       "cnName": "白头蝰",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/8ed1a88bd83c441f81510be819c6e5e8.png",
         "https://xstatic.pictureknow.com/snake/8ed1a88bd83c441f81510be819c6e5e8.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "455d2379b357bc76f29aa24f38b5e6c2",
@@ -1374,13 +1501,13 @@
       "sciName": "Pseudoxenodon bambusicola",
       "cnName": "横纹斜鳞蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/f0dd00cbdb254ee2a0e794d1f0f5ba71.png",
         "https://xstatic.pictureknow.com/snake/f0dd00cbdb254ee2a0e794d1f0f5ba71.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "03c62e2874ab68827b18887d15cc1689",
@@ -1390,13 +1517,13 @@
       "sciName": "Protobothrops mucrosquamatus",
       "cnName": "原矛头蝮",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/b499e2c3b9f4470683f77eed898c63e6.png",
         "https://xstatic.pictureknow.com/snake/b499e2c3b9f4470683f77eed898c63e6.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "418641151274eeb906ddfc5224c03e3b",
@@ -1406,13 +1533,13 @@
       "sciName": "Rhabdophis tigrinus",
       "cnName": "虎斑颈槽蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/5c122228c94c4111b993081c291e00df.png",
         "https://xstatic.pictureknow.com/snake/5c122228c94c4111b993081c291e00df.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "d4ea759564d6ae19bc238bbe11cc8cf8",
@@ -1422,13 +1549,13 @@
       "sciName": "Amphiesma stolatum",
       "cnName": "草腹链蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/b067882ee36346e7ba3472ffdeaaff9b.png",
         "https://xstatic.pictureknow.com/snake/b067882ee36346e7ba3472ffdeaaff9b.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "eb05616249e3d074830dcf2a93127fc4",
@@ -1438,13 +1565,13 @@
       "sciName": "Ptyas mucosa",
       "cnName": "滑鼠蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/4c92eebd2e764c128207f1c3429e2871.png",
         "https://xstatic.pictureknow.com/snake/4c92eebd2e764c128207f1c3429e2871.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "5700e30af03ea20d840f908a9bbbff70",
@@ -1454,13 +1581,13 @@
       "sciName": "Myrrophis chinensis",
       "cnName": "中国水蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/69920b521a304247b2c9c21ffadfc63a.png",
         "https://xstatic.pictureknow.com/snake/69920b521a304247b2c9c21ffadfc63a.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "7acbee8941d3de838386c0aa3e49c7b7",
@@ -1470,13 +1597,13 @@
       "sciName": "Myrrophis chinensis",
       "cnName": "中国水蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/df2c7fae8e7f41278f63fca96aa10718.png",
         "https://xstatic.pictureknow.com/snake/df2c7fae8e7f41278f63fca96aa10718.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "8b88c2d4cf4446ece0f4925dc30f0bcc",
@@ -1486,13 +1613,13 @@
       "sciName": "Naja atra",
       "cnName": "舟山眼镜蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/57892c2245da4df9bb4b5d6f14245a61.png",
         "https://xstatic.pictureknow.com/snake/57892c2245da4df9bb4b5d6f14245a61.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "39839cdbea5469262a7f174ec9e6ceee",
@@ -1502,13 +1629,13 @@
       "sciName": "Pseudagkistrodon rudis",
       "cnName": "颈棱蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/378158a81f2e4f9dae3352514a00ba32.png",
         "https://xstatic.pictureknow.com/snake/378158a81f2e4f9dae3352514a00ba32.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "b583a3f18ac95383dd7c1dda894ffa39",
@@ -1518,13 +1645,13 @@
       "sciName": "Elaphe taeniura",
       "cnName": "黑眉锦蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/3e677c4b95b043e7b5dd0a97545eb54f.png",
         "https://xstatic.pictureknow.com/snake/3e677c4b95b043e7b5dd0a97545eb54f.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "9d5f5265781e1ae4b6cf019e22700ad6",
@@ -1534,13 +1661,13 @@
       "sciName": "Fowlea flavipunctatus",
       "cnName": "黄斑渔游蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/4fa50ded23824c9dafa7a226bc5cf5da.png",
         "https://xstatic.pictureknow.com/snake/4fa50ded23824c9dafa7a226bc5cf5da.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "59ec9c63005b399d0201692a966dbe8f",
@@ -1550,13 +1677,13 @@
       "sciName": "Fowlea flavipunctatus",
       "cnName": "黄斑渔游蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/16848bf84cf04f629630d422964b11a2.png",
         "https://xstatic.pictureknow.com/snake/16848bf84cf04f629630d422964b11a2.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "33bafde17361684068609df29dffa800",
@@ -1566,13 +1693,13 @@
       "sciName": "Naja atra",
       "cnName": "舟山眼镜蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/bf96151e60344919980fdb7b9354afba.png",
         "https://xstatic.pictureknow.com/snake/bf96151e60344919980fdb7b9354afba.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "24633fc6641b9326c128b735401e100b",
@@ -1582,13 +1709,13 @@
       "sciName": "Naja atra",
       "cnName": "舟山眼镜蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/9ce604b778ad42bd800b29471bea0bc4.png",
         "https://xstatic.pictureknow.com/snake/9ce604b778ad42bd800b29471bea0bc4.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "5cfdb82ad9bbfb4042f47cac51b0a60f",
@@ -1598,13 +1725,13 @@
       "sciName": "Fowlea flavipunctatus",
       "cnName": "黄斑渔游蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/d6855f57527b40bcadbb15cffebb41b6.png",
         "https://xstatic.pictureknow.com/snake/d6855f57527b40bcadbb15cffebb41b6.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "8efafd98d790a8d492438a0bd9a2cb46",
@@ -1614,13 +1741,13 @@
       "sciName": "Oreocryptophis porphyraceus",
       "cnName": "紫灰锦蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/4b8481659b1e4ba3b3152fb19d2012e3.png",
         "https://xstatic.pictureknow.com/snake/4b8481659b1e4ba3b3152fb19d2012e3.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "048e1ebb4fe0ffeeae25503a11ed8eba",
@@ -1630,13 +1757,13 @@
       "sciName": "Naja atra",
       "cnName": "舟山眼镜蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/895b90832edb4cf3a20be954d7349faf.png",
         "https://xstatic.pictureknow.com/snake/895b90832edb4cf3a20be954d7349faf.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "ad14abd17009a49da32407ee81885208",
@@ -1646,13 +1773,13 @@
       "sciName": "Naja atra",
       "cnName": "舟山眼镜蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/97e843f7253c499293ad6c60eeff1903.png",
         "https://xstatic.pictureknow.com/snake/97e843f7253c499293ad6c60eeff1903.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "20709bd36b2d1b3774e9b6da6a0f01f0",
@@ -1662,13 +1789,13 @@
       "sciName": "Oocatochus rufodorsatus",
       "cnName": "红纹滞卵蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/a3cf8758f4de4816989b6cc284504bd5.png",
         "https://xstatic.pictureknow.com/snake/a3cf8758f4de4816989b6cc284504bd5.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "d4c94e00b4750fcb84c7e53e33dc630e",
@@ -1678,13 +1805,13 @@
       "sciName": "Oocatochus rufodorsatus",
       "cnName": "红纹滞卵蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/5a22aba75de147cd85bd49fff715c97f.png",
         "https://xstatic.pictureknow.com/snake/5a22aba75de147cd85bd49fff715c97f.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "70dbcbb23c5b31be3ac2920c41af8bfc",
@@ -1694,13 +1821,13 @@
       "sciName": "Myrrophis chinensis",
       "cnName": "中国水蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/512f438322c5401e8358d59a76987000.png",
         "https://xstatic.pictureknow.com/snake/512f438322c5401e8358d59a76987000.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "f94deec66b8eaee48559856efc68e094",
@@ -1710,13 +1837,13 @@
       "sciName": "Boiga multomaculata",
       "cnName": "繁花林蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/539099248cc943b9a5a6829315deeecc.png",
         "https://xstatic.pictureknow.com/snake/539099248cc943b9a5a6829315deeecc.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "1d25595d7c7f609451ab4c5d4f0ad69a",
@@ -1726,13 +1853,13 @@
       "sciName": "Boiga multomaculata",
       "cnName": "繁花林蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/a50d0cea5e034fa78db01c1a9a836d47.png",
         "https://xstatic.pictureknow.com/snake/a50d0cea5e034fa78db01c1a9a836d47.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "4598e451aea738b44484a74ca5ff911c",
@@ -1742,13 +1869,13 @@
       "sciName": "Dendrelaphis pictus",
       "cnName": "过树蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/2098b953cd9549de84e7f47d0e61ddca.png",
         "https://xstatic.pictureknow.com/snake/2098b953cd9549de84e7f47d0e61ddca.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "<urlopen error _ssl.c:993: The handshake operation timed out>; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "40e4676270c49b401a2eb10415ba4e2b",
@@ -1758,13 +1885,13 @@
       "sciName": "Oligodon chinensis",
       "cnName": "中国小头蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/3bf3893ba698435f96be8145f5875d9c.png",
         "https://xstatic.pictureknow.com/snake/3bf3893ba698435f96be8145f5875d9c.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "2bb3ac1881d73ee4e8da37f3658b8193",
@@ -1774,13 +1901,13 @@
       "sciName": "Protobothrops mucrosquamatus",
       "cnName": "原矛头蝮",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/63aeee7e8d594281832a3d3f83003d4f.png",
         "https://xstatic.pictureknow.com/snake/63aeee7e8d594281832a3d3f83003d4f.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "753841dfb045cea1a18d1776c8f970c8",
@@ -1790,13 +1917,13 @@
       "sciName": "Ptyas mucosa",
       "cnName": "滑鼠蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/2aaf2fbe24504e76a188720c8b81acbb.png",
         "https://xstatic.pictureknow.com/snake/2aaf2fbe24504e76a188720c8b81acbb.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "6911302f11612f7cf5a13d6848ee8559",
@@ -1806,13 +1933,13 @@
       "sciName": "Vipera renardi",
       "cnName": "东方蝰",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/c9da490281824e5fb4f925b5ef4020d9.png",
         "https://xstatic.pictureknow.com/snake/c9da490281824e5fb4f925b5ef4020d9.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "<urlopen error _ssl.c:993: The handshake operation timed out>; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "a1c8e0d9edb59fc3ff34a4fcdc379535",
@@ -1822,13 +1949,13 @@
       "sciName": "Naja atra",
       "cnName": "舟山眼镜蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/8e801bebe2384cf58571077da9912785.png",
         "https://xstatic.pictureknow.com/snake/8e801bebe2384cf58571077da9912785.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "7e07f78f6b4df569f55cf121a9ce817f",
@@ -1838,13 +1965,13 @@
       "sciName": "Elaphe taeniura",
       "cnName": "黑眉锦蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/9de252425bc44b50a028b948fd6d3043.png",
         "https://xstatic.pictureknow.com/snake/9de252425bc44b50a028b948fd6d3043.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "fba68ae654b4ba5fe13959f6c39a2539",
@@ -1854,13 +1981,13 @@
       "sciName": "Boiga cyanea",
       "cnName": "绿林蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/29cb35522ede45609b6b66d005fcd827.png",
         "https://xstatic.pictureknow.com/snake/29cb35522ede45609b6b66d005fcd827.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "894e124027e52e7039704332b738c0bb",
@@ -1870,13 +1997,13 @@
       "sciName": "Naja atra",
       "cnName": "舟山眼镜蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/7b7ff1aab32942ed9a4762207169e4fc.png",
         "https://xstatic.pictureknow.com/snake/7b7ff1aab32942ed9a4762207169e4fc.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "db23eceda83994409da097fd2a8a11a5",
@@ -1886,13 +2013,13 @@
       "sciName": "Lycodon rufozonatus",
       "cnName": "赤链蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/50bf8e334a0c46e1ae7e476de6f0312d.png",
         "https://xstatic.pictureknow.com/snake/50bf8e334a0c46e1ae7e476de6f0312d.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "<urlopen error _ssl.c:993: The handshake operation timed out>; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "f9f350c229c67885a58818aca60a9d70",
@@ -1902,13 +2029,13 @@
       "sciName": "Ovophis makazayazaya",
       "cnName": "台湾烙铁头蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/e335ace9677a41b79f6f67ac8d65977f.png",
         "https://xstatic.pictureknow.com/snake/e335ace9677a41b79f6f67ac8d65977f.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; <urlopen error _ssl.c:993: The handshake operation timed out>"
     },
     {
       "uniqueId": "1b17138a52abe99ea61cac38dada6f69",
@@ -1918,13 +2045,13 @@
       "sciName": "Ptyas korros",
       "cnName": "灰鼠蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/c977ae15097b47c394f790dffa2e674e.png",
         "https://xstatic.pictureknow.com/snake/c977ae15097b47c394f790dffa2e674e.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "f254b251fb9e347d0ef106e186cf18f3",
@@ -1934,13 +2061,13 @@
       "sciName": "Ptyas mucosa",
       "cnName": "滑鼠蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/c58922012e394ed59155c8ddfa116bac.png",
         "https://xstatic.pictureknow.com/snake/c58922012e394ed59155c8ddfa116bac.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "7bb605525d2dff50dbd0f8918367826d",
@@ -1950,13 +2077,13 @@
       "sciName": "Oligodon formosanus",
       "cnName": "台湾小头蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/2a2ce60522594876991e4c827a3beb47.png",
         "https://xstatic.pictureknow.com/snake/2a2ce60522594876991e4c827a3beb47.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "c10b7a5125b5802cfe9e4a24432ba6f4",
@@ -1966,13 +2093,13 @@
       "sciName": "Fowlea flavipunctatus",
       "cnName": "黄斑渔游蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/4c555c5762a94b0ba966d34652581ea6.png",
         "https://xstatic.pictureknow.com/snake/4c555c5762a94b0ba966d34652581ea6.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "ec78c442346dd0c541de5d4824ffec17",
@@ -1982,13 +2109,13 @@
       "sciName": "Elaphe taeniura",
       "cnName": "黑眉锦蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/468e75fb566b4a12b63153fc8e5226c8.png",
         "https://xstatic.pictureknow.com/snake/468e75fb566b4a12b63153fc8e5226c8.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "<urlopen error _ssl.c:993: The handshake operation timed out>; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "2829ecf7802eaf763f4fe1de49dc6c12",
@@ -1998,13 +2125,13 @@
       "sciName": "Elaphe taeniura",
       "cnName": "黑眉锦蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/cee21a930cb246179395e21accd814f1.png",
         "https://xstatic.pictureknow.com/snake/cee21a930cb246179395e21accd814f1.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "1da84e755e17f23dac9e8a85693fd6f9",
@@ -2014,13 +2141,13 @@
       "sciName": "Pareas margaritophorus",
       "cnName": "横纹钝头蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/2f9f0e2a158c4ffe9a2edc4f4859fe3b.png",
         "https://xstatic.pictureknow.com/snake/2f9f0e2a158c4ffe9a2edc4f4859fe3b.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "fe8beae473eaa39bedcc18ee73e39436",
@@ -2030,13 +2157,13 @@
       "sciName": "Elaphe taeniura",
       "cnName": "黑眉锦蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/165c9507b1c04bb28c7c21a89ead1499.png",
         "https://xstatic.pictureknow.com/snake/165c9507b1c04bb28c7c21a89ead1499.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "61ae1ff2a99a30b7d17f918081b4712b",
@@ -2046,13 +2173,13 @@
       "sciName": "",
       "cnName": "纱窗",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/2f3d1ed86d5b4cdf896140f4fa3023fa.png",
         "https://xstatic.pictureknow.com/snake/2f3d1ed86d5b4cdf896140f4fa3023fa.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "442e85b0f703a0c6506cca9bd114e26c",
@@ -2062,13 +2189,13 @@
       "sciName": "Elaphe schrenckii",
       "cnName": "棕黑锦蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/9a5f2f1b0c78427bbadc5f49d3e85edc.png",
         "https://xstatic.pictureknow.com/snake/9a5f2f1b0c78427bbadc5f49d3e85edc.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "89b124fab1b32fd257678b7daebc879d",
@@ -2078,13 +2205,13 @@
       "sciName": "Fowlea flavipunctatus",
       "cnName": "黄斑渔游蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/ebc69440d0c8411b93dad697e0807b4d.png",
         "https://xstatic.pictureknow.com/snake/ebc69440d0c8411b93dad697e0807b4d.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "31fa42ce1f0ee81e73c796ee5f8df84c",
@@ -2094,13 +2221,13 @@
       "sciName": "Oligodon formosanus",
       "cnName": "台湾小头蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/ca3de50b02bf4e3d8029757314b1ffd1.png",
         "https://xstatic.pictureknow.com/snake/ca3de50b02bf4e3d8029757314b1ffd1.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "c3eaa73b44d35510cee0c99399689571",
@@ -2110,13 +2237,13 @@
       "sciName": "Ptyas mucosa",
       "cnName": "滑鼠蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/fe9a3edc975a4503b8d250b96a49354a.png",
         "https://xstatic.pictureknow.com/snake/fe9a3edc975a4503b8d250b96a49354a.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "9ec56395f2cba0e02bdb3dfc2cd130ce",
@@ -2126,13 +2253,13 @@
       "sciName": "Oligodon cinereus",
       "cnName": "紫棕小头蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/20b46f1759594f4e830419c490891a7d.png",
         "https://xstatic.pictureknow.com/snake/20b46f1759594f4e830419c490891a7d.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "ba850b7dea4a8f95a335bf459979c2c8",
@@ -2142,13 +2269,13 @@
       "sciName": "Daboia siamensis",
       "cnName": "泰国圆斑蝰",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/e803f16e057f440d940949c0512def66.png",
         "https://xstatic.pictureknow.com/snake/e803f16e057f440d940949c0512def66.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "5f0e7abb895aebcc357f822b1a976a05",
@@ -2158,13 +2285,13 @@
       "sciName": "Protobothrops cornutus",
       "cnName": "角原矛头蝮",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/3c453142d9854ebdb6dd00139bb68cd5.png",
         "https://xstatic.pictureknow.com/snake/3c453142d9854ebdb6dd00139bb68cd5.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "cd462791056a233eb67c5dc8a0d6f975",
@@ -2174,13 +2301,13 @@
       "sciName": "Protobothrops mangshanensis",
       "cnName": "莽山原矛头蝮",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/858128207dfc49c785a7b030b869cd1e.png",
         "https://xstatic.pictureknow.com/snake/858128207dfc49c785a7b030b869cd1e.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "0ae9e7316ed312d4cc33e3305a3ed42d",
@@ -2190,13 +2317,13 @@
       "sciName": "Protobothrops cornutus",
       "cnName": "角原矛头蝮",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/eba3e80798474909b98323ece7a8e61d.png",
         "https://xstatic.pictureknow.com/snake/eba3e80798474909b98323ece7a8e61d.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "4fb83ad5a26911f58b60f4a7ded89028",
@@ -2206,13 +2333,13 @@
       "sciName": "Ovophis makazayazaya",
       "cnName": "台湾烙铁头蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/f9bc7aac2233463a99532a6743aecef6.png",
         "https://xstatic.pictureknow.com/snake/f9bc7aac2233463a99532a6743aecef6.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "5ceefc0390eff9bd2337d2e3acf3b46e",
@@ -2222,13 +2349,13 @@
       "sciName": "Protobothrops mangshanensis",
       "cnName": "莽山原矛头蝮",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/530772954d87434aa74343f4a7f33a50.png",
         "https://xstatic.pictureknow.com/snake/530772954d87434aa74343f4a7f33a50.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "27c7be13dd0c39e84eb19df162186378",
@@ -2238,13 +2365,13 @@
       "sciName": "Protobothrops mangshanensis",
       "cnName": "莽山原矛头蝮",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/268c2cfb65ec4f7981c74a816807ca06.png",
         "https://xstatic.pictureknow.com/snake/268c2cfb65ec4f7981c74a816807ca06.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "dde03268c890c565252b9d5a098c4cc9",
@@ -2254,13 +2381,13 @@
       "sciName": "Archelaphe bella",
       "cnName": "方花蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/250b13bb1a914f3fb4120fa028155427.png",
         "https://xstatic.pictureknow.com/snake/250b13bb1a914f3fb4120fa028155427.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "b93e4e7948690b162201e4828ae06e8f",
@@ -2270,13 +2397,13 @@
       "sciName": "Trimeresurus albolabris",
       "cnName": "白唇竹叶青蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/ad91a72f3020415ea7a4a6446756053c.png",
         "https://xstatic.pictureknow.com/snake/ad91a72f3020415ea7a4a6446756053c.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "d951eb4728fe6648970f5080f5fd9dc9",
@@ -2286,13 +2413,13 @@
       "sciName": "Naja atra",
       "cnName": "舟山眼镜蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/42d174f1eefc4fbb82db2a69483fc922.png",
         "https://xstatic.pictureknow.com/snake/42d174f1eefc4fbb82db2a69483fc922.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "94f8b56343d993b4fb4838e21df1b50d",
@@ -2302,13 +2429,13 @@
       "sciName": "Coelognathus radiatus",
       "cnName": "三索锦蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/06723cdee44744478f26c2410445a041.png",
         "https://xstatic.pictureknow.com/snake/06723cdee44744478f26c2410445a041.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "e5f84ef775ed14c83eb25723c7fd8d62",
@@ -2318,13 +2445,13 @@
       "sciName": "Elaphe dione",
       "cnName": "白条锦蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/c7cd3416e3604b69aaa5cf9daebdca9e.png",
         "https://xstatic.pictureknow.com/snake/c7cd3416e3604b69aaa5cf9daebdca9e.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "d4ac8dacd554016079515b5d3a1855d2",
@@ -2334,13 +2461,13 @@
       "sciName": "Opisthotropis kuatunensis",
       "cnName": "挂墩后棱蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/5aba6266dc6f40868c2ed7ee02257137.png",
         "https://xstatic.pictureknow.com/snake/5aba6266dc6f40868c2ed7ee02257137.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "7c5beb694f0d80727e68cb60ed8113fc",
@@ -2350,13 +2477,13 @@
       "sciName": "Oligodon formosanus",
       "cnName": "台湾小头蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/0d2998942b834459a3c7d6e7a9e3143b.png",
         "https://xstatic.pictureknow.com/snake/0d2998942b834459a3c7d6e7a9e3143b.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "93dbf75c122bd13b4165643ea1537235",
@@ -2366,13 +2493,13 @@
       "sciName": "Ptyas dhumnades",
       "cnName": "乌梢蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/105f88b1d5c14cc0a8de389265095dca.png",
         "https://xstatic.pictureknow.com/snake/105f88b1d5c14cc0a8de389265095dca.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "4643dc3311e31a3fc05ff02fc0630a71",
@@ -2382,13 +2509,13 @@
       "sciName": "Trimeresurus albolabris",
       "cnName": "白唇竹叶青蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/a1fd5e57a7704983b1b739c56fd1014b.png",
         "https://xstatic.pictureknow.com/snake/a1fd5e57a7704983b1b739c56fd1014b.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "13bd5e29e2366e8c251b49c4054cf2fe",
@@ -2398,13 +2525,13 @@
       "sciName": "Laticauda laticaudata",
       "cnName": "扁尾海蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/03986f299c7c4bea8664bf8cb4048049.png",
         "https://xstatic.pictureknow.com/snake/03986f299c7c4bea8664bf8cb4048049.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "45b91a92b4d5323839f949860bdcfe48",
@@ -2414,13 +2541,13 @@
       "sciName": "Deinagkistrodon acutus",
       "cnName": "尖吻蝮",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/70f254deefab4bd3bc2e71ef41d05eaf.png",
         "https://xstatic.pictureknow.com/snake/70f254deefab4bd3bc2e71ef41d05eaf.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "6e699b11dc809513fae443ad524dfd4f",
@@ -2430,13 +2557,13 @@
       "sciName": "Bungarus multicinctus",
       "cnName": "银环蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/cccba786922f4c549782547a5ef13ff1.png",
         "https://xstatic.pictureknow.com/snake/cccba786922f4c549782547a5ef13ff1.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "9c1a50ea81b12529724ca347c222fe46",
@@ -2447,13 +2574,13 @@
       "cnName": "棘鳞海蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/fbd6676d71a248fe86c2a7f14d61bd39.png",
       "retry_reason": "source_label_inconsistent_with_visible_anatomy",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/fbd6676d71a248fe86c2a7f14d61bd39.png",
         "https://xstatic.pictureknow.com/snake/fbd6676d71a248fe86c2a7f14d61bd39.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "6fb7cfe60ba5143b7569ef7618ae81df",
@@ -2464,13 +2591,13 @@
       "cnName": "棘鳞海蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/370e72edc4ac49579f65c05503032307.png",
       "retry_reason": "source_label_inconsistent_with_visible_anatomy",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/370e72edc4ac49579f65c05503032307.png",
         "https://xstatic.pictureknow.com/snake/370e72edc4ac49579f65c05503032307.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "5efd02d32afd6d3e9e86c576ce911ab5",
@@ -2481,13 +2608,13 @@
       "cnName": "白枕白环蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/926169c4c74847499cfe63583b517409.png",
       "retry_reason": "source_label_inconsistent_with_visible_pattern",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/926169c4c74847499cfe63583b517409.png",
         "https://xstatic.pictureknow.com/snake/926169c4c74847499cfe63583b517409.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "56a761d4cb8cd7cc8edb256163ae73c2",
@@ -2498,13 +2625,13 @@
       "cnName": "虎斑颈槽蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/1576207f1b044c389b4b6817c0e2c813.png",
       "retry_reason": "same_photo_conflicting_species_labels",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/1576207f1b044c389b4b6817c0e2c813.png",
         "https://xstatic.pictureknow.com/snake/1576207f1b044c389b4b6817c0e2c813.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "d3bccc46bad17dffc78759cdf80de3df",
@@ -2515,13 +2642,13 @@
       "cnName": "滑鼠蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/0ed3d1ed69bb4ee4aebed92c3552dd3b.png",
       "retry_reason": "same_photo_conflicting_species_labels",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/0ed3d1ed69bb4ee4aebed92c3552dd3b.png",
         "https://xstatic.pictureknow.com/snake/0ed3d1ed69bb4ee4aebed92c3552dd3b.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "825c78f167e58578488c9b88cfc34070",
@@ -2532,13 +2659,13 @@
       "cnName": "白条锦蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/b5c7ae57e06344bab70e2cf2c5bbb1de.png",
       "retry_reason": "source_label_inconsistent_with_visible_anatomy",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/b5c7ae57e06344bab70e2cf2c5bbb1de.png",
         "https://xstatic.pictureknow.com/snake/b5c7ae57e06344bab70e2cf2c5bbb1de.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "7774e1cb35c7fe93418c9ee6326544c9",
@@ -2549,13 +2676,13 @@
       "cnName": "黄斑渔游蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/90d46ccdb2b74c3d8314fd4a0997bf61.png",
       "retry_reason": "same_photo_conflicting_species_labels",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/90d46ccdb2b74c3d8314fd4a0997bf61.png",
         "https://xstatic.pictureknow.com/snake/90d46ccdb2b74c3d8314fd4a0997bf61.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "23bcf31044cf028276609c0d0c3b9bdd",
@@ -2566,13 +2693,13 @@
       "cnName": "虎斑颈槽蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/ea895910cc7648bcb93dd3ce0460d0b5.png",
       "retry_reason": "same_photo_conflicting_species_labels",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/ea895910cc7648bcb93dd3ce0460d0b5.png",
         "https://xstatic.pictureknow.com/snake/ea895910cc7648bcb93dd3ce0460d0b5.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "0814d9b60ccf51d045cc38953c4463f9",
@@ -2583,13 +2710,13 @@
       "cnName": "滑鼠蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/d713bd8207204eed849fe294d91014e3.png",
       "retry_reason": "same_photo_conflicting_species_labels",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/d713bd8207204eed849fe294d91014e3.png",
         "https://xstatic.pictureknow.com/snake/d713bd8207204eed849fe294d91014e3.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "a56ba7e88ce001e0514d424c9a105416",
@@ -2600,13 +2727,13 @@
       "cnName": "白条锦蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/8558fe9c5fdc411fb0070df5eb2350db.png",
       "retry_reason": "species_label_uncertain",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/8558fe9c5fdc411fb0070df5eb2350db.png",
         "https://xstatic.pictureknow.com/snake/8558fe9c5fdc411fb0070df5eb2350db.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "17d53d7072c29141cb7a2c3908e8b669",
@@ -2617,13 +2744,13 @@
       "cnName": "孟加拉眼镜蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/04259068e97e414f9e51958c64f2b238.png",
       "retry_reason": "species_and_photo_authenticity_uncertain",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/04259068e97e414f9e51958c64f2b238.png",
         "https://xstatic.pictureknow.com/snake/04259068e97e414f9e51958c64f2b238.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "6b955fb7044ebbe7d1b169112295be04",
@@ -2634,13 +2761,13 @@
       "cnName": "台湾烙铁头蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/d2133f401eb0470780324d0e2dcc329e.png",
       "retry_reason": "species_label_uncertain",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/d2133f401eb0470780324d0e2dcc329e.png",
         "https://xstatic.pictureknow.com/snake/d2133f401eb0470780324d0e2dcc329e.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "3e986a40d8f0bf5d17ef0e6a2f7c7907",
@@ -2651,13 +2778,13 @@
       "cnName": "台湾烙铁头蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/0d20212fa2c04d91ae7372a5c512cf92.png",
       "retry_reason": "species_label_uncertain",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/0d20212fa2c04d91ae7372a5c512cf92.png",
         "https://xstatic.pictureknow.com/snake/0d20212fa2c04d91ae7372a5c512cf92.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "78cc05587da98f8584d5a2ec8de6fcba",
@@ -2668,13 +2795,13 @@
       "cnName": "台湾小头蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/6b3eb3b9f77b4666a6a3df1598583eb9.png",
       "retry_reason": "species_label_uncertain",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/6b3eb3b9f77b4666a6a3df1598583eb9.png",
         "https://xstatic.pictureknow.com/snake/6b3eb3b9f77b4666a6a3df1598583eb9.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "10fd0595fdc1b0d59ea3ca0f29b32a2b",
@@ -2685,13 +2812,13 @@
       "cnName": "眼镜王蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/dbd83a34c1be4adcb71c951edf2b1b27.png",
       "retry_reason": "species_label_uncertain_low_detail",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/dbd83a34c1be4adcb71c951edf2b1b27.png",
         "https://xstatic.pictureknow.com/snake/dbd83a34c1be4adcb71c951edf2b1b27.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "<urlopen error _ssl.c:993: The handshake operation timed out>; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "7b59ed8caf355adbec10828502846a6c",
@@ -2703,13 +2830,13 @@
       "download_url": "https://xstatic.pictureknow.com/snake/f6d6990f1c314630ab8d34c9f3625a19.png?x-oss-process=image/format,webp",
       "original_unavailable": "source original unavailable; webpage full-size WebP used",
       "retry_reason": "species_label_uncertain",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/f6d6990f1c314630ab8d34c9f3625a19.png",
         "https://xstatic.pictureknow.com/snake/f6d6990f1c314630ab8d34c9f3625a19.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "94ce10e3459e1ce11e9410572e818276",
@@ -2721,13 +2848,13 @@
       "download_url": "https://xstatic.pictureknow.com/snake/e5c5b8d7b73a4d4ea4d55fab7b54cade.png?x-oss-process=image/format,webp",
       "original_unavailable": "source original unavailable; webpage full-size WebP used",
       "retry_reason": "snake_content_and_species_uncertain",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/e5c5b8d7b73a4d4ea4d55fab7b54cade.png",
         "https://xstatic.pictureknow.com/snake/e5c5b8d7b73a4d4ea4d55fab7b54cade.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "3b448aa023720a787bed207d58b4b6b1",
@@ -2738,13 +2865,13 @@
       "cnName": "黑背白环蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/5cfcb72264db4171a1bb22beb0ccaafb.png",
       "retry_reason": "species_label_uncertain",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/5cfcb72264db4171a1bb22beb0ccaafb.png",
         "https://xstatic.pictureknow.com/snake/5cfcb72264db4171a1bb22beb0ccaafb.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "79be0ac6840e756f125a0aff3eac97e9",
@@ -2754,13 +2881,13 @@
       "sciName": "Ovophis monticola",
       "cnName": "山烙铁头蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/b62c4204c6dc49cab31fe60e89a216d0.png",
         "https://xstatic.pictureknow.com/snake/b62c4204c6dc49cab31fe60e89a216d0.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "<urlopen error _ssl.c:993: The handshake operation timed out>; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "a0337f17c01178ec0dea91f07a347936",
@@ -2770,13 +2897,13 @@
       "sciName": "Naja kaouthia",
       "cnName": "孟加拉眼镜蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/fb114a50e93e4c129404764495b19aa8.png",
         "https://xstatic.pictureknow.com/snake/fb114a50e93e4c129404764495b19aa8.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "06231c7835aa1ec98f28449e46417862",
@@ -2786,13 +2913,13 @@
       "sciName": "Python bivittatus",
       "cnName": "缅甸蟒",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/34483bc22bf44984af9ca6e6da553c45.png",
         "https://xstatic.pictureknow.com/snake/34483bc22bf44984af9ca6e6da553c45.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "77e10fbe73c0733b863b96aad432d417",
@@ -2802,13 +2929,13 @@
       "sciName": "Ptyas mucosa",
       "cnName": "滑鼠蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/ef522a24191245a6a825587e99a79c4d.png",
         "https://xstatic.pictureknow.com/snake/ef522a24191245a6a825587e99a79c4d.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "71a56f59f8b541d7b85e9d106d1405f9",
@@ -2818,13 +2945,13 @@
       "sciName": "Vipera berus",
       "cnName": "极北蝰",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/06078126d3244db38aadc1e7e5084a57.png",
         "https://xstatic.pictureknow.com/snake/06078126d3244db38aadc1e7e5084a57.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "ed3af443063bf41494e9170e32bc3e52",
@@ -2834,13 +2961,13 @@
       "sciName": "Lycodon ruhstrati",
       "cnName": "黑背白环蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/e2b38197901a46fa9ea8f6a4dcca60c4.png",
         "https://xstatic.pictureknow.com/snake/e2b38197901a46fa9ea8f6a4dcca60c4.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "9e4336eece8e798e810c8fb171447304",
@@ -2850,13 +2977,13 @@
       "sciName": "",
       "cnName": "睡袋",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/f2919c43575a4c83bf12f39ffc1b71ca.png",
         "https://xstatic.pictureknow.com/snake/f2919c43575a4c83bf12f39ffc1b71ca.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "c492592f519105d01474c9a3580d222c",
@@ -2866,13 +2993,13 @@
       "sciName": "Elaphe carinata",
       "cnName": "王锦蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/1702c47a095740d294f7cdad73b2b04c.png",
         "https://xstatic.pictureknow.com/snake/1702c47a095740d294f7cdad73b2b04c.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "db3607fd3a76c6a56073e33288321754",
@@ -2882,13 +3009,13 @@
       "sciName": "Oreocryptophis porphyraceus",
       "cnName": "紫灰锦蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/b814b8c0da9243fba216fe40bd81ad75.png",
         "https://xstatic.pictureknow.com/snake/b814b8c0da9243fba216fe40bd81ad75.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "387ea4a6ba45d41cd7bdd2fb3004da2e",
@@ -2898,13 +3025,13 @@
       "sciName": "Gloydius brevicauda",
       "cnName": "短尾蝮",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/e4d20f2c8bf4470d84b3e4f082caf7cc.png",
         "https://xstatic.pictureknow.com/snake/e4d20f2c8bf4470d84b3e4f082caf7cc.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "937b5cf8d640c6d8aa1318f1ad5fdaa0",
@@ -2914,13 +3041,13 @@
       "sciName": "Trimerodytes balteatus",
       "cnName": "横纹华游蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/939b60dde33840e0a2f2c589c5df0fd1.png",
         "https://xstatic.pictureknow.com/snake/939b60dde33840e0a2f2c589c5df0fd1.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "785eb94c75000ff14c4a843f38c548a2",
@@ -2930,13 +3057,13 @@
       "sciName": "Calamaria septentrionalis",
       "cnName": "钝尾两头蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/32480afa13d949f28f814c32bb6bc2cf.png",
         "https://xstatic.pictureknow.com/snake/32480afa13d949f28f814c32bb6bc2cf.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "f0de58077a6de318daaee29846193c8a",
@@ -2947,13 +3074,13 @@
       "cnName": "棕黑锦蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/8f6017315d0947ec9c6e8b87a4526678.png",
       "retry_reason": "species_label_uncertain",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/8f6017315d0947ec9c6e8b87a4526678.png",
         "https://xstatic.pictureknow.com/snake/8f6017315d0947ec9c6e8b87a4526678.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "55d42cf6aef7d527a2b33933283ed1c0",
@@ -2964,13 +3091,13 @@
       "cnName": "银环蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/01e5ef77044d428c8d4a15aeb446d459.png",
       "retry_reason": "same_image_conflicting_species_labels",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/01e5ef77044d428c8d4a15aeb446d459.png",
         "https://xstatic.pictureknow.com/snake/01e5ef77044d428c8d4a15aeb446d459.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; <urlopen error _ssl.c:993: The handshake operation timed out>"
     },
     {
       "uniqueId": "c6ec224339e10c3e8f2deccd6e36cd04",
@@ -2981,13 +3108,13 @@
       "cnName": "金花蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/c1c690aa9d9d4680956f8b3a9faa36cf.png",
       "retry_reason": "same_image_conflicting_species_labels",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/c1c690aa9d9d4680956f8b3a9faa36cf.png",
         "https://xstatic.pictureknow.com/snake/c1c690aa9d9d4680956f8b3a9faa36cf.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "6839d993c9b2e5edd4fac7c58e1bb58b",
@@ -2998,13 +3125,13 @@
       "cnName": "银环蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/ced922c619db48ebbd48bf712da08f87.png",
       "retry_reason": "same_image_conflicting_species_labels",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/ced922c619db48ebbd48bf712da08f87.png",
         "https://xstatic.pictureknow.com/snake/ced922c619db48ebbd48bf712da08f87.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "34d03964377193f5096fc4918748901f",
@@ -3015,13 +3142,13 @@
       "cnName": "福清白环蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/1c87927a147046eeb8a84fccf3e58d2d.png",
       "retry_reason": "same_image_conflicting_species_labels",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/1c87927a147046eeb8a84fccf3e58d2d.png",
         "https://xstatic.pictureknow.com/snake/1c87927a147046eeb8a84fccf3e58d2d.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "064a1b2079135970753f65255fe84759",
@@ -3032,13 +3159,13 @@
       "cnName": "银环蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/4f168ce859f94bbbbd1caed4674c2ad6.png",
       "retry_reason": "same_image_conflicting_species_labels",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/4f168ce859f94bbbbd1caed4674c2ad6.png",
         "https://xstatic.pictureknow.com/snake/4f168ce859f94bbbbd1caed4674c2ad6.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "e78494105746c288696ea315fb2ea012",
@@ -3049,13 +3176,13 @@
       "cnName": "台湾小头蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/3eb13231d5d8417dbba137e749082d9e.png",
       "retry_reason": "species_label_uncertain",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/3eb13231d5d8417dbba137e749082d9e.png",
         "https://xstatic.pictureknow.com/snake/3eb13231d5d8417dbba137e749082d9e.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; The read operation timed out"
     },
     {
       "uniqueId": "a16f91c4b5fbe4e8d4fb38097dc0a462",
@@ -3066,13 +3193,13 @@
       "cnName": "中国小头蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/366e6bc9b378437e85b79927e24fde86.png",
       "retry_reason": "species_labels_conflict_and_image_authenticity_uncertain",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/366e6bc9b378437e85b79927e24fde86.png",
         "https://xstatic.pictureknow.com/snake/366e6bc9b378437e85b79927e24fde86.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "d13ea9059cfa7d98ea06374991c46b20",
@@ -3083,13 +3210,13 @@
       "cnName": "中国小头蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/ad9ffae984b9429d9d8eefc0117e821d.png",
       "retry_reason": "species_labels_conflict_and_image_authenticity_uncertain",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/ad9ffae984b9429d9d8eefc0117e821d.png",
         "https://xstatic.pictureknow.com/snake/ad9ffae984b9429d9d8eefc0117e821d.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "0bd4f4f20cf5464369d6e1c7070551fa",
@@ -3100,13 +3227,13 @@
       "cnName": "台湾小头蛇",
       "download_url": "https://xstatic.pictureknow.com/snake/c0cc4fac59fd4f0b875800e01ade907b.png",
       "retry_reason": "species_labels_conflict_and_image_authenticity_uncertain",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/c0cc4fac59fd4f0b875800e01ade907b.png",
         "https://xstatic.pictureknow.com/snake/c0cc4fac59fd4f0b875800e01ade907b.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "44b4ca2e41a88485f10f34adc86c543c",
@@ -3116,13 +3243,13 @@
       "sciName": "Ptyas mucosa",
       "cnName": "滑鼠蛇",
       "retry_reason": "species_label_conflict",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/e873cb94a0314201bcfedfa941a58221.png",
         "https://xstatic.pictureknow.com/snake/e873cb94a0314201bcfedfa941a58221.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "3cc41ea0b0185e8bb8249ae6a5b25d86",
@@ -3132,13 +3259,13 @@
       "sciName": "Ophiophagus hannah",
       "cnName": "眼镜王蛇",
       "retry_reason": "species_label_conflict",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/5086d3617a544bbaa412489c68b7df11.png",
         "https://xstatic.pictureknow.com/snake/5086d3617a544bbaa412489c68b7df11.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "4c2b4e4d21b796d5acd30e58c2bc0827",
@@ -3150,13 +3277,13 @@
       "download_url": "https://xstatic.pictureknow.com/snake/e2d3763304644d2393f3e6e3d288ed16.png?x-oss-process=image/format,webp",
       "original_unavailable": "OSS InvalidObjectState",
       "retry_reason": "species_label_conflict",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/e2d3763304644d2393f3e6e3d288ed16.png",
         "https://xstatic.pictureknow.com/snake/e2d3763304644d2393f3e6e3d288ed16.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "0cd72a8e8c046d87367b39c8ece8d84a",
@@ -3168,13 +3295,13 @@
       "download_url": "https://xstatic.pictureknow.com/snake/926746633b674fb183d90ef110e3f365.png?x-oss-process=image/format,webp",
       "original_unavailable": "OSS InvalidObjectState",
       "retry_reason": "snake_content_uncertain",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/926746633b674fb183d90ef110e3f365.png",
         "https://xstatic.pictureknow.com/snake/926746633b674fb183d90ef110e3f365.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "73ded7319bc494ddf421e3005ef80608",
@@ -3186,13 +3313,13 @@
       "download_url": "https://xstatic.pictureknow.com/snake/38ac0a4839274a2fae9e1f8ba57bc12a.png?x-oss-process=image/format,webp",
       "original_unavailable": "OSS InvalidObjectState",
       "retry_reason": "snake_content_uncertain",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/38ac0a4839274a2fae9e1f8ba57bc12a.png",
         "https://xstatic.pictureknow.com/snake/38ac0a4839274a2fae9e1f8ba57bc12a.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "2e4dc940da817da99ec44e61c5a31959",
@@ -3204,13 +3331,13 @@
       "download_url": "https://xstatic.pictureknow.com/snake/d47fbcde47404e4fbab6aec36b17ca9e.png?x-oss-process=image/format,webp",
       "original_unavailable": "OSS InvalidObjectState",
       "retry_reason": "species_label_conflict",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/d47fbcde47404e4fbab6aec36b17ca9e.png",
         "https://xstatic.pictureknow.com/snake/d47fbcde47404e4fbab6aec36b17ca9e.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "a90d255b196df2cb97029b278f82cb64",
@@ -3220,13 +3347,13 @@
       "sciName": "Bungarus multicinctus",
       "cnName": "银环蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/e038b69e08cd43bb8b1d0c1ddbbb84dd.png",
         "https://xstatic.pictureknow.com/snake/e038b69e08cd43bb8b1d0c1ddbbb84dd.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "0bf911d05cd44b5cca3d62de4bdedecc",
@@ -3236,13 +3363,13 @@
       "sciName": "Fowlea flavipunctatus",
       "cnName": "黄斑渔游蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/c62faaac94944280a977c466807b8e15.png",
         "https://xstatic.pictureknow.com/snake/c62faaac94944280a977c466807b8e15.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "0735e9bf7b94f91b67ca5b9b46178c5e",
@@ -3252,13 +3379,13 @@
       "sciName": "Lycodon futsingensis",
       "cnName": "福清白环蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/5c1d48eb0eab4bb0927772d3b87c7502.png",
         "https://xstatic.pictureknow.com/snake/5c1d48eb0eab4bb0927772d3b87c7502.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "33718694fe21e5c2a613e8cd95cbdfab",
@@ -3268,13 +3395,13 @@
       "sciName": "Lycodon futsingensis",
       "cnName": "福清白环蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/5ac76d8501904cdd953e4f03c9a40b03.png",
         "https://xstatic.pictureknow.com/snake/5ac76d8501904cdd953e4f03c9a40b03.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
       "uniqueId": "2b15e98a3f574c2369e5d87af8545aef",
@@ -3284,55 +3411,190 @@
       "sciName": "Ptyas major",
       "cnName": "翠青蛇",
       "retry_reason": "original_and_webp_unavailable",
-      "last_attempt_at": "2026-11-01",
-      "last_attempt_result": "original_and_webp_http_403",
+      "last_attempt_at": "2026-11-02",
+      "last_attempt_result": "original_and_webp_unavailable",
       "attempted_urls": [
         "https://xstatic.pictureknow.com/snake/16d862c5ec834f28b689842682be13ad.png",
         "https://xstatic.pictureknow.com/snake/16d862c5ec834f28b689842682be13ad.png?x-oss-process=image/format,webp"
       ],
-      "last_error": "HTTPError: HTTP Error 403: Forbidden"
-    }
-  ],
-  "excluded_count": 2,
-  "excluded_topics": [
-    {
-      "topic_id": "80dd3ce886538c9ecb648b0f85e07d27",
-      "reason": "non_snake_ray"
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     },
     {
-      "topic_id": "785aea988a1ac42245b72998f705781e",
-      "reason": "non_snake_mammal"
+      "uniqueId": "f17bef1c703721b555d59769af0281d5",
+      "createTime": 1793581098000,
+      "img": "https://xstatic.pictureknow.com/snake/608b6f43ef5c430b88ed75e9e3633f64.png",
+      "snakeId": "8264c64646c24a08a8e2cb60209c2641",
+      "sciName": "Ptyas mucosa",
+      "cnName": "滑鼠蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/608b6f43ef5c430b88ed75e9e3633f64.png",
+      "last_attempt_at": "2026-11-02",
+      "attempted_urls": [],
+      "retry_reason": "species_label_or_image_content_uncertain",
+      "last_attempt_result": "readable_deferred_after_visual_review"
+    },
+    {
+      "uniqueId": "b0f51fe66993f5ea5081df0b1e21088f",
+      "createTime": 1793542864000,
+      "img": "https://xstatic.pictureknow.com/snake/e39bfb160d884d449afe793a8ae2f3e3.png",
+      "snakeId": "0f874538b6cf425082d47a9caddf2619",
+      "sciName": "Dendrelaphis pictus",
+      "cnName": "过树蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/e39bfb160d884d449afe793a8ae2f3e3.png",
+      "last_attempt_at": "2026-11-02",
+      "attempted_urls": [],
+      "retry_reason": "species_label_or_image_content_uncertain",
+      "last_attempt_result": "readable_deferred_after_visual_review"
+    },
+    {
+      "uniqueId": "ee95558b48a7c95141438496a86a7b5c",
+      "createTime": 1793538094000,
+      "img": "https://xstatic.pictureknow.com/snake/991d5524144f4ff6a6b92fc63ebc12d8.png",
+      "snakeId": "6435f96708124c51b4a7d85cbfd0b6dd",
+      "sciName": "Pseudagkistrodon rudis",
+      "cnName": "颈棱蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/991d5524144f4ff6a6b92fc63ebc12d8.png",
+      "last_attempt_at": "2026-11-02",
+      "attempted_urls": [],
+      "retry_reason": "species_label_or_image_content_uncertain",
+      "last_attempt_result": "readable_deferred_after_visual_review"
+    },
+    {
+      "uniqueId": "fd04a289f2f05a6ab248730bda1e629d",
+      "createTime": 1793534182000,
+      "img": "https://xstatic.pictureknow.com/snake/9c8f23c839b747a7bc4be018e45b7e17.png",
+      "snakeId": "2cbce1ccac48450bac99070f4f982fce",
+      "sciName": "Oligodon chinensis",
+      "cnName": "中国小头蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/9c8f23c839b747a7bc4be018e45b7e17.png",
+      "last_attempt_at": "2026-11-02",
+      "attempted_urls": [],
+      "retry_reason": "species_label_or_image_content_uncertain",
+      "last_attempt_result": "readable_deferred_after_visual_review"
+    },
+    {
+      "uniqueId": "70773afde69996712cc31ab6b6cf5715",
+      "createTime": 1793534152000,
+      "img": "https://xstatic.pictureknow.com/snake/1dbea828cf0046c7b00db948568827cd.png",
+      "snakeId": "2cbce1ccac48450bac99070f4f982fce",
+      "sciName": "Oligodon chinensis",
+      "cnName": "中国小头蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/1dbea828cf0046c7b00db948568827cd.png",
+      "last_attempt_at": "2026-11-02",
+      "attempted_urls": [],
+      "retry_reason": "species_label_or_image_content_uncertain",
+      "last_attempt_result": "readable_deferred_after_visual_review"
+    },
+    {
+      "uniqueId": "cd2ec3e9b721d06c7baa11e2dfe3c975",
+      "createTime": 1793528528000,
+      "img": "https://xstatic.pictureknow.com/snake/70b248064b2c44fea17e9488319f739f.png",
+      "snakeId": "ed94f2c43f754395bcb7e95cc17c6b7a",
+      "sciName": "Elaphe schrenckii",
+      "cnName": "棕黑锦蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/70b248064b2c44fea17e9488319f739f.png",
+      "last_attempt_at": "2026-11-02",
+      "attempted_urls": [],
+      "retry_reason": "species_label_or_image_content_uncertain",
+      "last_attempt_result": "readable_deferred_after_visual_review"
+    },
+    {
+      "uniqueId": "7ecc6e51c46a864266743cd08949ad09",
+      "createTime": 1793528240000,
+      "img": "https://xstatic.pictureknow.com/snake/df99c86a75c84eb1beb97a269dd26db4.png",
+      "snakeId": "ab065bb23c8249d9b7a013551bd3c5d2",
+      "sciName": "Elaphe dione",
+      "cnName": "白条锦蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/df99c86a75c84eb1beb97a269dd26db4.png",
+      "last_attempt_at": "2026-11-02",
+      "attempted_urls": [],
+      "retry_reason": "species_label_or_image_content_uncertain",
+      "last_attempt_result": "readable_deferred_after_visual_review"
+    },
+    {
+      "uniqueId": "deafe34ac59a65ea136d11520f551993",
+      "createTime": 1793519800000,
+      "img": "https://xstatic.pictureknow.com/snake/4fdbcd0fd4564945a5f1780b624637da.png",
+      "snakeId": "4dea85d9da714ceda8a4f8d248051c98",
+      "sciName": "Elaphe carinata",
+      "cnName": "王锦蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/4fdbcd0fd4564945a5f1780b624637da.png",
+      "last_attempt_at": "2026-11-02",
+      "attempted_urls": [],
+      "retry_reason": "species_label_or_image_content_uncertain",
+      "last_attempt_result": "readable_deferred_after_visual_review"
+    },
+    {
+      "uniqueId": "5cbe4ee1b466b0c77ddb02253e3345cc",
+      "createTime": 1793519185000,
+      "img": "https://xstatic.pictureknow.com/snake/e2c5b2d8142d4067aeb8afb6bdebcc63.png",
+      "snakeId": "4dea85d9da714ceda8a4f8d248051c98",
+      "sciName": "Elaphe carinata",
+      "cnName": "王锦蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/e2c5b2d8142d4067aeb8afb6bdebcc63.png",
+      "last_attempt_at": "2026-11-02",
+      "attempted_urls": [],
+      "retry_reason": "species_label_or_image_content_uncertain",
+      "last_attempt_result": "readable_deferred_after_visual_review"
+    },
+    {
+      "uniqueId": "0517e948659fbe72bc1c0e24b0146228",
+      "createTime": 1793516870000,
+      "img": "https://xstatic.pictureknow.com/snake/9e08dd3a1dda48e98ebaafb6cd4c238a.png",
+      "snakeId": "ab139189433b407e9ca3189b72a9b103",
+      "sciName": "Trimeresurus albolabris",
+      "cnName": "白唇竹叶青蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/9e08dd3a1dda48e98ebaafb6cd4c238a.png",
+      "last_attempt_at": "2026-11-02",
+      "attempted_urls": [],
+      "retry_reason": "species_label_or_image_content_uncertain",
+      "last_attempt_result": "readable_deferred_after_visual_review"
+    },
+    {
+      "uniqueId": "edbd12709a9fb399743162e2a6a4aab3",
+      "createTime": 1793505287000,
+      "img": "https://xstatic.pictureknow.com/snake/162a75166aef4f73b4c946606eddffff.png",
+      "snakeId": "fd6e946c0cec44019c40b7bc8a634608",
+      "sciName": "Pareas formosensis",
+      "cnName": "台湾钝头蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/162a75166aef4f73b4c946606eddffff.png",
+      "last_attempt_at": "2026-11-02",
+      "attempted_urls": [],
+      "retry_reason": "species_label_or_image_content_uncertain",
+      "last_attempt_result": "readable_deferred_after_visual_review"
+    },
+    {
+      "uniqueId": "3a695846f53ea7029865d385daf010d7",
+      "createTime": 1793498197000,
+      "img": "https://xstatic.pictureknow.com/snake/3800f9df3349494995022d5884b92e57.png",
+      "snakeId": "8264c64646c24a08a8e2cb60209c2641",
+      "sciName": "Ptyas mucosa",
+      "cnName": "滑鼠蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/3800f9df3349494995022d5884b92e57.png",
+      "last_attempt_at": "2026-11-02",
+      "attempted_urls": [],
+      "retry_reason": "species_label_or_image_content_uncertain",
+      "last_attempt_result": "readable_deferred_after_visual_review"
+    },
+    {
+      "uniqueId": "f5d4186de4fc878a0cd06312c8b1488d",
+      "createTime": 1793476394000,
+      "img": "https://xstatic.pictureknow.com/snake/8a0fce3bd1184d1ab03ccd2f526d3db2.png",
+      "snakeId": "6716b1c52eba4824b799a8380dc2c514",
+      "sciName": "Gloydius cognatus",
+      "cnName": "阿拉善蝮",
+      "last_attempt_at": "2026-11-02",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/8a0fce3bd1184d1ab03ccd2f526d3db2.png",
+        "https://xstatic.pictureknow.com/snake/8a0fce3bd1184d1ab03ccd2f526d3db2.png?x-oss-process=image/format,webp"
+      ],
+      "retry_reason": "original_and_webp_unavailable",
+      "last_attempt_result": "original_and_webp_unavailable",
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
     }
   ],
-  "notes": "Source login verified after refresh. Browser API pages 1-4 returned 200 unique topics in descending time order, crossing the previous cutoff; 186 belong to this window. All 51 historical retry items attempted. 183 original and full-size WebP downloads returned HTTP 403; one response was independently confirmed OSS InvalidObjectState. No image restoration or access bypass attempted. 25 readable topics deferred for conflicting source labels, insufficient features, or uncertain photographic content. Source labels are not expert identification. Scheduled discovery remains blocked by missing SNAKE_TOPIC_TOKEN.",
-  "scheduled_failure_evidence": "https://github.com/weijintao123/snake-library/actions/runs/41177639838",
-  "followup_check": {
-    "checked_until": "2026-11-01T00:31:05.230+08:00",
-    "scanned": 50,
-    "latest_topic_time": 1793460904000,
-    "source_total": 23219,
-    "new_topics_since_batch": 0,
-    "original_and_webp_retried": 183,
-    "newly_readable": 0,
-    "still_unavailable": 183
-  },
-  "online_verification": {
-    "verified_at": "2026-10-31T16:25:12.846384+00:00",
-    "verified_new_photos": 27,
-    "online_total": 1198,
-    "online_index_sha256": "92e512b193a1b288ed88d6b76fb8859cb5eb566759d77313ccdd10334459a311",
-    "data_commit": "2b661525875b8b26d16aadef6d813c8220a02d35",
-    "window": {
-      "source": "https://snake.pictureknow.com/topics",
-      "coverage": "full-window-browser-api",
-      "base_cutoff": "2026-10-23T09:31:22+08:00",
-      "window_start": "2026-10-23T09:31:22+08:00",
-      "window_end": "2026-11-01T00:06:24+08:00",
-      "baseline_commit": "398e4f62449f32bd3c77785a58b73a65547ac5f3",
-      "login_verified": true
-    },
-    "all_online_hashes_match": true
-  },
-  "page_display_verified": true,
-  "deployment_url": "https://github.com/weijintao123/snake-library/actions/runs/41219433229"
+  "excluded_topic_ids": [
+    "ef1137ee2b7fa7ad2d1e431fb697006d",
+    "350c3f13e57d1292e8a4e2d7a4f2db69",
+    "2b78c42aa494a6f9236c7f07e55ed4ba"
+  ]
 }

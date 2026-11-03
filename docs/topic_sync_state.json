@@ -1,9 +1,9 @@
 {
   "schema_version": 3,
-  "last_successful_cutoff": "2026-11-03T10:02:40+08:00",
-  "last_verified_data_commit": "7f8cd844dca03b984aa5b81cf90c6f39841b6a66",
-  "last_verified_deployment": "https://github.com/weijintao123/snake-library/actions/runs/41564199959",
-  "verified_image_count": 1205,
+  "last_successful_cutoff": "2026-11-03T13:53:57+08:00",
+  "last_verified_data_commit": "8e57a948f13ab40517591e984d02e0d7f74285c3",
+  "last_verified_deployment": "https://github.com/weijintao123/snake-library/actions/runs/41587141734",
+  "verified_image_count": 1206,
   "retry_topics": [
     {
       "uniqueId": "c0471dc80d1de0514bb53b06cc5c48b3",
@@ -3715,6 +3715,32 @@
       "attempted_urls": [],
       "retry_reason": "species_label_or_image_content_uncertain",
       "last_attempt_result": "readable_deferred_after_visual_review"
+    },
+    {
+      "uniqueId": "9a9e743ec9902e49b13a2515d80d7a1d",
+      "createTime": 1793684542000,
+      "img": "https://xstatic.pictureknow.com/snake/a29aa817e462487eaab71e7a8a6a511a.png",
+      "snakeId": "ed94f2c43f754395bcb7e95cc17c6b7a",
+      "sciName": "Elaphe schrenckii",
+      "cnName": "棕黑锦蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/a29aa817e462487eaab71e7a8a6a511a.png",
+      "last_attempt_at": "2026-11-03",
+      "attempted_urls": [],
+      "retry_reason": "species_label_or_image_content_uncertain",
+      "last_attempt_result": "readable_deferred_after_visual_review"
+    },
+    {
+      "uniqueId": "742e36fa0c8e72e429d7ac22b937b723",
+      "createTime": 1793676441000,
+      "img": "https://xstatic.pictureknow.com/snake/5bf7382e98524e7f99dbfde144f30b46.png",
+      "snakeId": "ee3e7d89f26e4c7c97db034cd44df358",
+      "sciName": "Oligodon formosanus",
+      "cnName": "台湾小头蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/5bf7382e98524e7f99dbfde144f30b46.png",
+      "last_attempt_at": "2026-11-03",
+      "attempted_urls": [],
+      "retry_reason": "species_label_or_image_content_uncertain",
+      "last_attempt_result": "readable_deferred_after_visual_review"
     }
   ],
   "excluded_topic_ids": [
@@ -3734,36 +3760,36 @@
     "350c3f13e57d1292e8a4e2d7a4f2db69",
     "2b78c42aa494a6f9236c7f07e55ed4ba"
   ],
-  "coverage_note": "Full window covered by 50 unique descending browser API records, crossing old cutoff. All 12 new topics reviewed, 4 added, 8 deferred. All 221 historical retries attempted and retained. Deployment, online index and all 4 new image SHA-256 values verified; page displays 152 species and 1205 photos.",
+  "coverage_note": "Full browser API window covered and reviewed: 3 new topics, 1 photograph added, 2 deferred. All 229 historical retries attempted and retained. Deployment, online index and new photo SHA-256 verified. Page displays 152 species and 1206 photos.",
   "last_completed_window": {
-    "window_start": "2026-11-02T09:24:57+08:00",
-    "window_end": "2026-11-03T10:02:40+08:00",
+    "window_start": "2026-11-03T10:02:40+08:00",
+    "window_end": "2026-11-03T13:53:57+08:00",
     "scanned": 50,
-    "new_topics": 12,
-    "added": 4,
+    "new_topics": 3,
+    "added": 1,
     "duplicates": 0,
     "new_species": 0,
     "total_species": 152,
-    "total_images": 1205,
-    "deferred": 229,
+    "total_images": 1206,
+    "deferred": 231,
     "excluded": 0
   },
   "last_followup_check": {
-    "checked_until": "2026-11-03T10:02:40+08:00",
-    "source_total": 23250,
+    "checked_until": "2026-11-03T13:53:57+08:00",
+    "source_total": 23253,
     "scanned": 50,
-    "historical_retried": 221,
+    "historical_retried": 229,
     "historical_newly_resolved": 0
   },
-  "online_index_sha256": "3e09baa888bf4cf7ee06518960bb7ce49b14194cf398ef17e889c238c9e03d29",
-  "last_completed_at": "2026-11-03 02:11:46 UTC",
+  "online_index_sha256": "5a94c1f525cfa1857418c54cfb2b6663b5333e48e9783c00528db9eed8c86037",
+  "last_completed_at": "2026-11-03 06:03:07 UTC",
   "last_full_review_window": {
     "source": "https://snake.pictureknow.com/topics",
     "coverage": "full-window-browser-api",
-    "base_cutoff": "2026-11-02T09:24:57+08:00",
-    "window_start": "2026-11-02T09:24:57+08:00",
-    "window_end": "2026-11-03T10:02:40+08:00",
-    "baseline_commit": "0789f99801371ec124b53089aec374f8f28831ea",
+    "base_cutoff": "2026-11-03T10:02:40+08:00",
+    "window_start": "2026-11-03T10:02:40+08:00",
+    "window_end": "2026-11-03T13:53:57+08:00",
+    "baseline_commit": "c0038436fda5afddacf0ca45303509907f374724",
     "login_verified": true
   },
   "automation": {

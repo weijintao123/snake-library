@@ -1,30 +1,31 @@
 {
   "source": "https://snake.pictureknow.com/topics",
-  "window_start": "2026-11-02T09:24:57+08:00",
-  "window_end": "2026-11-03T10:02:40+08:00",
+  "window_start": "2026-11-03T10:02:40+08:00",
+  "window_end": "2026-11-03T13:53:57+08:00",
   "coverage": "full-window-browser-api",
   "scanned": 50,
-  "source_total": 23250,
-  "baseline_commit": "0789f99801371ec124b53089aec374f8f28831ea",
+  "source_total": 23253,
+  "baseline_commit": "c0038436fda5afddacf0ca45303509907f374724",
   "login_verified": true,
-  "new_topics": 12,
-  "historical_retried": 221,
-  "added": 4,
-  "duplicates": 0,
-  "excluded": 0,
-  "deferred": 229,
-  "new_species": 0,
-  "total_species": 152,
-  "total_photos": 1205,
-  "idempotent_second_added": 0,
   "pagination": {
     "page": 1,
     "count": 50,
     "unique": 50,
     "descending": true,
-    "earliest": 1793349401000,
-    "latest": 1793657344000
+    "earliest": 1793349517000,
+    "latest": 1793684542000
   },
+  "new_topics": 3,
+  "historical_retried": 229,
+  "added": 1,
+  "duplicates": 0,
+  "excluded": 0,
+  "deferred": 231,
+  "new_species": 0,
+  "total_species": 152,
+  "total_photos": 1206,
+  "idempotent_second_added": 0,
+  "notes": "All 3 new topics visually reviewed. One compatible source-labelled snake photo accepted; two deferred for insufficient species detail. Historical readable records remain uncertain. Source labels are not expert identification.",
   "retry_topics": [
     {
       "uniqueId": "c0471dc80d1de0514bb53b06cc5c48b3",
@@ -3736,7 +3737,32 @@
       "attempted_urls": [],
       "retry_reason": "species_label_or_image_content_uncertain",
       "last_attempt_result": "readable_deferred_after_visual_review"
+    },
+    {
+      "uniqueId": "9a9e743ec9902e49b13a2515d80d7a1d",
+      "createTime": 1793684542000,
+      "img": "https://xstatic.pictureknow.com/snake/a29aa817e462487eaab71e7a8a6a511a.png",
+      "snakeId": "ed94f2c43f754395bcb7e95cc17c6b7a",
+      "sciName": "Elaphe schrenckii",
+      "cnName": "棕黑锦蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/a29aa817e462487eaab71e7a8a6a511a.png",
+      "last_attempt_at": "2026-11-03",
+      "attempted_urls": [],
+      "retry_reason": "species_label_or_image_content_uncertain",
+      "last_attempt_result": "readable_deferred_after_visual_review"
+    },
+    {
+      "uniqueId": "742e36fa0c8e72e429d7ac22b937b723",
+      "createTime": 1793676441000,
+      "img": "https://xstatic.pictureknow.com/snake/5bf7382e98524e7f99dbfde144f30b46.png",
+      "snakeId": "ee3e7d89f26e4c7c97db034cd44df358",
+      "sciName": "Oligodon formosanus",
+      "cnName": "台湾小头蛇",
+      "download_url": "https://xstatic.pictureknow.com/snake/5bf7382e98524e7f99dbfde144f30b46.png",
+      "last_attempt_at": "2026-11-03",
+      "attempted_urls": [],
+      "retry_reason": "species_label_or_image_content_uncertain",
+      "last_attempt_result": "readable_deferred_after_visual_review"
     }
-  ],
-  "notes": "Window fully scanned and all 12 new records visually reviewed. Four source-labelled compatible snake photographs accepted; eight new records deferred for uncertain species/detail or conflicting source labels. All 221 historical retries retained (one readable but still uncertain). Site labels are not expert identification. No full species-page photo scraping."
+  ]
 }

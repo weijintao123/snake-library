@@ -3889,6 +3889,61 @@
       "saved_path": "review_photos/d167a078530221f8c834ee90cdd435f085bf3a07031c3939d6ed1f567a358f6a.jpg",
       "saved_sha256": "d167a078530221f8c834ee90cdd435f085bf3a07031c3939d6ed1f567a358f6a",
       "last_attempt_result": "downloaded_and_saved_for_species_review"
+    },
+    {
+      "uniqueId": "302f6c6fd189ee99f8fb8e196239553a",
+      "img": "https://xstatic.pictureknow.com/snake/397e958b02f744e994bffecc7d1f3297.png",
+      "sciName": "Pareas boulengeri",
+      "cnName": "平鳞钝头蛇",
+      "retry_reason": "species_review_required_image_saved",
+      "saved_path": "review_photos/8bbe7bf572b96d6ccbaa217338a64258aa94f18384673b62922f3fae0d84027b.jpg",
+      "saved_sha256": "8bbe7bf572b96d6ccbaa217338a64258aa94f18384673b62922f3fae0d84027b",
+      "last_attempt_result": "downloaded_and_saved_for_species_review",
+      "coverage": "browser-visible-only"
+    },
+    {
+      "uniqueId": "99fa5e05d49800c0bae688fb40143f5f",
+      "img": "https://xstatic.pictureknow.com/snake/bc4437c7eb9447469fa13ae7c573b8c0.png",
+      "sciName": "Protobothrops jerdonii",
+      "cnName": "菜花原矛头蝮",
+      "retry_reason": "species_review_required_image_saved",
+      "saved_path": "review_photos/3c73412eea8ea80d4ab0daf2b4f2acec3dd55a32e21e1c730a61607a9a3f54ad.jpg",
+      "saved_sha256": "3c73412eea8ea80d4ab0daf2b4f2acec3dd55a32e21e1c730a61607a9a3f54ad",
+      "last_attempt_result": "downloaded_and_saved_for_species_review",
+      "coverage": "browser-visible-only"
+    },
+    {
+      "uniqueId": "315182c3e41bb1630a419c8ffaf40fac",
+      "img": "https://xstatic.pictureknow.com/snake/80b6df0981db4214822c94049eb5bb40.png",
+      "sciName": "Euprepiophis mandarinus",
+      "cnName": "玉斑锦蛇",
+      "retry_reason": "species_review_required_image_saved",
+      "saved_path": "review_photos/31830a1d16cf13b53ebd5ca76360fcf6aa9f56040709dc31cb136dcf583f849f.jpg",
+      "saved_sha256": "31830a1d16cf13b53ebd5ca76360fcf6aa9f56040709dc31cb136dcf583f849f",
+      "last_attempt_result": "downloaded_and_saved_for_species_review",
+      "coverage": "browser-visible-only"
+    },
+    {
+      "uniqueId": "1947e82b6c7eec5c0630a9979b4a9078",
+      "img": "https://xstatic.pictureknow.com/snake/8ce245afbfb94ed88461aeb9305e5125.png",
+      "sciName": "Elaphe dione",
+      "cnName": "白条锦蛇",
+      "retry_reason": "species_review_required_image_saved",
+      "saved_path": "review_photos/e77ed78555f312e365ac76f8f27a48dcbf4fe4af8cd764b9c1e8156268167b53.jpg",
+      "saved_sha256": "e77ed78555f312e365ac76f8f27a48dcbf4fe4af8cd764b9c1e8156268167b53",
+      "last_attempt_result": "downloaded_and_saved_for_species_review",
+      "coverage": "browser-visible-only"
+    },
+    {
+      "uniqueId": "91b2e70185dce7ff490cfe6a47340f2b",
+      "img": "https://xstatic.pictureknow.com/snake/d6451933ed5a42b2bef34c17185fbe2b.png",
+      "sciName": "Hydrophis platurus",
+      "cnName": "长吻海蛇",
+      "retry_reason": "species_review_required_image_saved",
+      "saved_path": "review_photos/672042f163e88ab2db2c3938d42ebdcb66df5682a722b5943555f51a3f9bd5f3.jpg",
+      "saved_sha256": "672042f163e88ab2db2c3938d42ebdcb66df5682a722b5943555f51a3f9bd5f3",
+      "last_attempt_result": "downloaded_and_saved_for_species_review",
+      "coverage": "browser-visible-only"
     }
   ],
   "excluded_topic_ids": [
@@ -3955,5 +4010,16 @@
   },
   "verified_pending_review_image_count": 19,
   "review_saved_index": "docs/topic_review_saved_index.json",
-  "review_gallery": "https://weijintao123.github.io/snake-library/review.html"
+  "review_gallery": "https://weijintao123.github.io/snake-library/review.html",
+  "last_partial_visible_import": {
+    "checked_at": "2026-11-06T07:00:05.191070+00:00",
+    "coverage": "browser-visible-only",
+    "new_saved_photos": 5,
+    "data_commit": "8b3d38f472b6f9f3414e8459f36f26accd2f534a",
+    "deployment": "https://github.com/weijintao123/snake-library/actions/runs/42178355128",
+    "online_hashes_verified": 5,
+    "online_review_index_count": 24,
+    "browser_page_verification": "timeout",
+    "cutoff_advanced": false
+  }
 }

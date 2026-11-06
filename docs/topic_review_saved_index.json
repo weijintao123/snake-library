@@ -305,6 +305,91 @@
       "status": "species_review_required",
       "capture_type": "downloaded_source_file",
       "snake_content_verified": true
+    },
+    {
+      "uniqueId": "302f6c6fd189ee99f8fb8e196239553a",
+      "url": "https://xstatic.pictureknow.com/snake/397e958b02f744e994bffecc7d1f3297.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/397e958b02f744e994bffecc7d1f3297.png",
+      "sha256": "8bbe7bf572b96d6ccbaa217338a64258aa94f18384673b62922f3fae0d84027b",
+      "path": "review_photos/8bbe7bf572b96d6ccbaa217338a64258aa94f18384673b62922f3fae0d84027b.jpg",
+      "source_label": {
+        "scientific_name": "Pareas boulengeri",
+        "chinese_name": "平鳞钝头蛇"
+      },
+      "status": "species_review_required",
+      "capture_type": "downloaded_source_file",
+      "snake_content_verified": true,
+      "review_reason": "source_label_conflicts_with_visible_snake",
+      "saved_at": "2026-11-06T07:00:05.191070+00:00",
+      "coverage": "browser-visible-only"
+    },
+    {
+      "uniqueId": "99fa5e05d49800c0bae688fb40143f5f",
+      "url": "https://xstatic.pictureknow.com/snake/bc4437c7eb9447469fa13ae7c573b8c0.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/bc4437c7eb9447469fa13ae7c573b8c0.png",
+      "sha256": "3c73412eea8ea80d4ab0daf2b4f2acec3dd55a32e21e1c730a61607a9a3f54ad",
+      "path": "review_photos/3c73412eea8ea80d4ab0daf2b4f2acec3dd55a32e21e1c730a61607a9a3f54ad.jpg",
+      "source_label": {
+        "scientific_name": "Protobothrops jerdonii",
+        "chinese_name": "菜花原矛头蝮"
+      },
+      "status": "species_review_required",
+      "capture_type": "downloaded_source_file",
+      "snake_content_verified": true,
+      "review_reason": "species_confirmation_pending",
+      "saved_at": "2026-11-06T07:00:05.191070+00:00",
+      "coverage": "browser-visible-only"
+    },
+    {
+      "uniqueId": "315182c3e41bb1630a419c8ffaf40fac",
+      "url": "https://xstatic.pictureknow.com/snake/80b6df0981db4214822c94049eb5bb40.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/80b6df0981db4214822c94049eb5bb40.png",
+      "sha256": "31830a1d16cf13b53ebd5ca76360fcf6aa9f56040709dc31cb136dcf583f849f",
+      "path": "review_photos/31830a1d16cf13b53ebd5ca76360fcf6aa9f56040709dc31cb136dcf583f849f.jpg",
+      "source_label": {
+        "scientific_name": "Euprepiophis mandarinus",
+        "chinese_name": "玉斑锦蛇"
+      },
+      "status": "species_review_required",
+      "capture_type": "downloaded_source_file",
+      "snake_content_verified": true,
+      "review_reason": "species_confirmation_pending",
+      "saved_at": "2026-11-06T07:00:05.191070+00:00",
+      "coverage": "browser-visible-only"
+    },
+    {
+      "uniqueId": "1947e82b6c7eec5c0630a9979b4a9078",
+      "url": "https://xstatic.pictureknow.com/snake/8ce245afbfb94ed88461aeb9305e5125.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/8ce245afbfb94ed88461aeb9305e5125.png",
+      "sha256": "e77ed78555f312e365ac76f8f27a48dcbf4fe4af8cd764b9c1e8156268167b53",
+      "path": "review_photos/e77ed78555f312e365ac76f8f27a48dcbf4fe4af8cd764b9c1e8156268167b53.jpg",
+      "source_label": {
+        "scientific_name": "Elaphe dione",
+        "chinese_name": "白条锦蛇"
+      },
+      "status": "species_review_required",
+      "capture_type": "downloaded_source_file",
+      "snake_content_verified": true,
+      "review_reason": "species_confirmation_pending",
+      "saved_at": "2026-11-06T07:00:05.191070+00:00",
+      "coverage": "browser-visible-only"
+    },
+    {
+      "uniqueId": "91b2e70185dce7ff490cfe6a47340f2b",
+      "url": "https://xstatic.pictureknow.com/snake/d6451933ed5a42b2bef34c17185fbe2b.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/d6451933ed5a42b2bef34c17185fbe2b.png",
+      "sha256": "672042f163e88ab2db2c3938d42ebdcb66df5682a722b5943555f51a3f9bd5f3",
+      "path": "review_photos/672042f163e88ab2db2c3938d42ebdcb66df5682a722b5943555f51a3f9bd5f3.jpg",
+      "source_label": {
+        "scientific_name": "Hydrophis platurus",
+        "chinese_name": "长吻海蛇"
+      },
+      "status": "species_review_required",
+      "capture_type": "downloaded_source_file",
+      "snake_content_verified": true,
+      "review_reason": "species_confirmation_pending",
+      "saved_at": "2026-11-06T07:00:05.191070+00:00",
+      "coverage": "browser-visible-only"
     }
   ]
 }

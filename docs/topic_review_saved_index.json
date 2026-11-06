@@ -1,24 +1,27 @@
 {
   "schema_version": 1,
   "source": "https://snake.pictureknow.com/topics",
-  "photos": [
+  "photos": [],
+  "integrated_photos": [
     {
       "uniqueId": "c0471dc80d1de0514bb53b06cc5c48b3",
       "createTime": 1793460904000,
       "url": "https://xstatic.pictureknow.com/snake/bcb53fee41eb4c07805272a08c59bbc2.png",
       "download_url": "https://xstatic.pictureknow.com/snake/bcb53fee41eb4c07805272a08c59bbc2.png?x-oss-process=image/format,webp",
       "sha256": "4e08bc856c90c003fcac99fdd8be47a087e0bca573932a50792535da101f2990",
-      "path": "review_photos/Oligodon formosanus--台湾小头蛇--待核验/4e08bc856c90c003fcac99fdd8be47a087e0bca573932a50792535da101f2990.jpg",
+      "path": "photos/Oligodon formosanus--台湾小头蛇--无毒/4e08bc856c90c003fcac99fdd8be47a087e0bca573932a50792535da101f2990.jpg",
       "source_label": {
         "site_id": "ee3e7d89f26e4c7c97db034cd44df358",
         "scientific_name": "Oligodon formosanus",
         "chinese_name": "台湾小头蛇"
       },
-      "status": "species_review_required",
+      "status": "user_confirmed_and_integrated",
       "capture_type": "downloaded_source_file",
       "snake_content_verified": true,
       "previous_flat_path": "review_photos/4e08bc856c90c003fcac99fdd8be47a087e0bca573932a50792535da101f2990.jpg",
-      "folder": "Oligodon formosanus--台湾小头蛇--待核验"
+      "folder": "Oligodon formosanus--台湾小头蛇--待核验",
+      "species_folder": "Oligodon formosanus--台湾小头蛇--无毒",
+      "confirmed_at": "2026-11-06T07:36:27.109Z"
     },
     {
       "uniqueId": "6d5fabea4165d8d457c007815fc1dad6",
@@ -26,17 +29,19 @@
       "url": "https://xstatic.pictureknow.com/snake/ff9a6279dce24d7db128e38d6e2311a9.png",
       "download_url": "https://xstatic.pictureknow.com/snake/ff9a6279dce24d7db128e38d6e2311a9.png?x-oss-process=image/format,webp",
       "sha256": "923ebc3c95cf5fd60ba49ac0fc4ed565a0cf23843eabe29094e6f25db81bbe93",
-      "path": "review_photos/Lycodon capucinus--白枕白环蛇--待核验/923ebc3c95cf5fd60ba49ac0fc4ed565a0cf23843eabe29094e6f25db81bbe93.jpg",
+      "path": "photos/Lycodon capucinus--白枕白环蛇--无毒/923ebc3c95cf5fd60ba49ac0fc4ed565a0cf23843eabe29094e6f25db81bbe93.jpg",
       "source_label": {
         "site_id": "0b0a34590e5d4e5aa8cbc73b15903a6d",
         "scientific_name": "Lycodon capucinus",
         "chinese_name": "白枕白环蛇"
       },
-      "status": "species_review_required",
+      "status": "user_confirmed_and_integrated",
       "capture_type": "downloaded_source_file",
       "snake_content_verified": true,
       "previous_flat_path": "review_photos/923ebc3c95cf5fd60ba49ac0fc4ed565a0cf23843eabe29094e6f25db81bbe93.jpg",
-      "folder": "Lycodon capucinus--白枕白环蛇--待核验"
+      "folder": "Lycodon capucinus--白枕白环蛇--待核验",
+      "species_folder": "Lycodon capucinus--白枕白环蛇--无毒",
+      "confirmed_at": "2026-11-06T07:36:27.109Z"
     },
     {
       "uniqueId": "72226aca5278c4095f6ae7c456e857a9",
@@ -44,17 +49,19 @@
       "url": "https://xstatic.pictureknow.com/snake/994f98df108a4045a799199a403c0e9e.png",
       "download_url": "https://xstatic.pictureknow.com/snake/994f98df108a4045a799199a403c0e9e.png?x-oss-process=image/format,webp",
       "sha256": "c9c6176e2cd83fcd579fd8cd967d59a732a5ea8f1cba4678db0ca4d7b6034b55",
-      "path": "review_photos/Boiga kraepelini--绞花林蛇--待核验/c9c6176e2cd83fcd579fd8cd967d59a732a5ea8f1cba4678db0ca4d7b6034b55.jpg",
+      "path": "photos/Boiga kraepelini--绞花林蛇--微毒/c9c6176e2cd83fcd579fd8cd967d59a732a5ea8f1cba4678db0ca4d7b6034b55.jpg",
       "source_label": {
         "site_id": "02eefe73536247d7b837009a77f526bf",
         "scientific_name": "Boiga kraepelini",
         "chinese_name": "绞花林蛇"
       },
-      "status": "species_review_required",
+      "status": "user_confirmed_and_integrated",
       "capture_type": "downloaded_source_file",
       "snake_content_verified": true,
       "previous_flat_path": "review_photos/c9c6176e2cd83fcd579fd8cd967d59a732a5ea8f1cba4678db0ca4d7b6034b55.jpg",
-      "folder": "Boiga kraepelini--绞花林蛇--待核验"
+      "folder": "Boiga kraepelini--绞花林蛇--待核验",
+      "species_folder": "Boiga kraepelini--绞花林蛇--微毒",
+      "confirmed_at": "2026-11-06T07:36:27.109Z"
     },
     {
       "uniqueId": "a66ff447058dc58767dc9b40910e969e",
@@ -62,17 +69,19 @@
       "url": "https://xstatic.pictureknow.com/snake/1a736ffd6be746f88e189c61ffc2616c.png",
       "download_url": "https://xstatic.pictureknow.com/snake/1a736ffd6be746f88e189c61ffc2616c.png?x-oss-process=image/format,webp",
       "sha256": "1300c177d1aa3105b80c202e408efb2ce5e1ff159acf4ace156665d4a3d8809e",
-      "path": "review_photos/Pseudoxenodon bambusicola--横纹斜鳞蛇--待核验/1300c177d1aa3105b80c202e408efb2ce5e1ff159acf4ace156665d4a3d8809e.jpg",
+      "path": "photos/Pseudoxenodon bambusicola--横纹斜鳞蛇--无毒/1300c177d1aa3105b80c202e408efb2ce5e1ff159acf4ace156665d4a3d8809e.jpg",
       "source_label": {
         "site_id": "8c5e30ad53434489bb608a01bf51b495",
         "scientific_name": "Pseudoxenodon bambusicola",
         "chinese_name": "横纹斜鳞蛇"
       },
-      "status": "species_review_required",
+      "status": "user_confirmed_and_integrated",
       "capture_type": "downloaded_source_file",
       "snake_content_verified": true,
       "previous_flat_path": "review_photos/1300c177d1aa3105b80c202e408efb2ce5e1ff159acf4ace156665d4a3d8809e.jpg",
-      "folder": "Pseudoxenodon bambusicola--横纹斜鳞蛇--待核验"
+      "folder": "Pseudoxenodon bambusicola--横纹斜鳞蛇--待核验",
+      "species_folder": "Pseudoxenodon bambusicola--横纹斜鳞蛇--无毒",
+      "confirmed_at": "2026-11-06T07:36:27.109Z"
     },
     {
       "uniqueId": "18378bb79afbb326acaa48f7d9d79f15",
@@ -80,17 +89,19 @@
       "url": "https://xstatic.pictureknow.com/snake/09251f93b226457cbe43c9660f35382e.png",
       "download_url": "https://xstatic.pictureknow.com/snake/09251f93b226457cbe43c9660f35382e.png?x-oss-process=image/format,webp",
       "sha256": "d6c6811274141feb8139c70111d9731612fbd9af6ab75f03be0ff8d3e89a7813",
-      "path": "review_photos/Elaphe taeniura--黑眉锦蛇--待核验/d6c6811274141feb8139c70111d9731612fbd9af6ab75f03be0ff8d3e89a7813.jpg",
+      "path": "photos/Elaphe taeniura--黑眉锦蛇--无毒/d6c6811274141feb8139c70111d9731612fbd9af6ab75f03be0ff8d3e89a7813.jpg",
       "source_label": {
         "site_id": "e9037e2e73d74304adb76b9d7eeab2f7",
         "scientific_name": "Elaphe taeniura",
         "chinese_name": "黑眉锦蛇"
       },
-      "status": "species_review_required",
+      "status": "user_confirmed_and_integrated",
       "capture_type": "downloaded_source_file",
       "snake_content_verified": true,
       "previous_flat_path": "review_photos/d6c6811274141feb8139c70111d9731612fbd9af6ab75f03be0ff8d3e89a7813.jpg",
-      "folder": "Elaphe taeniura--黑眉锦蛇--待核验"
+      "folder": "Elaphe taeniura--黑眉锦蛇--待核验",
+      "species_folder": "Elaphe taeniura--黑眉锦蛇--无毒",
+      "confirmed_at": "2026-11-06T07:36:27.109Z"
     },
     {
       "uniqueId": "e8784590f20dccfaabd83dbe0b4f1d4e",
@@ -98,17 +109,19 @@
       "url": "https://xstatic.pictureknow.com/snake/d6339cd2bc7e4ffda6a71faa04dc3caa.png",
       "download_url": "https://xstatic.pictureknow.com/snake/d6339cd2bc7e4ffda6a71faa04dc3caa.png?x-oss-process=image/format,webp",
       "sha256": "79172478e0f5d3b7a5c2ae29880cec6bc8057ad2a14b2807b1c4655e38c9d5b7",
-      "path": "review_photos/Ophiophagus hannah--眼镜王蛇--待核验/79172478e0f5d3b7a5c2ae29880cec6bc8057ad2a14b2807b1c4655e38c9d5b7.jpg",
+      "path": "photos/Ophiophagus hannah--眼镜王蛇--剧毒/79172478e0f5d3b7a5c2ae29880cec6bc8057ad2a14b2807b1c4655e38c9d5b7.jpg",
       "source_label": {
         "site_id": "4ca82904e79f4ec0b234e052d8a23fa1",
         "scientific_name": "Ophiophagus hannah",
         "chinese_name": "眼镜王蛇"
       },
-      "status": "species_review_required",
+      "status": "user_confirmed_and_integrated",
       "capture_type": "downloaded_source_file",
       "snake_content_verified": true,
       "previous_flat_path": "review_photos/79172478e0f5d3b7a5c2ae29880cec6bc8057ad2a14b2807b1c4655e38c9d5b7.jpg",
-      "folder": "Ophiophagus hannah--眼镜王蛇--待核验"
+      "folder": "Ophiophagus hannah--眼镜王蛇--待核验",
+      "species_folder": "Ophiophagus hannah--眼镜王蛇--剧毒",
+      "confirmed_at": "2026-11-06T07:36:27.109Z"
     },
     {
       "uniqueId": "70773afde69996712cc31ab6b6cf5715",
@@ -116,17 +129,19 @@
       "url": "https://xstatic.pictureknow.com/snake/1dbea828cf0046c7b00db948568827cd.png",
       "download_url": "https://xstatic.pictureknow.com/snake/1dbea828cf0046c7b00db948568827cd.png?x-oss-process=image/format,webp",
       "sha256": "5b8274a32d2371cab4d7513685387dd6b0458a83345fea3e4912d500ec8533c9",
-      "path": "review_photos/Oligodon chinensis--中国小头蛇--待核验/5b8274a32d2371cab4d7513685387dd6b0458a83345fea3e4912d500ec8533c9.jpg",
+      "path": "photos/Oligodon chinensis--中国小头蛇--无毒/5b8274a32d2371cab4d7513685387dd6b0458a83345fea3e4912d500ec8533c9.jpg",
       "source_label": {
         "site_id": "2cbce1ccac48450bac99070f4f982fce",
         "scientific_name": "Oligodon chinensis",
         "chinese_name": "中国小头蛇"
       },
-      "status": "species_review_required",
+      "status": "user_confirmed_and_integrated",
       "capture_type": "downloaded_source_file",
       "snake_content_verified": true,
       "previous_flat_path": "review_photos/5b8274a32d2371cab4d7513685387dd6b0458a83345fea3e4912d500ec8533c9.jpg",
-      "folder": "Oligodon chinensis--中国小头蛇--待核验"
+      "folder": "Oligodon chinensis--中国小头蛇--待核验",
+      "species_folder": "Oligodon chinensis--中国小头蛇--无毒",
+      "confirmed_at": "2026-11-06T07:36:27.109Z"
     },
     {
       "uniqueId": "cd2ec3e9b721d06c7baa11e2dfe3c975",
@@ -134,17 +149,19 @@
       "url": "https://xstatic.pictureknow.com/snake/70b248064b2c44fea17e9488319f739f.png",
       "download_url": "https://xstatic.pictureknow.com/snake/70b248064b2c44fea17e9488319f739f.png?x-oss-process=image/format,webp",
       "sha256": "466dfee25991dc37cab5508ad5679c4fbbdca2ffa9656832c1e83920dd9dd93b",
-      "path": "review_photos/Elaphe schrenckii--棕黑锦蛇--待核验/466dfee25991dc37cab5508ad5679c4fbbdca2ffa9656832c1e83920dd9dd93b.jpg",
+      "path": "photos/Elaphe schrenckii--棕黑锦蛇--无毒/466dfee25991dc37cab5508ad5679c4fbbdca2ffa9656832c1e83920dd9dd93b.jpg",
       "source_label": {
         "site_id": "ed94f2c43f754395bcb7e95cc17c6b7a",
         "scientific_name": "Elaphe schrenckii",
         "chinese_name": "棕黑锦蛇"
       },
-      "status": "species_review_required",
+      "status": "user_confirmed_and_integrated",
       "capture_type": "downloaded_source_file",
       "snake_content_verified": true,
       "previous_flat_path": "review_photos/466dfee25991dc37cab5508ad5679c4fbbdca2ffa9656832c1e83920dd9dd93b.jpg",
-      "folder": "Elaphe schrenckii--棕黑锦蛇--待核验"
+      "folder": "Elaphe schrenckii--棕黑锦蛇--待核验",
+      "species_folder": "Elaphe schrenckii--棕黑锦蛇--无毒",
+      "confirmed_at": "2026-11-06T07:36:27.109Z"
     },
     {
       "uniqueId": "9a9e743ec9902e49b13a2515d80d7a1d",
@@ -152,17 +169,19 @@
       "url": "https://xstatic.pictureknow.com/snake/a29aa817e462487eaab71e7a8a6a511a.png",
       "download_url": "https://xstatic.pictureknow.com/snake/a29aa817e462487eaab71e7a8a6a511a.png",
       "sha256": "33cc3ded0927c94d97a6e4df8e59190b5011eb8ae87d7a1860ddcc902ade6411",
-      "path": "review_photos/Elaphe schrenckii--棕黑锦蛇--待核验/33cc3ded0927c94d97a6e4df8e59190b5011eb8ae87d7a1860ddcc902ade6411.jpg",
+      "path": "photos/Elaphe schrenckii--棕黑锦蛇--无毒/33cc3ded0927c94d97a6e4df8e59190b5011eb8ae87d7a1860ddcc902ade6411.jpg",
       "source_label": {
         "site_id": "ed94f2c43f754395bcb7e95cc17c6b7a",
         "scientific_name": "Elaphe schrenckii",
         "chinese_name": "棕黑锦蛇"
       },
-      "status": "species_review_required",
+      "status": "user_confirmed_and_integrated",
       "capture_type": "downloaded_source_file",
       "snake_content_verified": true,
       "previous_flat_path": "review_photos/33cc3ded0927c94d97a6e4df8e59190b5011eb8ae87d7a1860ddcc902ade6411.jpg",
-      "folder": "Elaphe schrenckii--棕黑锦蛇--待核验"
+      "folder": "Elaphe schrenckii--棕黑锦蛇--待核验",
+      "species_folder": "Elaphe schrenckii--棕黑锦蛇--无毒",
+      "confirmed_at": "2026-11-06T07:36:27.109Z"
     },
     {
       "uniqueId": "742e36fa0c8e72e429d7ac22b937b723",
@@ -170,17 +189,19 @@
       "url": "https://xstatic.pictureknow.com/snake/5bf7382e98524e7f99dbfde144f30b46.png",
       "download_url": "https://xstatic.pictureknow.com/snake/5bf7382e98524e7f99dbfde144f30b46.png",
       "sha256": "26ea08d27b0acf199eb597bdb6e910e2f3d70efafc2c8602b3c411c2300990cd",
-      "path": "review_photos/Oligodon formosanus--台湾小头蛇--待核验/26ea08d27b0acf199eb597bdb6e910e2f3d70efafc2c8602b3c411c2300990cd.jpg",
+      "path": "photos/Oligodon formosanus--台湾小头蛇--无毒/26ea08d27b0acf199eb597bdb6e910e2f3d70efafc2c8602b3c411c2300990cd.jpg",
       "source_label": {
         "site_id": "ee3e7d89f26e4c7c97db034cd44df358",
         "scientific_name": "Oligodon formosanus",
         "chinese_name": "台湾小头蛇"
       },
-      "status": "species_review_required",
+      "status": "user_confirmed_and_integrated",
       "capture_type": "downloaded_source_file",
       "snake_content_verified": true,
       "previous_flat_path": "review_photos/26ea08d27b0acf199eb597bdb6e910e2f3d70efafc2c8602b3c411c2300990cd.jpg",
-      "folder": "Oligodon formosanus--台湾小头蛇--待核验"
+      "folder": "Oligodon formosanus--台湾小头蛇--待核验",
+      "species_folder": "Oligodon formosanus--台湾小头蛇--无毒",
+      "confirmed_at": "2026-11-06T07:36:27.109Z"
     },
     {
       "uniqueId": "21a27f2377e24755cad597c0d2082476",
@@ -188,17 +209,19 @@
       "url": "https://xstatic.pictureknow.com/snake/c392217562654b6dbd6faad857bd4899.png",
       "download_url": "https://xstatic.pictureknow.com/snake/c392217562654b6dbd6faad857bd4899.png",
       "sha256": "722094dddaba1d27ea46cc7d38cecfe3e7b21948ea35f9f674b1280e50e8ef85",
-      "path": "review_photos/Pseudagkistrodon rudis--颈棱蛇--待核验/722094dddaba1d27ea46cc7d38cecfe3e7b21948ea35f9f674b1280e50e8ef85.jpg",
+      "path": "photos/Pseudagkistrodon rudis--颈棱蛇--无毒/722094dddaba1d27ea46cc7d38cecfe3e7b21948ea35f9f674b1280e50e8ef85.jpg",
       "source_label": {
         "site_id": "6435f96708124c51b4a7d85cbfd0b6dd",
         "scientific_name": "Pseudagkistrodon rudis",
         "chinese_name": "颈棱蛇"
       },
-      "status": "species_review_required",
+      "status": "user_confirmed_and_integrated",
       "capture_type": "downloaded_source_file",
       "snake_content_verified": true,
       "previous_flat_path": "review_photos/722094dddaba1d27ea46cc7d38cecfe3e7b21948ea35f9f674b1280e50e8ef85.jpg",
-      "folder": "Pseudagkistrodon rudis--颈棱蛇--待核验"
+      "folder": "Pseudagkistrodon rudis--颈棱蛇--待核验",
+      "species_folder": "Pseudagkistrodon rudis--颈棱蛇--无毒",
+      "confirmed_at": "2026-11-06T07:36:27.109Z"
     },
     {
       "uniqueId": "cae07f2107ee612708688f0b51866147",
@@ -206,17 +229,19 @@
       "url": "https://xstatic.pictureknow.com/snake/5509ed1071e44eb5ac7be07a95552252.png",
       "download_url": "https://xstatic.pictureknow.com/snake/5509ed1071e44eb5ac7be07a95552252.png",
       "sha256": "6559a3c33577b65fa31bbf0facce884f744b2e4d761269e8da2fa6c0553c1212",
-      "path": "review_photos/Ptyas mucosa--滑鼠蛇--待核验/6559a3c33577b65fa31bbf0facce884f744b2e4d761269e8da2fa6c0553c1212.jpg",
+      "path": "photos/Ptyas mucosa--滑鼠蛇--无毒/6559a3c33577b65fa31bbf0facce884f744b2e4d761269e8da2fa6c0553c1212.jpg",
       "source_label": {
         "site_id": "8264c64646c24a08a8e2cb60209c2641",
         "scientific_name": "Ptyas mucosa",
         "chinese_name": "滑鼠蛇"
       },
-      "status": "species_review_required",
+      "status": "user_confirmed_and_integrated",
       "capture_type": "downloaded_source_file",
       "snake_content_verified": true,
       "previous_flat_path": "review_photos/6559a3c33577b65fa31bbf0facce884f744b2e4d761269e8da2fa6c0553c1212.jpg",
-      "folder": "Ptyas mucosa--滑鼠蛇--待核验"
+      "folder": "Ptyas mucosa--滑鼠蛇--待核验",
+      "species_folder": "Ptyas mucosa--滑鼠蛇--无毒",
+      "confirmed_at": "2026-11-06T07:36:27.109Z"
     },
     {
       "uniqueId": "9cb60035bed772d40018536f31188dfd",
@@ -224,17 +249,19 @@
       "url": "https://xstatic.pictureknow.com/snake/92adf54ce3e94cfc81eeac895582de00.png",
       "download_url": "https://xstatic.pictureknow.com/snake/92adf54ce3e94cfc81eeac895582de00.png",
       "sha256": "77d254a5c55c14d6f79d6c34695682b6ac64cc23619d3b317b5909df4622fa93",
-      "path": "review_photos/Fowlea flavipunctatus--黄斑渔游蛇--待核验/77d254a5c55c14d6f79d6c34695682b6ac64cc23619d3b317b5909df4622fa93.jpg",
+      "path": "photos/Fowlea flavipunctatus--黄斑渔游蛇--无毒/77d254a5c55c14d6f79d6c34695682b6ac64cc23619d3b317b5909df4622fa93.jpg",
       "source_label": {
         "site_id": "f75d122546494092a6a2f67279972d82",
         "scientific_name": "Fowlea flavipunctatus",
         "chinese_name": "黄斑渔游蛇"
       },
-      "status": "species_review_required",
+      "status": "user_confirmed_and_integrated",
       "capture_type": "downloaded_source_file",
       "snake_content_verified": true,
       "previous_flat_path": "review_photos/77d254a5c55c14d6f79d6c34695682b6ac64cc23619d3b317b5909df4622fa93.jpg",
-      "folder": "Fowlea flavipunctatus--黄斑渔游蛇--待核验"
+      "folder": "Fowlea flavipunctatus--黄斑渔游蛇--待核验",
+      "species_folder": "Fowlea flavipunctatus--黄斑渔游蛇--无毒",
+      "confirmed_at": "2026-11-06T07:36:27.109Z"
     },
     {
       "uniqueId": "31c047dbb502a3aa4c769faff512802e",
@@ -242,17 +269,19 @@
       "url": "https://xstatic.pictureknow.com/snake/5346fda2b21f4f8aa067d4b2ebb515ed.png",
       "download_url": "https://xstatic.pictureknow.com/snake/5346fda2b21f4f8aa067d4b2ebb515ed.png",
       "sha256": "4c6984037d3027bfe8c22889d2ae3488d2a27dc002bcb3c3f9ece7bb106fc407",
-      "path": "review_photos/Lycodon capucinus--白枕白环蛇--待核验/4c6984037d3027bfe8c22889d2ae3488d2a27dc002bcb3c3f9ece7bb106fc407.jpg",
+      "path": "photos/Lycodon capucinus--白枕白环蛇--无毒/4c6984037d3027bfe8c22889d2ae3488d2a27dc002bcb3c3f9ece7bb106fc407.jpg",
       "source_label": {
         "site_id": "0b0a34590e5d4e5aa8cbc73b15903a6d",
         "scientific_name": "Lycodon capucinus",
         "chinese_name": "白枕白环蛇"
       },
-      "status": "species_review_required",
+      "status": "user_confirmed_and_integrated",
       "capture_type": "downloaded_source_file",
       "snake_content_verified": true,
       "previous_flat_path": "review_photos/4c6984037d3027bfe8c22889d2ae3488d2a27dc002bcb3c3f9ece7bb106fc407.jpg",
-      "folder": "Lycodon capucinus--白枕白环蛇--待核验"
+      "folder": "Lycodon capucinus--白枕白环蛇--待核验",
+      "species_folder": "Lycodon capucinus--白枕白环蛇--无毒",
+      "confirmed_at": "2026-11-06T07:36:27.109Z"
     },
     {
       "uniqueId": "6d63a90258f36c5d22172ec0b78532e2",
@@ -260,17 +289,19 @@
       "url": "https://xstatic.pictureknow.com/snake/fef44465b00a4692906dd9ef0452cfb4.png",
       "download_url": "https://xstatic.pictureknow.com/snake/fef44465b00a4692906dd9ef0452cfb4.png",
       "sha256": "3f7b9dd876f77a2120f83d5fcc743776ae9de657a746f9f97a7b30c29c58036e",
-      "path": "review_photos/Lycodon capucinus--白枕白环蛇--待核验/3f7b9dd876f77a2120f83d5fcc743776ae9de657a746f9f97a7b30c29c58036e.jpg",
+      "path": "photos/Lycodon capucinus--白枕白环蛇--无毒/3f7b9dd876f77a2120f83d5fcc743776ae9de657a746f9f97a7b30c29c58036e.jpg",
       "source_label": {
         "site_id": "0b0a34590e5d4e5aa8cbc73b15903a6d",
         "scientific_name": "Lycodon capucinus",
         "chinese_name": "白枕白环蛇"
       },
-      "status": "species_review_required",
+      "status": "user_confirmed_and_integrated",
       "capture_type": "downloaded_source_file",
       "snake_content_verified": true,
       "previous_flat_path": "review_photos/3f7b9dd876f77a2120f83d5fcc743776ae9de657a746f9f97a7b30c29c58036e.jpg",
-      "folder": "Lycodon capucinus--白枕白环蛇--待核验"
+      "folder": "Lycodon capucinus--白枕白环蛇--待核验",
+      "species_folder": "Lycodon capucinus--白枕白环蛇--无毒",
+      "confirmed_at": "2026-11-06T07:36:27.109Z"
     },
     {
       "uniqueId": "95d00cf24620558025edd0b0cb939fe4",
@@ -278,17 +309,19 @@
       "url": "https://xstatic.pictureknow.com/snake/9df090ac27ea4f238860f3f9b6732feb.png",
       "download_url": "https://xstatic.pictureknow.com/snake/9df090ac27ea4f238860f3f9b6732feb.png",
       "sha256": "f0d487719a7b777e1486c99f00cc21f43fdf502bf2d59969987670ab19b209b1",
-      "path": "review_photos/Boiga multomaculata--繁花林蛇--待核验/f0d487719a7b777e1486c99f00cc21f43fdf502bf2d59969987670ab19b209b1.jpg",
+      "path": "photos/Boiga multomaculata--繁花林蛇--微毒/f0d487719a7b777e1486c99f00cc21f43fdf502bf2d59969987670ab19b209b1.jpg",
       "source_label": {
         "site_id": "ef158005c94d4eeebedba0300beec5ac",
         "scientific_name": "Boiga multomaculata",
         "chinese_name": "繁花林蛇"
       },
-      "status": "species_review_required",
+      "status": "user_confirmed_and_integrated",
       "capture_type": "downloaded_source_file",
       "snake_content_verified": true,
       "previous_flat_path": "review_photos/f0d487719a7b777e1486c99f00cc21f43fdf502bf2d59969987670ab19b209b1.jpg",
-      "folder": "Boiga multomaculata--繁花林蛇--待核验"
+      "folder": "Boiga multomaculata--繁花林蛇--待核验",
+      "species_folder": "Boiga multomaculata--繁花林蛇--微毒",
+      "confirmed_at": "2026-11-06T07:36:27.109Z"
     },
     {
       "uniqueId": "328e40813eaea05ec1d71e7b64402110",
@@ -296,17 +329,19 @@
       "url": "https://xstatic.pictureknow.com/snake/3590d62791924c53b03b971bb0966dce.png",
       "download_url": "https://xstatic.pictureknow.com/snake/3590d62791924c53b03b971bb0966dce.png",
       "sha256": "fc8c0e7080b236b5091fc13478c816d1ffcf6ae42113f68da64ad4dd4531aea1",
-      "path": "review_photos/Fowlea flavipunctatus--黄斑渔游蛇--待核验/fc8c0e7080b236b5091fc13478c816d1ffcf6ae42113f68da64ad4dd4531aea1.jpg",
+      "path": "photos/Fowlea flavipunctatus--黄斑渔游蛇--无毒/fc8c0e7080b236b5091fc13478c816d1ffcf6ae42113f68da64ad4dd4531aea1.jpg",
       "source_label": {
         "site_id": "f75d122546494092a6a2f67279972d82",
         "scientific_name": "Fowlea flavipunctatus",
         "chinese_name": "黄斑渔游蛇"
       },
-      "status": "species_review_required",
+      "status": "user_confirmed_and_integrated",
       "capture_type": "downloaded_source_file",
       "snake_content_verified": true,
       "previous_flat_path": "review_photos/fc8c0e7080b236b5091fc13478c816d1ffcf6ae42113f68da64ad4dd4531aea1.jpg",
-      "folder": "Fowlea flavipunctatus--黄斑渔游蛇--待核验"
+      "folder": "Fowlea flavipunctatus--黄斑渔游蛇--待核验",
+      "species_folder": "Fowlea flavipunctatus--黄斑渔游蛇--无毒",
+      "confirmed_at": "2026-11-06T07:36:27.109Z"
     },
     {
       "uniqueId": "e56eec99a3114c0b157eb63c6cbf1b99",
@@ -314,17 +349,19 @@
       "url": "https://xstatic.pictureknow.com/snake/c4384a32d35c4d53a6b9a476c898bf6b.png",
       "download_url": "https://xstatic.pictureknow.com/snake/c4384a32d35c4d53a6b9a476c898bf6b.png",
       "sha256": "750b6ac211c8dad746c279b9d0208ca3b2ba8b9c5bd1d07eb52f626c1b080815",
-      "path": "review_photos/Rhabdophis tigrinus--虎斑颈槽蛇--待核验/750b6ac211c8dad746c279b9d0208ca3b2ba8b9c5bd1d07eb52f626c1b080815.jpg",
+      "path": "photos/Rhabdophis tigrinus--虎斑颈槽蛇--剧毒/750b6ac211c8dad746c279b9d0208ca3b2ba8b9c5bd1d07eb52f626c1b080815.jpg",
       "source_label": {
         "site_id": "4328ff2e7a344e98b17adc055a7a1060",
         "scientific_name": "Rhabdophis tigrinus",
         "chinese_name": "虎斑颈槽蛇"
       },
-      "status": "species_review_required",
+      "status": "user_confirmed_and_integrated",
       "capture_type": "downloaded_source_file",
       "snake_content_verified": true,
       "previous_flat_path": "review_photos/750b6ac211c8dad746c279b9d0208ca3b2ba8b9c5bd1d07eb52f626c1b080815.jpg",
-      "folder": "Rhabdophis tigrinus--虎斑颈槽蛇--待核验"
+      "folder": "Rhabdophis tigrinus--虎斑颈槽蛇--待核验",
+      "species_folder": "Rhabdophis tigrinus--虎斑颈槽蛇--剧毒",
+      "confirmed_at": "2026-11-06T07:36:27.109Z"
     },
     {
       "uniqueId": "e116ebcee8b06865ff24751b5569feb7",
@@ -332,112 +369,125 @@
       "url": "https://xstatic.pictureknow.com/snake/b92f4ce9bd0042feb34d757c8c1f3247.png",
       "download_url": "https://xstatic.pictureknow.com/snake/b92f4ce9bd0042feb34d757c8c1f3247.png",
       "sha256": "d167a078530221f8c834ee90cdd435f085bf3a07031c3939d6ed1f567a358f6a",
-      "path": "review_photos/Xenopeltis unicolor--闪鳞蛇--待核验/d167a078530221f8c834ee90cdd435f085bf3a07031c3939d6ed1f567a358f6a.jpg",
+      "path": "photos/Xenopeltis unicolor--闪鳞蛇--无毒/d167a078530221f8c834ee90cdd435f085bf3a07031c3939d6ed1f567a358f6a.jpg",
       "source_label": {
         "site_id": "d7d8171c9493475b88cfed720b5e4fe7",
         "scientific_name": "Xenopeltis unicolor",
         "chinese_name": "闪鳞蛇"
       },
-      "status": "species_review_required",
+      "status": "user_confirmed_and_integrated",
       "capture_type": "downloaded_source_file",
       "snake_content_verified": true,
       "previous_flat_path": "review_photos/d167a078530221f8c834ee90cdd435f085bf3a07031c3939d6ed1f567a358f6a.jpg",
-      "folder": "Xenopeltis unicolor--闪鳞蛇--待核验"
+      "folder": "Xenopeltis unicolor--闪鳞蛇--待核验",
+      "species_folder": "Xenopeltis unicolor--闪鳞蛇--无毒",
+      "confirmed_at": "2026-11-06T07:36:27.109Z"
     },
     {
       "uniqueId": "302f6c6fd189ee99f8fb8e196239553a",
       "url": "https://xstatic.pictureknow.com/snake/397e958b02f744e994bffecc7d1f3297.png",
       "download_url": "https://xstatic.pictureknow.com/snake/397e958b02f744e994bffecc7d1f3297.png",
       "sha256": "8bbe7bf572b96d6ccbaa217338a64258aa94f18384673b62922f3fae0d84027b",
-      "path": "review_photos/Pareas boulengeri--平鳞钝头蛇--待核验/8bbe7bf572b96d6ccbaa217338a64258aa94f18384673b62922f3fae0d84027b.jpg",
+      "path": "photos/Pareas boulengeri--平鳞钝头蛇--无毒/8bbe7bf572b96d6ccbaa217338a64258aa94f18384673b62922f3fae0d84027b.jpg",
       "source_label": {
         "scientific_name": "Pareas boulengeri",
         "chinese_name": "平鳞钝头蛇"
       },
-      "status": "species_review_required",
+      "status": "user_confirmed_and_integrated",
       "capture_type": "downloaded_source_file",
       "snake_content_verified": true,
       "review_reason": "source_label_conflicts_with_visible_snake",
       "saved_at": "2026-11-06T07:00:05.191070+00:00",
       "coverage": "browser-visible-only",
       "previous_flat_path": "review_photos/8bbe7bf572b96d6ccbaa217338a64258aa94f18384673b62922f3fae0d84027b.jpg",
-      "folder": "Pareas boulengeri--平鳞钝头蛇--待核验"
+      "folder": "Pareas boulengeri--平鳞钝头蛇--待核验",
+      "species_folder": "Pareas boulengeri--平鳞钝头蛇--无毒",
+      "confirmed_at": "2026-11-06T07:36:27.109Z"
     },
     {
       "uniqueId": "99fa5e05d49800c0bae688fb40143f5f",
       "url": "https://xstatic.pictureknow.com/snake/bc4437c7eb9447469fa13ae7c573b8c0.png",
       "download_url": "https://xstatic.pictureknow.com/snake/bc4437c7eb9447469fa13ae7c573b8c0.png",
       "sha256": "3c73412eea8ea80d4ab0daf2b4f2acec3dd55a32e21e1c730a61607a9a3f54ad",
-      "path": "review_photos/Protobothrops jerdonii--菜花原矛头蝮--待核验/3c73412eea8ea80d4ab0daf2b4f2acec3dd55a32e21e1c730a61607a9a3f54ad.jpg",
+      "path": "photos/Protobothrops jerdonii--菜花原矛头蝮--剧毒/3c73412eea8ea80d4ab0daf2b4f2acec3dd55a32e21e1c730a61607a9a3f54ad.jpg",
       "source_label": {
         "scientific_name": "Protobothrops jerdonii",
         "chinese_name": "菜花原矛头蝮"
       },
-      "status": "species_review_required",
+      "status": "user_confirmed_and_integrated",
       "capture_type": "downloaded_source_file",
       "snake_content_verified": true,
       "review_reason": "species_confirmation_pending",
       "saved_at": "2026-11-06T07:00:05.191070+00:00",
       "coverage": "browser-visible-only",
       "previous_flat_path": "review_photos/3c73412eea8ea80d4ab0daf2b4f2acec3dd55a32e21e1c730a61607a9a3f54ad.jpg",
-      "folder": "Protobothrops jerdonii--菜花原矛头蝮--待核验"
+      "folder": "Protobothrops jerdonii--菜花原矛头蝮--待核验",
+      "species_folder": "Protobothrops jerdonii--菜花原矛头蝮--剧毒",
+      "confirmed_at": "2026-11-06T07:36:27.109Z"
     },
     {
       "uniqueId": "315182c3e41bb1630a419c8ffaf40fac",
       "url": "https://xstatic.pictureknow.com/snake/80b6df0981db4214822c94049eb5bb40.png",
       "download_url": "https://xstatic.pictureknow.com/snake/80b6df0981db4214822c94049eb5bb40.png",
       "sha256": "31830a1d16cf13b53ebd5ca76360fcf6aa9f56040709dc31cb136dcf583f849f",
-      "path": "review_photos/Euprepiophis mandarinus--玉斑锦蛇--待核验/31830a1d16cf13b53ebd5ca76360fcf6aa9f56040709dc31cb136dcf583f849f.jpg",
+      "path": "photos/Euprepiophis mandarinus--玉斑锦蛇--无毒/31830a1d16cf13b53ebd5ca76360fcf6aa9f56040709dc31cb136dcf583f849f.jpg",
       "source_label": {
         "scientific_name": "Euprepiophis mandarinus",
         "chinese_name": "玉斑锦蛇"
       },
-      "status": "species_review_required",
+      "status": "user_confirmed_and_integrated",
       "capture_type": "downloaded_source_file",
       "snake_content_verified": true,
       "review_reason": "species_confirmation_pending",
       "saved_at": "2026-11-06T07:00:05.191070+00:00",
       "coverage": "browser-visible-only",
       "previous_flat_path": "review_photos/31830a1d16cf13b53ebd5ca76360fcf6aa9f56040709dc31cb136dcf583f849f.jpg",
-      "folder": "Euprepiophis mandarinus--玉斑锦蛇--待核验"
+      "folder": "Euprepiophis mandarinus--玉斑锦蛇--待核验",
+      "species_folder": "Euprepiophis mandarinus--玉斑锦蛇--无毒",
+      "confirmed_at": "2026-11-06T07:36:27.109Z"
     },
     {
       "uniqueId": "1947e82b6c7eec5c0630a9979b4a9078",
       "url": "https://xstatic.pictureknow.com/snake/8ce245afbfb94ed88461aeb9305e5125.png",
       "download_url": "https://xstatic.pictureknow.com/snake/8ce245afbfb94ed88461aeb9305e5125.png",
       "sha256": "e77ed78555f312e365ac76f8f27a48dcbf4fe4af8cd764b9c1e8156268167b53",
-      "path": "review_photos/Elaphe dione--白条锦蛇--待核验/e77ed78555f312e365ac76f8f27a48dcbf4fe4af8cd764b9c1e8156268167b53.jpg",
+      "path": "photos/Elaphe dione--白条锦蛇--无毒/e77ed78555f312e365ac76f8f27a48dcbf4fe4af8cd764b9c1e8156268167b53.jpg",
       "source_label": {
         "scientific_name": "Elaphe dione",
         "chinese_name": "白条锦蛇"
       },
-      "status": "species_review_required",
+      "status": "user_confirmed_and_integrated",
       "capture_type": "downloaded_source_file",
       "snake_content_verified": true,
       "review_reason": "species_confirmation_pending",
       "saved_at": "2026-11-06T07:00:05.191070+00:00",
       "coverage": "browser-visible-only",
       "previous_flat_path": "review_photos/e77ed78555f312e365ac76f8f27a48dcbf4fe4af8cd764b9c1e8156268167b53.jpg",
-      "folder": "Elaphe dione--白条锦蛇--待核验"
+      "folder": "Elaphe dione--白条锦蛇--待核验",
+      "species_folder": "Elaphe dione--白条锦蛇--无毒",
+      "confirmed_at": "2026-11-06T07:36:27.109Z"
     },
     {
       "uniqueId": "91b2e70185dce7ff490cfe6a47340f2b",
       "url": "https://xstatic.pictureknow.com/snake/d6451933ed5a42b2bef34c17185fbe2b.png",
       "download_url": "https://xstatic.pictureknow.com/snake/d6451933ed5a42b2bef34c17185fbe2b.png",
       "sha256": "672042f163e88ab2db2c3938d42ebdcb66df5682a722b5943555f51a3f9bd5f3",
-      "path": "review_photos/Hydrophis platurus--长吻海蛇--待核验/672042f163e88ab2db2c3938d42ebdcb66df5682a722b5943555f51a3f9bd5f3.jpg",
+      "path": "photos/Hydrophis platurus--长吻海蛇--剧毒/672042f163e88ab2db2c3938d42ebdcb66df5682a722b5943555f51a3f9bd5f3.jpg",
       "source_label": {
         "scientific_name": "Hydrophis platurus",
         "chinese_name": "长吻海蛇"
       },
-      "status": "species_review_required",
+      "status": "user_confirmed_and_integrated",
       "capture_type": "downloaded_source_file",
       "snake_content_verified": true,
       "review_reason": "species_confirmation_pending",
       "saved_at": "2026-11-06T07:00:05.191070+00:00",
       "coverage": "browser-visible-only",
       "previous_flat_path": "review_photos/672042f163e88ab2db2c3938d42ebdcb66df5682a722b5943555f51a3f9bd5f3.jpg",
-      "folder": "Hydrophis platurus--长吻海蛇--待核验"
+      "folder": "Hydrophis platurus--长吻海蛇--待核验",
+      "species_folder": "Hydrophis platurus--长吻海蛇--剧毒",
+      "confirmed_at": "2026-11-06T07:36:27.109Z"
     }
-  ]
+  ],
+  "updated_at": "2026-11-06T07:36:27.109Z"
 }

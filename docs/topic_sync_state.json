@@ -1,9 +1,9 @@
 {
   "schema_version": 3,
-  "last_successful_cutoff": "2026-11-04T11:35:46+08:00",
-  "last_verified_data_commit": "320d6a926ee0c33a27e6051c0e7a7225c0c28b6b",
-  "last_verified_deployment": "https://github.com/weijintao123/snake-library/actions/runs/42183155808",
-  "verified_image_count": 1232,
+  "last_successful_cutoff": "2026-11-09T17:37:58.073+08:00",
+  "last_verified_data_commit": "489732be99a57df14502f160827d5450ce79f579",
+  "last_verified_deployment": "https://github.com/weijintao123/snake-library/actions/runs/42607420417",
+  "verified_image_count": 1234,
   "retry_topics": [
     {
       "uniqueId": "26c925e180acbc1df523ecdbda5ed04e",
@@ -3581,6 +3581,516 @@
       "retry_reason": "species_label_or_image_content_uncertain",
       "last_attempt_result": "original_and_webp_unavailable",
       "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden"
+    },
+    {
+      "uniqueId": "c7abf927c9c31fe92c0fb73c89abfc81",
+      "createTime": 1794205178000,
+      "img": "https://xstatic.pictureknow.com/snake/8f37352387fa4cdb914125299354d30a.png",
+      "sciName": "Platyceps rhodorachis",
+      "cnName": "红脊扁头蛇",
+      "snakeId": "122d2a1998b847af83f0e9d6fdfa1985",
+      "download_url": "https://xstatic.pictureknow.com/snake/8f37352387fa4cdb914125299354d30a.png",
+      "retry_reason": "species_review_required_image_saved",
+      "saved_path": "review_photos/0d4ca538543e6520a053eb4221b2368d465fd32d3094d9b388d29430721cd686.jpg",
+      "saved_sha256": "0d4ca538543e6520a053eb4221b2368d465fd32d3094d9b388d29430721cd686",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "7ef40ad9735e3cebc75f2cbcbbbc4d3e",
+      "createTime": 1794195034000,
+      "img": "https://xstatic.pictureknow.com/snake/b5ef6ad1e9d64949a76f73b894f7cec3.png",
+      "sciName": "Calamaria septentrionalis",
+      "cnName": "钝尾两头蛇",
+      "snakeId": "b75cdc3b222c43a2a19690ef7261c6f8",
+      "download_url": "https://xstatic.pictureknow.com/snake/b5ef6ad1e9d64949a76f73b894f7cec3.png",
+      "retry_reason": "species_review_required_image_saved",
+      "saved_path": "review_photos/25bbc04d9ee180cc90f02965b1fa5c002859957b91560664c78ef1e18753fa68.jpg",
+      "saved_sha256": "25bbc04d9ee180cc90f02965b1fa5c002859957b91560664c78ef1e18753fa68",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "6497e953f38b11e6ee335f767ca92d33",
+      "createTime": 1794194193000,
+      "img": "https://xstatic.pictureknow.com/snake/6fbe4964886e4d34b550a522f9164512.png",
+      "sciName": "Trimeresurus albolabris",
+      "cnName": "白唇竹叶青蛇",
+      "snakeId": "ab139189433b407e9ca3189b72a9b103",
+      "download_url": "https://xstatic.pictureknow.com/snake/6fbe4964886e4d34b550a522f9164512.png",
+      "retry_reason": "species_review_required_image_saved",
+      "saved_path": "review_photos/b28db36ec4b645813bac34113b78ed8f52153528b38915250bc29c0293c660b7.jpg",
+      "saved_sha256": "b28db36ec4b645813bac34113b78ed8f52153528b38915250bc29c0293c660b7",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "dff452ba96781f3ac51a2e913644437b",
+      "createTime": 1794190045000,
+      "img": "https://xstatic.pictureknow.com/snake/a2c895546da84ecdbf80425bce23f5dc.png",
+      "sciName": "Lycodon subcinctus",
+      "cnName": "细白环蛇",
+      "snakeId": "23e609ee68f349fea1cf2346a7826c88",
+      "download_url": "https://xstatic.pictureknow.com/snake/a2c895546da84ecdbf80425bce23f5dc.png",
+      "retry_reason": "species_review_required_image_saved",
+      "saved_path": "review_photos/4b06b5fdff1df373cca2134148ad369a34bde496f513a57206a65b1519b18917.jpg",
+      "saved_sha256": "4b06b5fdff1df373cca2134148ad369a34bde496f513a57206a65b1519b18917",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "6af321ddaf144421ef4efd8a6234098a",
+      "createTime": 1794185624000,
+      "img": "https://xstatic.pictureknow.com/snake/8be8e824700d4f3f9b9ad6c517865ae9.png",
+      "sciName": "Fowlea flavipunctatus",
+      "cnName": "黄斑渔游蛇",
+      "snakeId": "f75d122546494092a6a2f67279972d82",
+      "download_url": "https://xstatic.pictureknow.com/snake/8be8e824700d4f3f9b9ad6c517865ae9.png",
+      "retry_reason": "species_review_required_image_saved",
+      "saved_path": "review_photos/3eab11a1dc5d6cbb01426c6198ddb9c83c2a5a5dcc0bce48614a481ec58d4b3b.jpg",
+      "saved_sha256": "3eab11a1dc5d6cbb01426c6198ddb9c83c2a5a5dcc0bce48614a481ec58d4b3b",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "f54335381ff87642321d8259453b41f9",
+      "createTime": 1794143511000,
+      "img": "https://xstatic.pictureknow.com/snake/cc4a5ae206324113ad241734d6cb9d73.png",
+      "sciName": "Ophiophagus hannah",
+      "cnName": "眼镜王蛇",
+      "snakeId": "4ca82904e79f4ec0b234e052d8a23fa1",
+      "download_url": "https://xstatic.pictureknow.com/snake/cc4a5ae206324113ad241734d6cb9d73.png",
+      "retry_reason": "species_review_required_image_saved",
+      "saved_path": "review_photos/7caf8a1f04580b1a87b349dd41d2e2c081f9ff1264648295dcd1facfeaed0ec2.jpg",
+      "saved_sha256": "7caf8a1f04580b1a87b349dd41d2e2c081f9ff1264648295dcd1facfeaed0ec2",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "288e1069f725ddf87edb4d53dcb1020b",
+      "createTime": 1794140181000,
+      "img": "https://xstatic.pictureknow.com/snake/bae237fac02643ed919df4dd2f38dfd7.png",
+      "sciName": "Fowlea flavipunctatus",
+      "cnName": "黄斑渔游蛇",
+      "snakeId": "f75d122546494092a6a2f67279972d82",
+      "download_url": "https://xstatic.pictureknow.com/snake/bae237fac02643ed919df4dd2f38dfd7.png",
+      "retry_reason": "species_review_required_image_saved",
+      "saved_path": "review_photos/9f942e2f29ac182a10bcf77fe439ccd44c92b0beacd22268d58afade557a6126.jpg",
+      "saved_sha256": "9f942e2f29ac182a10bcf77fe439ccd44c92b0beacd22268d58afade557a6126",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "f383fa77fe525261c90b36c5decc812c",
+      "createTime": 1794139498000,
+      "img": "https://xstatic.pictureknow.com/snake/dddd4e75b93948e99d6ad2eef77fe9ad.png",
+      "sciName": "Elaphe taeniura",
+      "cnName": "黑眉锦蛇",
+      "snakeId": "e9037e2e73d74304adb76b9d7eeab2f7",
+      "download_url": "https://xstatic.pictureknow.com/snake/dddd4e75b93948e99d6ad2eef77fe9ad.png",
+      "retry_reason": "species_review_required_image_saved",
+      "saved_path": "review_photos/41f9e581dc4f857c78cfaa34891cc8374bdfce219eb9af44e09cc458600d5134.jpg",
+      "saved_sha256": "41f9e581dc4f857c78cfaa34891cc8374bdfce219eb9af44e09cc458600d5134",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "b5b836f9e5afb477dcec63e2ad566b26",
+      "createTime": 1794128940000,
+      "img": "https://xstatic.pictureknow.com/snake/621c2e879979497dafb3aecd7c61cb16.png",
+      "sciName": "Ptyas mucosa",
+      "cnName": "滑鼠蛇",
+      "snakeId": "8264c64646c24a08a8e2cb60209c2641",
+      "download_url": "https://xstatic.pictureknow.com/snake/621c2e879979497dafb3aecd7c61cb16.png",
+      "retry_reason": "species_review_required_image_saved",
+      "saved_path": "review_photos/ceba951a868ec187e6f67979aa11b6b11948f8fb1fdcf28e20cb88174ad6c55b.jpg",
+      "saved_sha256": "ceba951a868ec187e6f67979aa11b6b11948f8fb1fdcf28e20cb88174ad6c55b",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "664591dfb0db85f6b5e73199d5531b14",
+      "createTime": 1794128921000,
+      "img": "https://xstatic.pictureknow.com/snake/ae1f867ec5624f3bbe20217d4e218a32.png",
+      "sciName": "Fowlea flavipunctatus",
+      "cnName": "黄斑渔游蛇",
+      "snakeId": "f75d122546494092a6a2f67279972d82",
+      "download_url": "https://xstatic.pictureknow.com/snake/ae1f867ec5624f3bbe20217d4e218a32.png",
+      "retry_reason": "species_review_required_image_saved",
+      "saved_path": "review_photos/7b1658f2766d579cbf95c486cea579fde729fb9c8c6c17a05d9513751298baa9.jpg",
+      "saved_sha256": "7b1658f2766d579cbf95c486cea579fde729fb9c8c6c17a05d9513751298baa9",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "ea021c367ec03314f235a24a82e76b05",
+      "createTime": 1794128862000,
+      "img": "https://xstatic.pictureknow.com/snake/834a48d4690f4028a89e2c8d39d2dc34.png",
+      "sciName": "Ovophis monticola",
+      "cnName": "山烙铁头蛇",
+      "snakeId": "bccaae38b7294442a78f7bea0ebb7e64",
+      "download_url": "https://xstatic.pictureknow.com/snake/834a48d4690f4028a89e2c8d39d2dc34.png",
+      "retry_reason": "species_review_required_image_saved",
+      "saved_path": "review_photos/9c98d4802fc2ec1ffdb40c292e27988c02dc3c51b9cd13df932febccdabbe4fa.jpg",
+      "saved_sha256": "9c98d4802fc2ec1ffdb40c292e27988c02dc3c51b9cd13df932febccdabbe4fa",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "bbb3f65bcc8daa26b99e53e2bfe88f57",
+      "createTime": 1794102342000,
+      "img": "https://xstatic.pictureknow.com/snake/33cfefe567a44374aea560c351132620.png",
+      "sciName": "Ptyas nigromarginata",
+      "cnName": "黑线乌梢蛇",
+      "snakeId": "52ce1959566643668fd9588a52b54792",
+      "download_url": "https://xstatic.pictureknow.com/snake/33cfefe567a44374aea560c351132620.png",
+      "retry_reason": "species_review_required_image_saved",
+      "saved_path": "review_photos/bf4ca323c227237b986cfe7c6f4a49769f96ca4ee8ccfc1708f245911511473c.jpg",
+      "saved_sha256": "bf4ca323c227237b986cfe7c6f4a49769f96ca4ee8ccfc1708f245911511473c",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "e7967dbafe9d24fbb1624afe735be926",
+      "createTime": 1794053328000,
+      "img": "https://xstatic.pictureknow.com/snake/608c05ad9b7a456a997e64bd79cc8e97.png",
+      "sciName": "Elaphe schrenckii",
+      "cnName": "棕黑锦蛇",
+      "snakeId": "ed94f2c43f754395bcb7e95cc17c6b7a",
+      "download_url": "https://xstatic.pictureknow.com/snake/608c05ad9b7a456a997e64bd79cc8e97.png?x-oss-process=image/format,webp",
+      "retry_reason": "species_review_required_image_saved",
+      "saved_path": "review_photos/6e7f13fd443bb9d47a0b33416facf3a06f952d958662db36fc3618a38ed6f84f.webp",
+      "saved_sha256": "6e7f13fd443bb9d47a0b33416facf3a06f952d958662db36fc3618a38ed6f84f",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "f95f329fef273850e33008d2fd42bf62",
+      "createTime": 1794022370000,
+      "img": "https://xstatic.pictureknow.com/snake/cc9e2605323845e2bbf909101fa756cd.png",
+      "sciName": "Rhabdophis helleri",
+      "cnName": "海勒颈槽蛇",
+      "snakeId": "021a13b9c06b49fca86751f3d04eb049",
+      "retry_reason": "original_and_fullsize_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/cc9e2605323845e2bbf909101fa756cd.png",
+        "https://xstatic.pictureknow.com/snake/cc9e2605323845e2bbf909101fa756cd.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "0114f880d433da1371a633a3e0be3070",
+      "createTime": 1794019867000,
+      "img": "https://xstatic.pictureknow.com/snake/8e05705d8642425c8ef09be4a900768f.png",
+      "sciName": "Trimerodytes percarinatus",
+      "cnName": "乌华游蛇",
+      "snakeId": "9d984d7bed484e1e814449f03ef2d9ba",
+      "retry_reason": "original_and_fullsize_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/8e05705d8642425c8ef09be4a900768f.png",
+        "https://xstatic.pictureknow.com/snake/8e05705d8642425c8ef09be4a900768f.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "865faf346e140ba464686e06081080c6",
+      "createTime": 1794011993000,
+      "img": "https://xstatic.pictureknow.com/snake/415f6b562f9d48779bfa05816d96261e.png",
+      "sciName": "Psammodynastes pulverulentus",
+      "cnName": "紫沙蛇",
+      "snakeId": "8e9d43644fe243ffb0a72a558b6590b0",
+      "retry_reason": "original_and_fullsize_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/415f6b562f9d48779bfa05816d96261e.png",
+        "https://xstatic.pictureknow.com/snake/415f6b562f9d48779bfa05816d96261e.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "638c1c50be794e3068beea3aec2d637a",
+      "createTime": 1793968158000,
+      "img": "https://xstatic.pictureknow.com/snake/54b6f76ad8cc4b12917bb5907efc7d38.png",
+      "sciName": "Naja atra",
+      "cnName": "舟山眼镜蛇",
+      "snakeId": "754cd6ec0ad845718dec8fe2020d47c4",
+      "download_url": "https://xstatic.pictureknow.com/snake/54b6f76ad8cc4b12917bb5907efc7d38.png?x-oss-process=image/format,webp",
+      "retry_reason": "species_review_required_image_saved",
+      "saved_path": "review_photos/1df578c4b3e3119afc0bb853849ae7ff0f995cd36d770b7a31136516c6ce340f.webp",
+      "saved_sha256": "1df578c4b3e3119afc0bb853849ae7ff0f995cd36d770b7a31136516c6ce340f",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "5d52f5db90ea70e62909f8def4664b78",
+      "createTime": 1793965306000,
+      "img": "https://xstatic.pictureknow.com/snake/3f5991b47b934ad9a3f5fa92fbc0e57e.png",
+      "sciName": "Naja fuxi",
+      "cnName": "西南眼镜蛇",
+      "snakeId": "b7c3b494d5a54e9a9b96e473d99d745f",
+      "retry_reason": "original_and_fullsize_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/3f5991b47b934ad9a3f5fa92fbc0e57e.png",
+        "https://xstatic.pictureknow.com/snake/3f5991b47b934ad9a3f5fa92fbc0e57e.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "8e592e2778f2f4dd6d8b7b4036c2532b",
+      "createTime": 1793876027000,
+      "img": "https://xstatic.pictureknow.com/snake/0de8f003c2204b3aa9234ebcc9af2bb7.png",
+      "sciName": "Elaphe carinata",
+      "cnName": "王锦蛇",
+      "snakeId": "4dea85d9da714ceda8a4f8d248051c98",
+      "retry_reason": "original_and_fullsize_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/0de8f003c2204b3aa9234ebcc9af2bb7.png",
+        "https://xstatic.pictureknow.com/snake/0de8f003c2204b3aa9234ebcc9af2bb7.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "73c33d6da38a01d0870ef56774f5c7f8",
+      "createTime": 1793858301000,
+      "img": "https://xstatic.pictureknow.com/snake/fa553c3d37664bef93d3d453f39528d2.png",
+      "sciName": "Pseudagkistrodon rudis",
+      "cnName": "颈棱蛇",
+      "snakeId": "6435f96708124c51b4a7d85cbfd0b6dd",
+      "retry_reason": "original_and_fullsize_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/fa553c3d37664bef93d3d453f39528d2.png",
+        "https://xstatic.pictureknow.com/snake/fa553c3d37664bef93d3d453f39528d2.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "a93fc9a5ba037bc18791fcb3ecf10539",
+      "createTime": 1793854294000,
+      "img": "https://xstatic.pictureknow.com/snake/aa4608609759481fb5dabecdd072e39c.png",
+      "sciName": "Achalinus spinalis",
+      "cnName": "黑脊蛇",
+      "snakeId": "851a084e9b1443ce8b516de40a0e5789",
+      "retry_reason": "original_and_fullsize_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/aa4608609759481fb5dabecdd072e39c.png",
+        "https://xstatic.pictureknow.com/snake/aa4608609759481fb5dabecdd072e39c.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "297ff48f9916ccf1338f77936994d6eb",
+      "createTime": 1793840614000,
+      "img": "https://xstatic.pictureknow.com/snake/576e42996a88471087d42dbcfe40af8e.png",
+      "sciName": "Ovophis monticola",
+      "cnName": "山烙铁头蛇",
+      "snakeId": "bccaae38b7294442a78f7bea0ebb7e64",
+      "retry_reason": "original_and_fullsize_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/576e42996a88471087d42dbcfe40af8e.png",
+        "https://xstatic.pictureknow.com/snake/576e42996a88471087d42dbcfe40af8e.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "9eb77aba72d2db987d38fc5ca32849ba",
+      "createTime": 1793840363000,
+      "img": "https://xstatic.pictureknow.com/snake/b5b030f9ce1547f8bf1efbc85d7be75d.png",
+      "sciName": "Boiga cyanea",
+      "cnName": "绿林蛇",
+      "snakeId": "41852fbf9e9740a980801e82dc8fbdbd",
+      "retry_reason": "original_and_fullsize_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/b5b030f9ce1547f8bf1efbc85d7be75d.png",
+        "https://xstatic.pictureknow.com/snake/b5b030f9ce1547f8bf1efbc85d7be75d.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "ab5048bd69fa77b5da750b8b6b1aa019",
+      "createTime": 1793804606000,
+      "img": "https://xstatic.pictureknow.com/snake/915b972af09841658c8ac2fccbadfc71.png",
+      "sciName": "Elaphe dione",
+      "cnName": "白条锦蛇",
+      "snakeId": "ab065bb23c8249d9b7a013551bd3c5d2",
+      "retry_reason": "original_and_fullsize_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/915b972af09841658c8ac2fccbadfc71.png",
+        "https://xstatic.pictureknow.com/snake/915b972af09841658c8ac2fccbadfc71.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "98b93b69c8445802a5c1133e6e60cc34",
+      "createTime": 1793796786000,
+      "img": "https://xstatic.pictureknow.com/snake/47ee075e9eaa4a8b9d79510a63837dd5.png",
+      "sciName": "Hypsiscopus plumbea",
+      "cnName": "铅色水蛇",
+      "snakeId": "3b8b110410b74eeab07c56a3d8c0a1dc",
+      "retry_reason": "original_and_fullsize_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/47ee075e9eaa4a8b9d79510a63837dd5.png",
+        "https://xstatic.pictureknow.com/snake/47ee075e9eaa4a8b9d79510a63837dd5.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "11792fcac5bc71e4568522a91ddf835e",
+      "createTime": 1793795062000,
+      "img": "https://xstatic.pictureknow.com/snake/37541ed6a7e44532b63f762f4678745a.png",
+      "sciName": "Oligodon formosanus",
+      "cnName": "台湾小头蛇",
+      "snakeId": "ee3e7d89f26e4c7c97db034cd44df358",
+      "download_url": "https://xstatic.pictureknow.com/snake/37541ed6a7e44532b63f762f4678745a.png?x-oss-process=image/format,webp",
+      "retry_reason": "species_review_required_image_saved",
+      "saved_path": "review_photos/56a0cfb89a97ffd0cca1725551c89f7018c0f3e4d7b5f371c62029369fa300c7.webp",
+      "saved_sha256": "56a0cfb89a97ffd0cca1725551c89f7018c0f3e4d7b5f371c62029369fa300c7",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "797f58eec207cb7d066b4450a653d05e",
+      "createTime": 1793791960000,
+      "img": "https://xstatic.pictureknow.com/snake/6909e6f4149e455e81f3e5db32204d71.png",
+      "sciName": "Elaphe schrenckii",
+      "cnName": "棕黑锦蛇",
+      "snakeId": "ed94f2c43f754395bcb7e95cc17c6b7a",
+      "retry_reason": "original_and_fullsize_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/6909e6f4149e455e81f3e5db32204d71.png",
+        "https://xstatic.pictureknow.com/snake/6909e6f4149e455e81f3e5db32204d71.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "65d64dd0787e0fc336e5f69c3adaefe5",
+      "createTime": 1793791945000,
+      "img": "https://xstatic.pictureknow.com/snake/a3cafda58e0d4663ad6d758429b740e6.png",
+      "sciName": "Elaphe dione",
+      "cnName": "白条锦蛇",
+      "snakeId": "ab065bb23c8249d9b7a013551bd3c5d2",
+      "retry_reason": "original_and_fullsize_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/a3cafda58e0d4663ad6d758429b740e6.png",
+        "https://xstatic.pictureknow.com/snake/a3cafda58e0d4663ad6d758429b740e6.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "30761a434af2b6cc8c425cf489803aa6",
+      "createTime": 1793775182000,
+      "img": "https://xstatic.pictureknow.com/snake/1bed38702bc1401ab5c3257b1ec90c84.png",
+      "sciName": "Rhabdophis tigrinus",
+      "cnName": "虎斑颈槽蛇",
+      "snakeId": "4328ff2e7a344e98b17adc055a7a1060",
+      "retry_reason": "original_and_fullsize_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/1bed38702bc1401ab5c3257b1ec90c84.png",
+        "https://xstatic.pictureknow.com/snake/1bed38702bc1401ab5c3257b1ec90c84.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "59163382dc042d486a8a08407a6ce394",
+      "createTime": 1793773302000,
+      "img": "https://xstatic.pictureknow.com/snake/b4f2a24527fc4667b34c2e1d955c68ff.png",
+      "sciName": "Python bivittatus",
+      "cnName": "缅甸蟒",
+      "snakeId": "d33886d2cdb04b5dbf0f81853aafc16d",
+      "retry_reason": "original_and_fullsize_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/b4f2a24527fc4667b34c2e1d955c68ff.png",
+        "https://xstatic.pictureknow.com/snake/b4f2a24527fc4667b34c2e1d955c68ff.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "38c6edd41072042e6a273bcb4d341297",
+      "createTime": 1793769657000,
+      "img": "https://xstatic.pictureknow.com/snake/2a294f82e84c4ab2919f90fbe88e20d4.png",
+      "sciName": "Vipera berus",
+      "cnName": "极北蝰",
+      "snakeId": "0396b17d4e244f94bb5f8e7e087351fc",
+      "retry_reason": "original_and_fullsize_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/2a294f82e84c4ab2919f90fbe88e20d4.png",
+        "https://xstatic.pictureknow.com/snake/2a294f82e84c4ab2919f90fbe88e20d4.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "61414cf41625f68eae428fa6a1d328d6",
+      "createTime": 1793769585000,
+      "img": "https://xstatic.pictureknow.com/snake/0bbd4c9409fc4329a05da011609faed6.png",
+      "sciName": "Oligodon albocinctus",
+      "cnName": "喜山小头蛇",
+      "snakeId": "adda2ef86d3a439d8a7361f7bfd0572b",
+      "retry_reason": "original_and_fullsize_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/0bbd4c9409fc4329a05da011609faed6.png",
+        "https://xstatic.pictureknow.com/snake/0bbd4c9409fc4329a05da011609faed6.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "c0a5559e4a1a57a4978f6670b6d09b42",
+      "createTime": 1793765998000,
+      "img": "https://xstatic.pictureknow.com/snake/3cbb9f5563c348e7b37f05631473d871.png",
+      "sciName": "Protobothrops mucrosquamatus",
+      "cnName": "原矛头蝮",
+      "snakeId": "177e11fb1b2345a986e5e0efd2878fd1",
+      "retry_reason": "original_and_fullsize_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/3cbb9f5563c348e7b37f05631473d871.png",
+        "https://xstatic.pictureknow.com/snake/3cbb9f5563c348e7b37f05631473d871.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "98bef499acc6a458a9acbda7736fc436",
+      "createTime": 1793765675000,
+      "img": "https://xstatic.pictureknow.com/snake/8219151d740342db97e5e5bd612e6830.png",
+      "sciName": "Protobothrops mucrosquamatus",
+      "cnName": "原矛头蝮",
+      "snakeId": "177e11fb1b2345a986e5e0efd2878fd1",
+      "retry_reason": "original_and_fullsize_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/8219151d740342db97e5e5bd612e6830.png",
+        "https://xstatic.pictureknow.com/snake/8219151d740342db97e5e5bd612e6830.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "d5b857abc80851d964aede7cf9aa0a69",
+      "createTime": 1793763655000,
+      "img": "https://xstatic.pictureknow.com/snake/afc16392df704569ad55e3e96d1885db.png",
+      "sciName": "Protobothrops mucrosquamatus",
+      "cnName": "原矛头蝮",
+      "snakeId": "177e11fb1b2345a986e5e0efd2878fd1",
+      "retry_reason": "original_and_fullsize_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/afc16392df704569ad55e3e96d1885db.png",
+        "https://xstatic.pictureknow.com/snake/afc16392df704569ad55e3e96d1885db.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+      "last_attempt_at": "2026-11-09"
+    },
+    {
+      "uniqueId": "f2070eed0bbb62479da56a46f8dc786c",
+      "createTime": 1793763637000,
+      "img": "https://xstatic.pictureknow.com/snake/e73913ff2c634eadab5ce30a30314278.png",
+      "sciName": "Protobothrops mucrosquamatus",
+      "cnName": "原矛头蝮",
+      "snakeId": "177e11fb1b2345a986e5e0efd2878fd1",
+      "retry_reason": "original_and_fullsize_unavailable",
+      "attempted_urls": [
+        "https://xstatic.pictureknow.com/snake/e73913ff2c634eadab5ce30a30314278.png",
+        "https://xstatic.pictureknow.com/snake/e73913ff2c634eadab5ce30a30314278.png?x-oss-process=image/format,webp"
+      ],
+      "last_error": "HTTP Error 403: Forbidden; HTTP Error 403: Forbidden",
+      "last_attempt_at": "2026-11-09"
     }
   ],
   "excluded_topic_ids": [
@@ -3600,7 +4110,8 @@
     "350c3f13e57d1292e8a4e2d7a4f2db69",
     "2b78c42aa494a6f9236c7f07e55ed4ba",
     "5ff3f2f2a1298df202bda58cf134ce3e",
-    "442665dce87718f479560ebdb35fdd43"
+    "442665dce87718f479560ebdb35fdd43",
+    "4a363784a75d3204d7220ec9ee713c44"
   ],
   "coverage_note": "Full 11-topic incremental window and all 231 historical retries processed. 23 source files readable: 2 classified photos and 19 pending-species photos saved; 2 mantis images permanently excluded. 219 unreadable source files retained. All 21 saved photos verified online by SHA-256. review.html shows 19 loaded images. No screenshots misrepresented as originals.",
   "last_completed_window": {
@@ -3645,7 +4156,7 @@
     "daily_time": "10:00",
     "github_09_schedule_removed": true
   },
-  "verified_pending_review_image_count": 0,
+  "verified_pending_review_image_count": 15,
   "review_saved_index": "docs/topic_review_saved_index.json",
   "review_gallery": "https://weijintao123.github.io/snake-library/review.html",
   "last_partial_visible_import": {
@@ -3667,5 +4178,18 @@
     "total_photos": 1232,
     "online_hashes_verified": 24,
     "cutoff_advanced": false
+  },
+  "last_complete_scan": {
+    "fetched": 50,
+    "window_topics": 44,
+    "already_archived": 5,
+    "downloaded": 18,
+    "non_snake": 1,
+    "new_classified": 2,
+    "new_review": 15,
+    "new_unavailable": 21,
+    "online_hashes_verified": 17,
+    "browser_species_count": 152,
+    "browser_classified_count": 1234
   }
 }

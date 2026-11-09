@@ -2,7 +2,7 @@
 
 网页：https://weijintao123.github.io/snake-library/
 
-截至2026-11-09，分类图库共152种、1232张唯一照片。另存17张物种待核验的蛇图，可在[待分类蛇图](https://weijintao123.github.io/snake-library/review.html)查看。
+截至2026-11-09，分类图库共152种、1234张唯一照片。另存15张物种待核验的蛇图，可在[待分类蛇图](https://weijintao123.github.io/snake-library/review.html)查看。
 
 只追加话题中的蛇照片；先视觉核验，再按站点物种ID、学名、中文名保守匹配。站点物种标签不代表专家鉴定；存疑内容不误归档。规范化URL与内容SHA-256双重去重，既有照片不覆盖、不删除。
 

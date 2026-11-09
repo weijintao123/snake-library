@@ -13,7 +13,7 @@
       "source_label": {
         "site_id": "122d2a1998b847af83f0e9d6fdfa1985",
         "scientific_name": "Platyceps rhodorachis",
-        "chinese_name": "�켹��ͷ��"
+        "chinese_name": "红脊扁头蛇"
       },
       "status": "species_review_required",
       "snake_content_verified": true
@@ -29,7 +29,7 @@
       "source_label": {
         "site_id": "b75cdc3b222c43a2a19690ef7261c6f8",
         "scientific_name": "Calamaria septentrionalis",
-        "chinese_name": "��β��ͷ��"
+        "chinese_name": "钝尾两头蛇"
       },
       "status": "species_review_required",
       "snake_content_verified": true
@@ -45,7 +45,7 @@
       "source_label": {
         "site_id": "ab139189433b407e9ca3189b72a9b103",
         "scientific_name": "Trimeresurus albolabris",
-        "chinese_name": "�״���Ҷ����"
+        "chinese_name": "白唇竹叶青蛇"
       },
       "status": "species_review_required",
       "snake_content_verified": true
@@ -61,7 +61,7 @@
       "source_label": {
         "site_id": "23e609ee68f349fea1cf2346a7826c88",
         "scientific_name": "Lycodon subcinctus",
-        "chinese_name": "ϸ�׻���"
+        "chinese_name": "细白环蛇"
       },
       "status": "species_review_required",
       "snake_content_verified": true
@@ -77,7 +77,7 @@
       "source_label": {
         "site_id": "f75d122546494092a6a2f67279972d82",
         "scientific_name": "Fowlea flavipunctatus",
-        "chinese_name": "�ư�������"
+        "chinese_name": "黄斑渔游蛇"
       },
       "status": "species_review_required",
       "snake_content_verified": true
@@ -93,7 +93,7 @@
       "source_label": {
         "site_id": "4ca82904e79f4ec0b234e052d8a23fa1",
         "scientific_name": "Ophiophagus hannah",
-        "chinese_name": "�۾�����"
+        "chinese_name": "眼镜王蛇"
       },
       "status": "species_review_required",
       "snake_content_verified": true
@@ -109,7 +109,7 @@
       "source_label": {
         "site_id": "f75d122546494092a6a2f67279972d82",
         "scientific_name": "Fowlea flavipunctatus",
-        "chinese_name": "�ư�������"
+        "chinese_name": "黄斑渔游蛇"
       },
       "status": "species_review_required",
       "snake_content_verified": true
@@ -125,7 +125,7 @@
       "source_label": {
         "site_id": "e9037e2e73d74304adb76b9d7eeab2f7",
         "scientific_name": "Elaphe taeniura",
-        "chinese_name": "��ü����"
+        "chinese_name": "黑眉锦蛇"
       },
       "status": "species_review_required",
       "snake_content_verified": true
@@ -141,7 +141,7 @@
       "source_label": {
         "site_id": "8264c64646c24a08a8e2cb60209c2641",
         "scientific_name": "Ptyas mucosa",
-        "chinese_name": "������"
+        "chinese_name": "滑鼠蛇"
       },
       "status": "species_review_required",
       "snake_content_verified": true
@@ -157,7 +157,7 @@
       "source_label": {
         "site_id": "f75d122546494092a6a2f67279972d82",
         "scientific_name": "Fowlea flavipunctatus",
-        "chinese_name": "�ư�������"
+        "chinese_name": "黄斑渔游蛇"
       },
       "status": "species_review_required",
       "snake_content_verified": true
@@ -173,39 +173,7 @@
       "source_label": {
         "site_id": "bccaae38b7294442a78f7bea0ebb7e64",
         "scientific_name": "Ovophis monticola",
-        "chinese_name": "ɽ����ͷ��"
-      },
-      "status": "species_review_required",
-      "snake_content_verified": true
-    },
-    {
-      "sha256": "0dfc8a2f6a9610a92dcf7cab2abc24cf01c80fc6bf3dff9edbd65a87b62170b6",
-      "path": "review_photos/0dfc8a2f6a9610a92dcf7cab2abc24cf01c80fc6bf3dff9edbd65a87b62170b6.jpg",
-      "download_url": "https://xstatic.pictureknow.com/snake/25639e4a2f9e473fad45d6737ee4199a.png",
-      "capture_type": "downloaded_source_file",
-      "uniqueId": "2088fbecea09045bda799ee2fc485874",
-      "createTime": 1794102848000,
-      "url": "https://xstatic.pictureknow.com/snake/25639e4a2f9e473fad45d6737ee4199a.png",
-      "source_label": {
-        "site_id": "ea20f2a33ff94d5ab89d988289847fc8",
-        "scientific_name": "Lycodon rufozonatus",
-        "chinese_name": "������"
-      },
-      "status": "species_review_required",
-      "snake_content_verified": true
-    },
-    {
-      "sha256": "8be44b8236cbe3bdaa1ed4cec414891a2b6552e8945430c1b5d3868dbe909181",
-      "path": "review_photos/8be44b8236cbe3bdaa1ed4cec414891a2b6552e8945430c1b5d3868dbe909181.jpg",
-      "download_url": "https://xstatic.pictureknow.com/snake/f82261560d6843ec9c8f5aa2753aa30f.png",
-      "capture_type": "downloaded_source_file",
-      "uniqueId": "65bdf43bf453f58d7f5099bb17f9e507",
-      "createTime": 1794102680000,
-      "url": "https://xstatic.pictureknow.com/snake/f82261560d6843ec9c8f5aa2753aa30f.png",
-      "source_label": {
-        "site_id": "ea20f2a33ff94d5ab89d988289847fc8",
-        "scientific_name": "Lycodon rufozonatus",
-        "chinese_name": "������"
+        "chinese_name": "山烙铁头蛇"
       },
       "status": "species_review_required",
       "snake_content_verified": true
@@ -221,7 +189,7 @@
       "source_label": {
         "site_id": "52ce1959566643668fd9588a52b54792",
         "scientific_name": "Ptyas nigromarginata",
-        "chinese_name": "����������"
+        "chinese_name": "黑线乌梢蛇"
       },
       "status": "species_review_required",
       "snake_content_verified": true
@@ -237,7 +205,7 @@
       "source_label": {
         "site_id": "ed94f2c43f754395bcb7e95cc17c6b7a",
         "scientific_name": "Elaphe schrenckii",
-        "chinese_name": "�غڽ���"
+        "chinese_name": "棕黑锦蛇"
       },
       "status": "species_review_required",
       "snake_content_verified": true
@@ -253,7 +221,7 @@
       "source_label": {
         "site_id": "754cd6ec0ad845718dec8fe2020d47c4",
         "scientific_name": "Naja atra",
-        "chinese_name": "��ɽ�۾���"
+        "chinese_name": "舟山眼镜蛇"
       },
       "status": "species_review_required",
       "snake_content_verified": true
@@ -269,7 +237,7 @@
       "source_label": {
         "site_id": "ee3e7d89f26e4c7c97db034cd44df358",
         "scientific_name": "Oligodon formosanus",
-        "chinese_name": "̨��Сͷ��"
+        "chinese_name": "台湾小头蛇"
       },
       "status": "species_review_required",
       "snake_content_verified": true
@@ -762,5 +730,5 @@
       "confirmed_at": "2026-11-06T07:36:27.109Z"
     }
   ],
-  "updated_at": "2026-11-09T09:43:13.685Z"
+  "updated_at": "2026-11-09T09:53:00.829Z"
 }

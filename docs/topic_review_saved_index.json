@@ -401,6 +401,96 @@
       "status": "species_review_required",
       "capture_type": "downloaded_source_file",
       "snake_content_verified": true
+    },
+    {
+      "uniqueId": "c97a12ef3f88ecffe26c1c2e536f1e20",
+      "createTime": 1795048427000,
+      "url": "https://xstatic.pictureknow.com/snake/e2dc055d24de4d8ab8427691497e53df.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/e2dc055d24de4d8ab8427691497e53df.png",
+      "sha256": "8cdb34b6fe5edde1f0be0e5bf3e1671955a7215f4015834102e02aec622608b0",
+      "path": "review_photos/8cdb34b6fe5edde1f0be0e5bf3e1671955a7215f4015834102e02aec622608b0.jpg",
+      "bytes": 217588,
+      "source_label": {
+        "site_id": "4dea85d9da714ceda8a4f8d248051c98",
+        "scientific_name": "Elaphe carinata",
+        "chinese_name": "王锦蛇"
+      },
+      "status": "species_review_required",
+      "capture_type": "downloaded_source_file",
+      "snake_content_verified": true,
+      "review_reason": "species_identity_not_reliably_confirmed"
+    },
+    {
+      "uniqueId": "6ffd4c8996dbfc369a8c9de8bf9ae14c",
+      "createTime": 1795011515000,
+      "url": "https://xstatic.pictureknow.com/snake/03551b670a1348749f61fdf0664f149e.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/03551b670a1348749f61fdf0664f149e.png",
+      "sha256": "293e3b47b1b14eb6c6b8ef7e3f32369badf05cc0a541f4d7ba9b9f8b95408b0e",
+      "path": "review_photos/293e3b47b1b14eb6c6b8ef7e3f32369badf05cc0a541f4d7ba9b9f8b95408b0e.jpg",
+      "bytes": 149794,
+      "source_label": {
+        "site_id": "ef158005c94d4eeebedba0300beec5ac",
+        "scientific_name": "Boiga multomaculata",
+        "chinese_name": "繁花林蛇"
+      },
+      "status": "species_review_required",
+      "capture_type": "downloaded_source_file",
+      "snake_content_verified": true,
+      "review_reason": "source_label_inconsistent_with_visible_anatomy"
+    },
+    {
+      "uniqueId": "8d2fa956540f330b7f2bb92f35d4bc8a",
+      "createTime": 1795011497000,
+      "url": "https://xstatic.pictureknow.com/snake/b8bcab990a3a4d92ad724807139d0f62.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/b8bcab990a3a4d92ad724807139d0f62.png",
+      "sha256": "15a2f1503dca8e322b32ea76f84ed56104ef4f126311fc6a03ed92d07661c836",
+      "path": "review_photos/15a2f1503dca8e322b32ea76f84ed56104ef4f126311fc6a03ed92d07661c836.jpg",
+      "bytes": 138034,
+      "source_label": {
+        "site_id": "ef158005c94d4eeebedba0300beec5ac",
+        "scientific_name": "Boiga multomaculata",
+        "chinese_name": "繁花林蛇"
+      },
+      "status": "species_review_required",
+      "capture_type": "downloaded_source_file",
+      "snake_content_verified": true,
+      "review_reason": "source_label_inconsistent_with_visible_anatomy"
+    },
+    {
+      "uniqueId": "e1a7d0d1ea35dfb5ac93efa2eb50bef8",
+      "createTime": 1795007643000,
+      "url": "https://xstatic.pictureknow.com/snake/f1e0d4d6a83d4e1893ce97c1438d9f99.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/f1e0d4d6a83d4e1893ce97c1438d9f99.png",
+      "sha256": "9c7f90ebf53a9b0728475ab61d39fcf253573e6ee69c39cf5aec6c6478ae15df",
+      "path": "review_photos/9c7f90ebf53a9b0728475ab61d39fcf253573e6ee69c39cf5aec6c6478ae15df.jpg",
+      "bytes": 567303,
+      "source_label": {
+        "site_id": "021a13b9c06b49fca86751f3d04eb049",
+        "scientific_name": "Rhabdophis helleri",
+        "chinese_name": "海勒颈槽蛇"
+      },
+      "status": "species_review_required",
+      "capture_type": "downloaded_source_file",
+      "snake_content_verified": true,
+      "review_reason": "species_identity_not_reliably_confirmed"
+    },
+    {
+      "uniqueId": "3bb9f0002e0cfa7e29b5265271503cb7",
+      "createTime": 1795004544000,
+      "url": "https://xstatic.pictureknow.com/snake/939bca442e1f4d18919ce73c2a058565.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/939bca442e1f4d18919ce73c2a058565.png",
+      "sha256": "0646dc8157534886678a0140529a2e0d7b285ca1ad3dc07ba7671d170185f675",
+      "path": "review_photos/0646dc8157534886678a0140529a2e0d7b285ca1ad3dc07ba7671d170185f675.jpg",
+      "bytes": 258959,
+      "source_label": {
+        "site_id": "b5461b620b7047a38091a7cda1017785",
+        "scientific_name": "Gonyosoma frenatum",
+        "chinese_name": "灰腹绿锦蛇"
+      },
+      "status": "species_review_required",
+      "capture_type": "downloaded_source_file",
+      "snake_content_verified": true,
+      "review_reason": "species_identity_not_reliably_confirmed"
     }
   ],
   "integrated_photos": [
@@ -890,5 +980,5 @@
       "confirmed_at": "2026-11-06T07:36:27.109Z"
     }
   ],
-  "updated_at": "2026-11-09T09:53:00.829Z"
+  "updated_at": "2026-11-19T01:32:53Z"
 }

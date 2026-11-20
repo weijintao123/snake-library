@@ -491,6 +491,168 @@
       "capture_type": "downloaded_source_file",
       "snake_content_verified": true,
       "review_reason": "species_identity_not_reliably_confirmed"
+    },
+    {
+      "uniqueId": "a5e1e166366fdc9d1b2bf84ed0e6c5c9",
+      "createTime": 1795174963000,
+      "url": "https://xstatic.pictureknow.com/snake/b213a88b02564e85844496932ca948d9.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/b213a88b02564e85844496932ca948d9.png",
+      "sha256": "272e73fe54b88caf873a3ad0ac74ce8dc74ed2acff4d6fcdeaa4f7ac14edf08b",
+      "path": "review_photos/272e73fe54b88caf873a3ad0ac74ce8dc74ed2acff4d6fcdeaa4f7ac14edf08b.jpg",
+      "bytes": 1826945,
+      "source_label": {
+        "site_id": "58af0205f4c4479f85887c111597c7cb",
+        "scientific_name": "Myrrophis chinensis",
+        "chinese_name": "中国水蛇"
+      },
+      "status": "species_review_required",
+      "capture_type": "downloaded_source_file",
+      "snake_content_verified": true,
+      "review_reason": "species_identity_not_reliably_confirmed"
+    },
+    {
+      "uniqueId": "cca8449ec03d342b1c18bba45c98da74",
+      "createTime": 1795174693000,
+      "url": "https://xstatic.pictureknow.com/snake/6b43e9fdc0974ae4a91aa4da23f02708.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/6b43e9fdc0974ae4a91aa4da23f02708.png",
+      "sha256": "390879acbb3d5c121bfd558a89c8b375bb3f2aab8e9f882885a6209b5ccd9277",
+      "path": "review_photos/390879acbb3d5c121bfd558a89c8b375bb3f2aab8e9f882885a6209b5ccd9277.jpg",
+      "bytes": 1855835,
+      "source_label": {
+        "site_id": "f0c8d3c27d7b424a8fbd6c1ac1b6e898",
+        "scientific_name": "Lycodon flavozonatus",
+        "chinese_name": "黄链蛇"
+      },
+      "status": "species_review_required",
+      "capture_type": "downloaded_source_file",
+      "snake_content_verified": true,
+      "review_reason": "species_identity_not_reliably_confirmed"
+    },
+    {
+      "uniqueId": "734e468918688c7f938d109c4bffa0d4",
+      "createTime": 1795174668000,
+      "url": "https://xstatic.pictureknow.com/snake/3e09ca54e691407e85ba67419c60e01e.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/3e09ca54e691407e85ba67419c60e01e.png",
+      "sha256": "d36e32ee1499f3d25d06d727e4c1c60c0aaa179083df29c336e26571e609f946",
+      "path": "review_photos/d36e32ee1499f3d25d06d727e4c1c60c0aaa179083df29c336e26571e609f946.jpg",
+      "bytes": 2341271,
+      "source_label": {
+        "site_id": "cd820a6915c645c2bf593edc50c4d468",
+        "scientific_name": "Chrysopelea ornata",
+        "chinese_name": "金花蛇"
+      },
+      "status": "species_review_required",
+      "capture_type": "downloaded_source_file",
+      "snake_content_verified": true,
+      "review_reason": "species_identity_not_reliably_confirmed"
+    },
+    {
+      "uniqueId": "796c20c78b29546d7756aa4faa4c209c",
+      "createTime": 1795174181000,
+      "url": "https://xstatic.pictureknow.com/snake/38d5eba6da43416f9950a0defb08417c.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/38d5eba6da43416f9950a0defb08417c.png",
+      "sha256": "f4792f70661c777584c27df475d5af868d085697adfd72d2b42bacde694795b5",
+      "path": "review_photos/f4792f70661c777584c27df475d5af868d085697adfd72d2b42bacde694795b5.jpg",
+      "bytes": 900661,
+      "source_label": {
+        "site_id": "6716b1c52eba4824b799a8380dc2c514",
+        "scientific_name": "Gloydius cognatus",
+        "chinese_name": "阿拉善蝮"
+      },
+      "status": "species_review_required",
+      "capture_type": "downloaded_source_file",
+      "snake_content_verified": true,
+      "review_reason": "species_identity_not_reliably_confirmed"
+    },
+    {
+      "uniqueId": "bd706fd92633b865bc8965cf5a6eda81",
+      "createTime": 1795146257000,
+      "url": "https://xstatic.pictureknow.com/snake/341f36cf799d4519ab7d3929e77708c6.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/341f36cf799d4519ab7d3929e77708c6.png",
+      "sha256": "c3c9179907ad62619b01772dbd20ad98f45bd343ffd6de552640d59d24aea9b5",
+      "path": "review_photos/c3c9179907ad62619b01772dbd20ad98f45bd343ffd6de552640d59d24aea9b5.jpg",
+      "bytes": 152031,
+      "source_label": {
+        "site_id": "b5461b620b7047a38091a7cda1017785",
+        "scientific_name": "Gonyosoma frenatum",
+        "chinese_name": "灰腹绿锦蛇"
+      },
+      "status": "species_review_required",
+      "capture_type": "downloaded_source_file",
+      "snake_content_verified": true,
+      "review_reason": "species_identity_not_reliably_confirmed"
+    },
+    {
+      "uniqueId": "575b36248d31eba6c11284b2699bd697",
+      "createTime": 1795134236000,
+      "url": "https://xstatic.pictureknow.com/snake/321d6fe3b1844558a9bda5240df9f627.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/321d6fe3b1844558a9bda5240df9f627.png",
+      "sha256": "be7fffdd787417844f0b4e0606fa2c195b30db8b668a029034aa16d7b77bd9d6",
+      "path": "review_photos/be7fffdd787417844f0b4e0606fa2c195b30db8b668a029034aa16d7b77bd9d6.jpg",
+      "bytes": 321975,
+      "source_label": {
+        "site_id": "ab065bb23c8249d9b7a013551bd3c5d2",
+        "scientific_name": "Elaphe dione",
+        "chinese_name": "白条锦蛇"
+      },
+      "status": "species_review_required",
+      "capture_type": "downloaded_source_file",
+      "snake_content_verified": true,
+      "review_reason": "species_identity_not_reliably_confirmed"
+    },
+    {
+      "uniqueId": "0c8490022f320411de7d9c4aa9473918",
+      "createTime": 1795134002000,
+      "url": "https://xstatic.pictureknow.com/snake/1faa5662f7ef43e5bc457637a4ab3f1c.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/1faa5662f7ef43e5bc457637a4ab3f1c.png",
+      "sha256": "2f00b2b041aed5ed8a3f8adc891ce45133984da88ff2d398b383e72b305db396",
+      "path": "review_photos/2f00b2b041aed5ed8a3f8adc891ce45133984da88ff2d398b383e72b305db396.jpg",
+      "bytes": 370270,
+      "source_label": {
+        "site_id": "ab065bb23c8249d9b7a013551bd3c5d2",
+        "scientific_name": "Elaphe dione",
+        "chinese_name": "白条锦蛇"
+      },
+      "status": "species_review_required",
+      "capture_type": "downloaded_source_file",
+      "snake_content_verified": true,
+      "review_reason": "species_identity_not_reliably_confirmed"
+    },
+    {
+      "uniqueId": "ae11a840e8d82a9f14ff2dd3cd0a12ca",
+      "createTime": 1795128943000,
+      "url": "https://xstatic.pictureknow.com/snake/b74cf31b56764494b41a9205463d502e.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/b74cf31b56764494b41a9205463d502e.png",
+      "sha256": "be7929a80de71f6533bf91b3e54e242f6f6d6db04b568679513c39978c2d3ded",
+      "path": "review_photos/be7929a80de71f6533bf91b3e54e242f6f6d6db04b568679513c39978c2d3ded.jpg",
+      "bytes": 176796,
+      "source_label": {
+        "site_id": "ab065bb23c8249d9b7a013551bd3c5d2",
+        "scientific_name": "Elaphe dione",
+        "chinese_name": "白条锦蛇"
+      },
+      "status": "species_review_required",
+      "capture_type": "downloaded_source_file",
+      "snake_content_verified": true,
+      "review_reason": "species_identity_not_reliably_confirmed"
+    },
+    {
+      "uniqueId": "0e84ae7fa5578fabc0199fd8cbd755d6",
+      "createTime": 1795070584000,
+      "url": "https://xstatic.pictureknow.com/snake/c4ee2c9665cd400dba88e3da8346140e.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/c4ee2c9665cd400dba88e3da8346140e.png",
+      "sha256": "018117ac123b14dd450b44cf01397f07be308181ecbf5946fc3a70fca42595be",
+      "path": "review_photos/018117ac123b14dd450b44cf01397f07be308181ecbf5946fc3a70fca42595be.jpg",
+      "bytes": 71377,
+      "source_label": {
+        "site_id": "",
+        "scientific_name": "",
+        "chinese_name": "复印机"
+      },
+      "status": "species_review_required",
+      "capture_type": "downloaded_source_file",
+      "snake_content_verified": true,
+      "review_reason": "source_non_snake_label_conflicts_with_visible_snake"
     }
   ],
   "integrated_photos": [
@@ -980,5 +1142,5 @@
       "confirmed_at": "2026-11-06T07:36:27.109Z"
     }
   ],
-  "updated_at": "2026-11-19T01:32:53Z"
+  "updated_at": "2026-11-20T14:51:36Z"
 }

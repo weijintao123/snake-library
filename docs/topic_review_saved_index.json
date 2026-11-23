@@ -815,6 +815,42 @@
       "capture_type": "downloaded_source_file",
       "snake_content_verified": true,
       "review_reason": "species_identity_not_reliably_confirmed"
+    },
+    {
+      "uniqueId": "e1f4cf00dcb16aeec5ebaa7fb1322018",
+      "createTime": 1795423010000,
+      "url": "https://xstatic.pictureknow.com/snake/fc8805b1ceb04471bf54f51bf019d484.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/fc8805b1ceb04471bf54f51bf019d484.png",
+      "sha256": "3547a5838a0cf186999587c1967555077ce6d43a2cf74d788b29fa5b8c7fb280",
+      "path": "review_photos/3547a5838a0cf186999587c1967555077ce6d43a2cf74d788b29fa5b8c7fb280.jpg",
+      "bytes": 435984,
+      "source_label": {
+        "site_id": "4328ff2e7a344e98b17adc055a7a1060",
+        "scientific_name": "Rhabdophis tigrinus",
+        "chinese_name": "虎斑颈槽蛇"
+      },
+      "status": "species_review_required",
+      "capture_type": "downloaded_source_file",
+      "snake_content_verified": true,
+      "review_reason": "species_identity_not_reliably_confirmed"
+    },
+    {
+      "uniqueId": "80b1aa4dcf159bd37096602568240473",
+      "createTime": 1795422486000,
+      "url": "https://xstatic.pictureknow.com/snake/fe23ebba031942afb971f6088d3d8507.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/fe23ebba031942afb971f6088d3d8507.png",
+      "sha256": "d1c6da022824c536db2dddaab0a472a936915dc06902b3029e5492063d3ed8e1",
+      "path": "review_photos/d1c6da022824c536db2dddaab0a472a936915dc06902b3029e5492063d3ed8e1.jpg",
+      "bytes": 95542,
+      "source_label": {
+        "site_id": "4ca82904e79f4ec0b234e052d8a23fa1",
+        "scientific_name": "Ophiophagus hannah",
+        "chinese_name": "眼镜王蛇"
+      },
+      "status": "species_review_required",
+      "capture_type": "downloaded_source_file",
+      "snake_content_verified": true,
+      "review_reason": "species_identity_not_reliably_confirmed"
     }
   ],
   "integrated_photos": [

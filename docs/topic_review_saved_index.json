@@ -653,6 +653,168 @@
       "capture_type": "downloaded_source_file",
       "snake_content_verified": true,
       "review_reason": "source_non_snake_label_conflicts_with_visible_snake"
+    },
+    {
+      "uniqueId": "3ee6f69f5bd08be09e343f874656b41a",
+      "createTime": 1795412762000,
+      "url": "https://xstatic.pictureknow.com/snake/403b96ecf50a4d2d97ac74cf64f410e2.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/403b96ecf50a4d2d97ac74cf64f410e2.png",
+      "sha256": "fc698ff8dfc3bc98cd72e22ce1b87d1dcfa828a865faf23f1aebd107ad5deb54",
+      "path": "review_photos/fc698ff8dfc3bc98cd72e22ce1b87d1dcfa828a865faf23f1aebd107ad5deb54.jpg",
+      "bytes": 495853,
+      "source_label": {
+        "site_id": "ab065bb23c8249d9b7a013551bd3c5d2",
+        "scientific_name": "Elaphe dione",
+        "chinese_name": "白条锦蛇"
+      },
+      "status": "species_review_required",
+      "capture_type": "downloaded_source_file",
+      "snake_content_verified": true,
+      "review_reason": "species_identity_not_reliably_confirmed"
+    },
+    {
+      "uniqueId": "7e84bc7f0c01da5f16d857104b805ad4",
+      "createTime": 1795412482000,
+      "url": "https://xstatic.pictureknow.com/snake/5311f6c78b8242daa7d5edfeff311fe9.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/5311f6c78b8242daa7d5edfeff311fe9.png",
+      "sha256": "260af5e80db34378943430845534074fcbf0f17c72bfede38cb56ff9cb9eb1fd",
+      "path": "review_photos/260af5e80db34378943430845534074fcbf0f17c72bfede38cb56ff9cb9eb1fd.jpg",
+      "bytes": 719915,
+      "source_label": {
+        "site_id": "ab065bb23c8249d9b7a013551bd3c5d2",
+        "scientific_name": "Elaphe dione",
+        "chinese_name": "白条锦蛇"
+      },
+      "status": "species_review_required",
+      "capture_type": "downloaded_source_file",
+      "snake_content_verified": true,
+      "review_reason": "species_identity_not_reliably_confirmed"
+    },
+    {
+      "uniqueId": "bfdfdac7a228a48e2d4361e6b6744482",
+      "createTime": 1795354224000,
+      "url": "https://xstatic.pictureknow.com/snake/e2b0e7aa071b473aaba81993fe4a9e5e.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/e2b0e7aa071b473aaba81993fe4a9e5e.png",
+      "sha256": "90cf782fbfaa62f2181fd99852b81c4c41bf2e592a98e7e4cd9f49d102bc9032",
+      "path": "review_photos/90cf782fbfaa62f2181fd99852b81c4c41bf2e592a98e7e4cd9f49d102bc9032.jpg",
+      "bytes": 139893,
+      "source_label": {
+        "site_id": "4dea85d9da714ceda8a4f8d248051c98",
+        "scientific_name": "Elaphe carinata",
+        "chinese_name": "王锦蛇"
+      },
+      "status": "species_review_required",
+      "capture_type": "downloaded_source_file",
+      "snake_content_verified": true,
+      "review_reason": "species_identity_not_reliably_confirmed"
+    },
+    {
+      "uniqueId": "4ed7569830de3b5033e26bba8781eca1",
+      "createTime": 1795350329000,
+      "url": "https://xstatic.pictureknow.com/snake/16462a85faa8449a8330d7de8c0af22c.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/16462a85faa8449a8330d7de8c0af22c.png",
+      "sha256": "2dde4933937b23024b30ca7dd15c91b7acd0fa05acc4f0c436df92289a5346cf",
+      "path": "review_photos/2dde4933937b23024b30ca7dd15c91b7acd0fa05acc4f0c436df92289a5346cf.jpg",
+      "bytes": 164724,
+      "source_label": {
+        "site_id": "fd6e946c0cec44019c40b7bc8a634608",
+        "scientific_name": "Pareas formosensis",
+        "chinese_name": "台湾钝头蛇"
+      },
+      "status": "species_review_required",
+      "capture_type": "downloaded_source_file",
+      "snake_content_verified": true,
+      "review_reason": "species_identity_not_reliably_confirmed"
+    },
+    {
+      "uniqueId": "45384e67f8e68997cb149973b424577a",
+      "createTime": 1795337657000,
+      "url": "https://xstatic.pictureknow.com/snake/996cdb5976be4149ad41146a99a9a3b5.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/996cdb5976be4149ad41146a99a9a3b5.png",
+      "sha256": "71267ea967eecf365727feaff09f3a96a97e2bfb5920886642a8977c0591642c",
+      "path": "review_photos/71267ea967eecf365727feaff09f3a96a97e2bfb5920886642a8977c0591642c.jpg",
+      "bytes": 2285739,
+      "source_label": {
+        "site_id": "f0a0d9515e464da0861f7767ab0d6a82",
+        "scientific_name": "Oreocryptophis porphyraceus",
+        "chinese_name": "紫灰锦蛇"
+      },
+      "status": "species_review_required",
+      "capture_type": "downloaded_source_file",
+      "snake_content_verified": true,
+      "review_reason": "species_identity_not_reliably_confirmed"
+    },
+    {
+      "uniqueId": "829b27f5f7f33c233eb51e8c9c62bb77",
+      "createTime": 1795329955000,
+      "url": "https://xstatic.pictureknow.com/snake/c1a43dfc5c08464197d69637996684f5.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/c1a43dfc5c08464197d69637996684f5.png",
+      "sha256": "0ffe941a709a2e0d41ab04185596d6c9cbf8af502f21d5916ba05087fa79cf00",
+      "path": "review_photos/0ffe941a709a2e0d41ab04185596d6c9cbf8af502f21d5916ba05087fa79cf00.jpg",
+      "bytes": 175245,
+      "source_label": {
+        "site_id": "02eefe73536247d7b837009a77f526bf",
+        "scientific_name": "Boiga kraepelini",
+        "chinese_name": "绞花林蛇"
+      },
+      "status": "species_review_required",
+      "capture_type": "downloaded_source_file",
+      "snake_content_verified": true,
+      "review_reason": "species_identity_not_reliably_confirmed"
+    },
+    {
+      "uniqueId": "d61a95fb981e0a34ce325b168fefe9d1",
+      "createTime": 1795325175000,
+      "url": "https://xstatic.pictureknow.com/snake/db5a6c85789747c7ba5277ec8f1279f0.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/db5a6c85789747c7ba5277ec8f1279f0.png",
+      "sha256": "b6e8b59afa92100319b981831efb581eaf3eb976e5d451735cf9f5756989c689",
+      "path": "review_photos/b6e8b59afa92100319b981831efb581eaf3eb976e5d451735cf9f5756989c689.jpg",
+      "bytes": 225429,
+      "source_label": {
+        "site_id": "ab139189433b407e9ca3189b72a9b103",
+        "scientific_name": "Trimeresurus albolabris",
+        "chinese_name": "白唇竹叶青蛇"
+      },
+      "status": "species_review_required",
+      "capture_type": "downloaded_source_file",
+      "snake_content_verified": true,
+      "review_reason": "species_identity_not_reliably_confirmed"
+    },
+    {
+      "uniqueId": "3233fcabe25a687f1063502be42e7cda",
+      "createTime": 1795311217000,
+      "url": "https://xstatic.pictureknow.com/snake/f1af6a840714478ca07db6e944657f6f.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/f1af6a840714478ca07db6e944657f6f.png",
+      "sha256": "edf0cf48404729e6594d832b97212ecba2678c97af666a6b7ad78d3669064647",
+      "path": "review_photos/edf0cf48404729e6594d832b97212ecba2678c97af666a6b7ad78d3669064647.jpg",
+      "bytes": 91467,
+      "source_label": {
+        "site_id": "b2d39d39e3c5413b8dd80ad6d2beabaa",
+        "scientific_name": "Oligodon fasciolatus",
+        "chinese_name": "束纹小头蛇"
+      },
+      "status": "species_review_required",
+      "capture_type": "downloaded_source_file",
+      "snake_content_verified": true,
+      "review_reason": "species_identity_not_reliably_confirmed"
+    },
+    {
+      "uniqueId": "9c201225662bbb61a51f159bfc9dd31d",
+      "createTime": 1795242277000,
+      "url": "https://xstatic.pictureknow.com/snake/d9226490538449269b8ef81c5d6255cd.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/d9226490538449269b8ef81c5d6255cd.png?x-oss-process=image/format,webp",
+      "sha256": "46b8fbd48bf768b42c2d63123e929b8fb4bc0edeadb39c6827b9d0af4b9f18a5",
+      "path": "review_photos/46b8fbd48bf768b42c2d63123e929b8fb4bc0edeadb39c6827b9d0af4b9f18a5.jpg",
+      "bytes": 67668,
+      "source_label": {
+        "site_id": "021a13b9c06b49fca86751f3d04eb049",
+        "scientific_name": "Rhabdophis helleri",
+        "chinese_name": "海勒颈槽蛇"
+      },
+      "status": "species_review_required",
+      "capture_type": "downloaded_source_file",
+      "snake_content_verified": true,
+      "review_reason": "species_identity_not_reliably_confirmed"
     }
   ],
   "integrated_photos": [
@@ -1142,5 +1304,5 @@
       "confirmed_at": "2026-11-06T07:36:27.109Z"
     }
   ],
-  "updated_at": "2026-11-20T14:51:36Z"
+  "updated_at": "2026-11-23T07:43:51Z"
 }

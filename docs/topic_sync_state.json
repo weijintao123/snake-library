@@ -1,8 +1,8 @@
 {
   "schema_version": 3,
-  "last_successful_cutoff": "2026-11-23T15:43:51+08:00",
-  "last_verified_data_commit": "39eb77675bedefbcc707c93e7c2588b8a4867c37",
-  "last_verified_deployment": "https://github.com/weijintao123/snake-library/actions/runs/45133927090",
+  "last_successful_cutoff": "2026-11-23T18:01:08+08:00",
+  "last_verified_data_commit": "88dc61b8e5e67f6b6a70bef1dbe859389d1ab2c6",
+  "last_verified_deployment": "https://github.com/weijintao123/snake-library/actions/runs/45153324581",
   "verified_image_count": 1234,
   "retry_topics": [
     {
@@ -5566,6 +5566,32 @@
       "download_url": "https://xstatic.pictureknow.com/snake/d9226490538449269b8ef81c5d6255cd.png?x-oss-process=image/format,webp",
       "capture_type": "downloaded_source_file",
       "snake_content_verified": true
+    },
+    {
+      "uniqueId": "e1f4cf00dcb16aeec5ebaa7fb1322018",
+      "createTime": 1795423010000,
+      "img": "https://xstatic.pictureknow.com/snake/fc8805b1ceb04471bf54f51bf019d484.png",
+      "sciName": "Rhabdophis tigrinus",
+      "cnName": "虎斑颈槽蛇",
+      "snakeId": "4328ff2e7a344e98b17adc055a7a1060",
+      "download_url": "https://xstatic.pictureknow.com/snake/fc8805b1ceb04471bf54f51bf019d484.png",
+      "retry_reason": "species_review_required_image_saved",
+      "saved_path": "review_photos/3547a5838a0cf186999587c1967555077ce6d43a2cf74d788b29fa5b8c7fb280.jpg",
+      "saved_sha256": "3547a5838a0cf186999587c1967555077ce6d43a2cf74d788b29fa5b8c7fb280",
+      "last_attempt_at": "2026-11-23T10:01:08Z"
+    },
+    {
+      "uniqueId": "80b1aa4dcf159bd37096602568240473",
+      "createTime": 1795422486000,
+      "img": "https://xstatic.pictureknow.com/snake/fe23ebba031942afb971f6088d3d8507.png",
+      "sciName": "Ophiophagus hannah",
+      "cnName": "眼镜王蛇",
+      "snakeId": "4ca82904e79f4ec0b234e052d8a23fa1",
+      "download_url": "https://xstatic.pictureknow.com/snake/fe23ebba031942afb971f6088d3d8507.png",
+      "retry_reason": "species_review_required_image_saved",
+      "saved_path": "review_photos/d1c6da022824c536db2dddaab0a472a936915dc06902b3029e5492063d3ed8e1.jpg",
+      "saved_sha256": "d1c6da022824c536db2dddaab0a472a936915dc06902b3029e5492063d3ed8e1",
+      "last_attempt_at": "2026-11-23T10:01:08Z"
     }
   ],
   "excluded_topic_ids": [
@@ -5590,34 +5616,36 @@
     "3324954c234cf089766e294773e0f918",
     "a77455e580ef6c20f2b0d4eb68ba6e5b"
   ],
-  "coverage_note": "One ordered unique page of 50 topics crosses the previous cutoff; 14 window image records processed. Ten source originals readable: nine visually verified snake images saved pending species review, one skin-wound-only image excluded. Four new originals/fullsize URLs failed, and all 297 historical unsaved records remained HTTP403. One new failed record loaded in the webpage but browser media export timed out; no screenshot/original save is claimed, and it remains a specific retry. All nine new files passed online SHA-256 verification after successful Pages deployment; review.html shows 48 images. E: mirror has 1282 files, 1277 usable plus five pre-existing unreadable repository originals.",
+  "coverage_note": "One ordered unique source page of 50 crosses the previous cutoff. Two window records both downloaded, visually confirmed to contain snakes, globally hash-checked and saved pending species review. All 301 historical unsaved retry IDs matched today's completed failed download batches; same-day results reused without repeating requests. All 48 existing saved pending records retained for identity review only. Both new files passed deployed online SHA-256 checks. E: mirror contains 1284 saved files: 1279 usable plus five pre-existing unreadable repository files. Pending page cache fix and final browser verification are recorded with deployment evidence.",
   "last_completed_window": {
-    "window_start": "2026-11-20T22:51:36+08:00",
-    "window_end": "2026-11-23T15:43:51+08:00",
+    "window_start": "2026-11-23T15:43:51+08:00",
+    "window_end": "2026-11-23T18:01:08+08:00",
     "scanned": 50,
-    "new_topics": 14,
-    "historical_retried": 297,
-    "historical_saved_review": 39,
-    "download_success": 10,
+    "new_topics": 2,
+    "historical_retried": 0,
+    "historical_download_retry_results_reused": 301,
+    "historical_saved_review": 48,
+    "download_success": 2,
     "added": 0,
-    "pending_photos_saved": 9,
+    "pending_photos_saved": 2,
     "duplicates": 0,
     "new_species": 0,
     "total_species": 152,
     "total_images": 1234,
-    "total_saved_with_pending": 1282,
-    "deferred": 349,
+    "total_saved_with_pending": 1284,
+    "deferred": 351,
     "unavailable": 301,
-    "excluded": 1
+    "excluded": 0
   },
   "last_followup_check": {
-    "checked_until": "2026-11-23T15:43:51+08:00",
-    "source_total": 23403,
+    "checked_until": "2026-11-23T18:01:08+08:00",
+    "source_total": 23405,
     "scanned": 50,
-    "historical_retried": 297
+    "historical_retried": 0,
+    "same_day_unsaved_results_reused": 301
   },
-  "online_index_sha256": "374f509b9b3dbe4106a6d07f92966fadb5cab0699bc31682fdff0adab2ebae09",
-  "last_completed_at": "2026-11-23T07:54:48Z",
+  "online_index_sha256": "74be3430f0edd3db308a8afcba083ed9392b282d74d4b75f9f5cf198084805c9",
+  "last_completed_at": "2026-11-23T10:11:03Z",
   "last_full_review_window": {
     "source": "https://snake.pictureknow.com/topics",
     "coverage": "full-window-browser-api",
@@ -5636,7 +5664,7 @@
     "time": "10:00",
     "local_mirror": "E:\\肥猫识蛇图库照片"
   },
-  "verified_pending_review_image_count": 48,
+  "verified_pending_review_image_count": 50,
   "review_saved_index": "docs/topic_review_saved_index.json",
   "review_gallery": "https://weijintao123.github.io/snake-library/review.html",
   "last_partial_visible_import": {
@@ -5661,23 +5689,30 @@
   },
   "last_complete_scan": {
     "fetched": 50,
-    "oldest": 1794715462000,
-    "window_topics": 14,
-    "historical_download_retries": 297,
-    "historical_saved_review": 39,
-    "new_downloaded": 10,
-    "new_non_snake": 1,
-    "new_review": 9,
-    "new_unavailable": 4,
+    "oldest": 1794716673000,
+    "newest": 1795423010000,
+    "source_total": 23405,
+    "ordered": true,
+    "unique": 50,
+    "window_topics": 2,
+    "historical_download_retries": 301,
+    "historical_download_attempts_this_run": 0,
+    "historical_same_day_results_reused": 301,
+    "historical_saved_review": 48,
+    "new_downloaded": 2,
+    "new_non_snake": 0,
+    "new_review": 2,
+    "new_unavailable": 0,
     "known_url_hits": 0,
     "content_duplicates": 0,
-    "online_hashes_verified": 9,
-    "browser_review_count": 48,
+    "online_hashes_verified": 2,
+    "browser_review_count": 50,
     "verified_classified_count": 1234,
-    "review_index_sha256": "3406c8a8cfe56ab693af220d55854eb9e37c15556cec3e41d05ac9d5cf210463",
+    "review_index_sha256": "c0c8ed88e652d6ffc09020dfd926c6a25dfd6bd0d8c582693599903104ceaa95",
     "login_verified": true,
-    "visible_image_export_failures": 1,
-    "screenshot_saved": 0
+    "screenshot_saved": 0,
+    "page_cache_fix_commit": "88dc61b8e5e67f6b6a70bef1dbe859389d1ab2c6",
+    "browser_render_verified": true
   },
   "excluded_topic_reasons": {
     "a77455e580ef6c20f2b0d4eb68ba6e5b": "visually_confirmed_skin_wound_only_no_snake"

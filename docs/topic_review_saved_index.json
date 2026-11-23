@@ -851,6 +851,24 @@
       "capture_type": "downloaded_source_file",
       "snake_content_verified": true,
       "review_reason": "species_identity_not_reliably_confirmed"
+    },
+    {
+      "uniqueId": "00d8296ea3bb1deddaebbb57b68e7094",
+      "createTime": 1795433555000,
+      "url": "https://xstatic.pictureknow.com/snake/609c2de2804841df831c932510050776.png",
+      "download_url": "https://xstatic.pictureknow.com/snake/609c2de2804841df831c932510050776.png",
+      "sha256": "aa5887cfd41cf507e266f9648f0d0c591a1c4c40d9b3cf7dd899bb831a25b219",
+      "path": "review_photos/aa5887cfd41cf507e266f9648f0d0c591a1c4c40d9b3cf7dd899bb831a25b219.jpg",
+      "bytes": 84516,
+      "source_label": {
+        "site_id": "e9037e2e73d74304adb76b9d7eeab2f7",
+        "scientific_name": "Elaphe taeniura",
+        "chinese_name": "黑眉锦蛇"
+      },
+      "status": "species_review_required",
+      "capture_type": "downloaded_source_file",
+      "snake_content_verified": true,
+      "review_reason": "species_identity_not_reliably_confirmed"
     }
   ],
   "integrated_photos": [

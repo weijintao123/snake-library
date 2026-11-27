@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "last_successful_cutoff": "2026-11-27T16:55:06+08:00",
+  "last_successful_cutoff": "2026-11-27T17:56:12.005+08:00",
   "last_verified_data_commit": "953a1f4516adab9e3a92784ab3eb66f5a570a651",
   "last_verified_deployment": "https://github.com/weijintao123/snake-library/actions/runs/45970282656",
   "verified_image_count": 1234,
@@ -9167,7 +9167,7 @@
     "a77455e580ef6c20f2b0d4eb68ba6e5b",
     "ffae5cc3b7b803ea1fd649d566a16c94"
   ],
-  "coverage_note": "One ordered unique source page of 50 crosses the previous cutoff. All 14 window records handled: 12 originals readable, 11 visually verified snake images saved pending review, one bowls-only image permanently excluded, two originals/fullsize URLs HTTP403. Both failed images also showed naturalWidth zero on the source topic page after loading 15 cards, so no screenshots saved. All 303 historical unsaved records retried: one original recovered, visually contains a snake, saved pending species review; 302 still HTTP403. Existing 71 saved pending images retained without downloading. All 12 new snake images globally SHA-256 checked with no duplicates. Local mirror contains 1317 saved files, 1312 usable plus five pre-existing unreadable repository files. Matching Pages deployment succeeded, all 12 image hashes matched online, browser rendered 83 pending images.",
+  "coverage_note": "One ordered unique source page of 50 crosses the previous cutoff. All 14 window records handled: 12 originals readable, 11 visually verified snake images saved pending review, one bowls-only image permanently excluded, two originals/fullsize URLs HTTP403. Both failed images also showed naturalWidth zero on the source topic page after loading 15 cards, so no screenshots saved. All 303 historical unsaved records retried: one original recovered, visually contains a snake, saved pending species review; 302 still HTTP403. Existing 71 saved pending images retained without downloading. All 12 new snake images globally SHA-256 checked with no duplicates. Local mirror contains 1317 saved files, 1312 usable plus five pre-existing unreadable repository files. Matching Pages deployment succeeded, all 12 image hashes matched online, browser rendered 83 pending images. Follow-up on November 27 completely checked the subsequent window through 17:56:12 Beijing: ordered unique first page crosses cutoff, no new records, all 304 unsaved retry IDs matched the same-day failed attempts and were retained without repeating requests. Login, 83-image browser review count, online indices and the 12 latest published file hashes reconfirmed. Local mirror unchanged with no new failures.",
   "last_completed_window": {
     "window_start": "2026-11-25T18:03:51.149+08:00",
     "window_end": "2026-11-27T16:55:06+08:00",
@@ -9190,13 +9190,26 @@
     "excluded": 1
   },
   "last_followup_check": {
-    "checked_until": "2026-11-27T16:55:06+08:00",
+    "checked_until": "2026-11-27T17:56:12.005+08:00",
+    "window_start": "2026-11-27T16:55:06+08:00",
     "source_total": 23442,
     "scanned": 50,
-    "historical_retried": 303
+    "window_topics": 0,
+    "ordered": true,
+    "unique": 50,
+    "oldest": 1795260101000,
+    "login_verified": true,
+    "historical_retried": 0,
+    "same_day_unsaved_retry_results_reused": 304,
+    "saved_pending_retained": 83,
+    "browser_review_count": 83,
+    "online_review_index_sha256": "2b86d640e485968fb9313494073cb51f4887d01012135ebee270258a9e3829e8",
+    "local_saved": 1317,
+    "local_usable": 1312,
+    "local_known_unreadable": 5
   },
   "online_index_sha256": "74be3430f0edd3db308a8afcba083ed9392b282d74d4b75f9f5cf198084805c9",
-  "last_completed_at": "2026-11-27T09:04:26Z",
+  "last_completed_at": "2026-11-27T09:59:43Z",
   "last_full_review_window": {
     "source": "https://snake.pictureknow.com/topics",
     "coverage": "full-window-browser-api",
